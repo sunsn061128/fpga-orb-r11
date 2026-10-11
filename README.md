@@ -1,57 +1,48 @@
-# FPGA ORB R11 完整交接包
+# FPGA ORB R11：源码与配对固件
 
-> 当前状态：完整 ZIP 上传失败，Release 附件尚未齐全；仅校验文本已上传。请暂勿将仓库或 Release 视为完整交付。本地短目录包及原交接资料均保留。
+此仓库采用直接公开源码的方式，不再上传完整交接 ZIP。
+源码、构建脚本、测试代码与说明可在线浏览；已验收的配对固件在
+[Release](https://github.com/sunsn061128/fpga-orb-r11/releases/tag/r11-handoff-20261011)
+单独下载。完整测试素材、SDK/BSP、生成工程和全部历史 job 仍保存在本地交接包。
 
-完整程序、测试素材、修改/测试历史和配对上板文件位于 **[Release 下载页](https://github.com/sunsn061128/fpga-orb-r11/releases/tag/r11-handoff-20261011)** 的 `r11.zip`。
+## 目录与版本边界
 
-不要用绿色 Code 菜单中的 Download ZIP 代替交接包；那个只下载本页说明。
-
-## 下载与解压
-
-1. 从 Release 的 Assets 下载 `r11.zip` 和 `r11.sha256.txt`。
-2. 建议解压到 `C:/h`，得到 `C:/h/r11`，避免 Windows 长路径限制。
-3. 先看 `SHORT_PATHS_ZH.md`、`README_ZH.md` 和 `docs/INDEX_ZH.md`。
-4. 在解压后的 `r11` 根目录执行只读校验：
-
-```powershell
-pwsh -NoProfile -File tooling/verify.ps1
-```
-
-下载文件的 SHA256 也可用以下命令查看，与 `r11.sha256.txt` 中的值比较（仓库中的 `r11.sha256` 内容相同）：
-
-```powershell
-Get-FileHash -Algorithm SHA256 .\r11.zip
-```
-
-本次只是复制、缩短目录和重新打包，原工程和原压缩包不动。顶层缩短为 `r11`，`workspace` 改为 `w`；工程内部目录以及 FPGA/CPU 参考的兄弟关系保持不变。冻结源码、bit/HDF/ELF、测试素材和原始证据保持字节一致；仅交接包自己的导航说明与校验/手动入口适配路径。包内保留原清单和新的校验清单。
-
-## 包内主要内容
-
-| 路径 | 内容 |
+| 路径 | 内容与边界 |
 |---|---|
-| `release/R11_DEFAULT` | 已验收 R11 默认固件、配对 R8 bit/HDF、冻结编译源、SDK/BSP、测试输入和报告 |
-| `release/R11_PROFILE_OPTIONAL` | 独立插桩固件，不与默认版混用 |
-| `w/FPGA_ORB_HLS` | FPGA/HLS/PS 作者源码、生成器、主机/RTL 测试及历史任务证据 |
-| `w/FPGA_ORB_SHARED_v1.0` | CPU 权威参考、验证集、逐段中间结果、规范和许可证 |
-| `w/FPGA_ORB_SHARED_v0.95_testdata` | 早期参考与验证资料 |
-| `background`、`docs` | 原有资料及交接说明 |
-| `manual_helpers`、`tooling` | 已实测手动入口和只读包校验工具 |
+| `FPGA_ORB_HLS/` | 作者源码、HLS/PS/Vivado 脚本及测试；含旧实现和后续开发快照 |
+| `FPGA_ORB_HLS/fastv2/next/` | 三核 mixed-PPC 实现及 PS 后端，开发快照含未启用的缓存实验 |
+| `FPGA_ORB_SHARED_v1.0/` | CPU 权威参考源码、规范和原许可证；不含完整 vectors |
+| `frozen/R11_DEFAULT/inputs/` | 已交付默认 R11 ELF 的冻结编译源；以此为固件源码依据 |
+| `evidence/` | 默认 R11 主机记录、源码/产物清单及复用 R8 路由报告 |
+| `docs/` | 构建前提、固件下载说明、公开文件溯源清单 |
 
-工作区包含后续实验源码；**默认 ELF 的权威编译源是 `release/R11_DEFAULT/inputs`**，不能将后续工作区实验称为同一个已验收固件。
+开发快照不等于默认 ELF 的全部冻结编译源，不能把新缓存实验称为已上板版本。
+源码复制保留字节和原目录关系；只新增公开分发说明，不修改算法。
 
-## 已有验收结果与边界
+## 已归档效果
 
-- ACZ7015，`xc7z015clg485-2`，`next_system_wrapper`，PL 100 MHz；Vivado HLS/Vivado/SDK 2018.3，主机 MinGW 14.2。
-- R11 Verified/Pipeline 最近复测：100/100 逐帧 CPU 精确比较 PASS；摘要 `a1967dad68429025`。
-- Production/Pipeline：960×720、8 层、固定图重复 100 帧，平均 **30.862 ms/帧**、最大 **30.874 ms**，约 **32.402 FPS**。Production 为 `COMPLETE_UNVERIFIED`，不是逐帧 CPU 比较 PASS。
-- 已归档真实 RTL 仿真：FAST 11、resize 13、Gaussian 14 事务通过。
-- 复用 R8 路由报告：WNS +0.177 ns、WHS +0.051 ns、TNS/THS 0；LUT 20452、FF 23621、BRAM36 tile 61、DSP 16；仍有 44 条报告 DRC 警告。
+- ACZ7015，`xc7z015clg485-2`，`next_system_wrapper`，PL 100 MHz。
+- R11 默认 ELF 复用已验收 R8 bit/HDF；不是本次重新综合或上板。
+- 最新 quiet 复测：Verified Pipeline 100/100 CPU 精确 PASS，摘要 `a1967dad68429025`。
+- Production 固定 960×720 输入、八层、100 帧：平均 30.862 ms，最大 30.874 ms，约 32.402 FPS；终态是 `COMPLETE_UNVERIFIED`，不是逐帧精确 PASS。
+- 路由 WNS +0.177 ns、WHS +0.051 ns、TNS/THS 0；LUT 20452、FF 23621、BRAM36 tile 61、DSP 16；仍有 44 条 DRC Warning。
+- 已有真实 RTL：FAST 11、resize 13、Gaussian 14 事务通过；完整仿真 job 留在本地归档，不随源码仓库上传。
 
-这些是包内已有测试证据，不是本次整理重新测试。范围不含视频解码、实时相机输入、跨层 B1 打包或完整 SLAM；不能宣称变化视频稳定 30 FPS、达到 60 FPS，或已完成本版 1000 帧物理长测。
+固定图短组结果不代表变化视频长期稳定 30 FPS、60 FPS、视频解码或完整 SLAM。
+详细历史及失败/恢复边界保留在 next 目录的中文报告中。
 
-包校验没有 JTAG 操作。实体下载会复位 PS/PL、覆盖 DDR，必须先阅读 `docs/MANUAL_BOARD_ZH.md` 并显式确认原板卡。不可自动上板或写 Flash/SD/eFUSE。
+## 使用
 
-## 资料与许可
+建议克隆到短路径，例如 `C:/h/orb`。版本保持 Vivado HLS/Vivado/SDK 2018.3，
+主机 MinGW 14.2.0 与 CMake/Ninja。见 [构建前提](docs/BUILD_PUBLIC_ZH.md)
+和 [固件说明](docs/FIRMWARE_ZH.md)。
 
-这是完整交接归档的公开分发，不是为全部内容重新授予开源许可。第三方手册、SDK、素材和参考代码保留原来源与许可证；使用、再分发须遵守各自条款。旧 job JSON/工程/冻结日志中的原电脑绝对路径保留为历史，不应直接复用旧缓存。
+没有完整外部测试输入时，不能宣称执行了全套回归。本文不授权自动 JTAG、
+下载、复位或 Flash/SD/eFUSE 写入。
 
+## 许可
+
+CPU 参考保留 `FPGA_ORB_SHARED_v1.0/LICENSE`（GPL-3.0-or-later）及
+`NOTICE.md`；`constants.hpp` 中保留原 GPL/BSD 来源声明。此整理不为全部
+内容重新授予 MIT 等统一许可；使用和再分发须遵守各文件原许可。
+第三方 SDK、手册和完整素材不在本源码仓库中。

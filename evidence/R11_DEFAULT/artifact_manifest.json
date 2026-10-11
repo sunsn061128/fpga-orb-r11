@@ -1,0 +1,18 @@
+[
+  {
+    "RelativePath": "vivado/next_system_wrapper.hdf",
+    "SHA256": "5F813CCCB2D2B58AE016A65065816A7B7EA0F8410F17159DD3C5D25BD28D6E5E"
+  },
+  {
+    "RelativePath": "vivado/next_fpga.runs/impl_1/next_system_wrapper.bit",
+    "SHA256": "21FEB85AE76C5AF1329E151A4A1872F50BFF8901DDB231BA8D453CB5D82B11B7"
+  },
+  {
+    "RelativePath": "sdk/next_benchmark/Debug/next_benchmark.elf",
+    "SHA256": "A5FC0FA01E8C63D300419DF7BE49E5F02C3EDE9C09FE68D83D6F7C7074D2130E"
+  },
+  {
+    "RelativePath": "hardware_parent.json",
+    "SHA256": "29DDACFC93015580EB0EB2F14398EF5F59CA87444A57A75D6F6EE42C78506591"
+  }
+]

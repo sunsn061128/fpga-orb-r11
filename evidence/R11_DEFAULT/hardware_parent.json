@@ -1,0 +1,15 @@
+{
+  "JobRoot": "C:\\Users\\dmsun\\Desktop\\PLD\\FPGA_ORB_HLS\\fastv2\\next\\board_build\\jobs\\20261010_020213_a86e3550",
+  "ManifestSHA256": "4CBAE2BB6F5A6109BAA36930671C345ECFCA10B2F7C4D1032418CA2F23A8DE5F",
+  "Artifacts": [
+    {
+      "RelativePath": "vivado/next_system_wrapper.hdf",
+      "SHA256": "5F813CCCB2D2B58AE016A65065816A7B7EA0F8410F17159DD3C5D25BD28D6E5E"
+    },
+    {
+      "RelativePath": "vivado/next_fpga.runs/impl_1/next_system_wrapper.bit",
+      "SHA256": "21FEB85AE76C5AF1329E151A4A1872F50BFF8901DDB231BA8D453CB5D82B11B7"
+    }
+  ],
+  "Note": "Reused accepted hardware, no new synthesis or route"
+}
