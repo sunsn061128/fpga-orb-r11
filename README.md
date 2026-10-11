@@ -6,7 +6,7 @@
 
 ## 下载与解压
 
-1. 从 Release 的 Assets 下载 `r11.zip` 和 `r11.sha256`。
+1. 从 Release 的 Assets 下载 `r11.zip` 和 `r11.sha256.txt`。
 2. 建议解压到 `C:/h`，得到 `C:/h/r11`，避免 Windows 长路径限制。
 3. 先看 `SHORT_PATHS_ZH.md`、`README_ZH.md` 和 `docs/INDEX_ZH.md`。
 4. 在解压后的 `r11` 根目录执行只读校验：
@@ -15,7 +15,7 @@
 pwsh -NoProfile -File tooling/verify.ps1
 ```
 
-下载文件的 SHA256 也可用以下命令查看，与 `r11.sha256` 中的值比较：
+下载文件的 SHA256 也可用以下命令查看，与 `r11.sha256.txt` 中的值比较（仓库中的 `r11.sha256` 内容相同）：
 
 ```powershell
 Get-FileHash -Algorithm SHA256 .\r11.zip
