@@ -1,5 +1,7 @@
 # FPGA ORB R11 完整交接包
 
+> 当前状态：完整 ZIP 上传失败，Release 附件尚未齐全；仅校验文本已上传。请暂勿将仓库或 Release 视为完整交付。本地短目录包及原交接资料均保留。
+
 完整程序、测试素材、修改/测试历史和配对上板文件位于 **[Release 下载页](https://github.com/sunsn061128/fpga-orb-r11/releases/tag/r11-handoff-20261011)** 的 `r11.zip`。
 
 不要用绿色 Code 菜单中的 Download ZIP 代替交接包；那个只下载本页说明。
