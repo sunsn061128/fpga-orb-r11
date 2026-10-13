@@ -1,0 +1,21 @@
+{
+  "state": "SUCCEEDED",
+  "kernel": "descriptor",
+  "clock_period_ns": 8,
+  "hls_job": "C:\\h\\orb4\\20261013_184246_descriptor_818b3438",
+  "hls_state_at_freeze": "RUNNING",
+  "started_utc": "2026-10-13T10:50:21.969044+00:00",
+  "scope": "Isolated IP random AXI/reset/direct done barrier; common DDR address space, no DDR PHY or two-core contention",
+  "config_sha256": "0a5e6ba612e2c1a5f4fb08af33562991839f72896e111be26443e9d22fd2adfd",
+  "vectors_sha256": "63120f0a481ef71e5a4243aac7eb7b42beae6a840c1d8f59f966f1ed28c95d2f",
+  "result": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\r17_opt\\prefetch64_queued40_80\\result.json",
+  "runtime": {
+    "version": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dmsun\\Documents\\Codex\\toolchains\\fpga\\python\\Scripts\\python.exe",
+    "base_prefix": "C:\\Users\\dmsun\\AppData\\Local\\Programs\\Python\\Python311",
+    "loaded_dll": "C:\\Users\\dmsun\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll",
+    "expected_dll": "C:\\Users\\dmsun\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll",
+    "repaired_stdio": []
+  },
+  "finished_utc": "2026-10-13T10:51:48.786990+00:00"
+}

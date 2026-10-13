@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_11'
+================================================================
+* Date:           Mon Oct 12 19:34:24 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.940|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+---------+
+    |    Latency   |   Interval   | Pipeline|
+    | min |   max  | min |   max  |   Type  |
+    +-----+--------+-----+--------+---------+
+    |    3|  522757|    3|  522757|   none  |
+    +-----+--------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+-----+--------+----------+-----------+-----------+------------+----------+
+        |                    |    Latency   | Iteration|  Initiation Interval  |    Trip    |          |
+        |      Loop Name     | min |   max  |  Latency |  achieved |   target  |    Count   | Pipelined|
+        +--------------------+-----+--------+----------+-----------+-----------+------------+----------+
+        |- L_PackLayerQuads  |    0|  522754|         3|          1|          1| 0 ~ 522753 |    yes   |
+        +--------------------+-----+--------+----------+-----------+-----------+------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      1|      -|      -|
+|Expression       |        -|      -|      0|    944|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     40|
+|Register         |        -|      -|    344|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      1|    344|    984|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|   ~0  |   ~0  |      2|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    +---------------------------+----------------------+-----------+
+    |          Instance         |        Module        | Expression|
+    +---------------------------+----------------------+-----------+
+    |fastv2_layer4_hlseOg_U553  |fastv2_layer4_hlseOg  |  i0 * i1  |
+    +---------------------------+----------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+-----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+-----+------------+------------+
+    |indvar_flatten_next_fu_234_p2     |     +    |      0|  0|   40|          40|           1|
+    |position_2_fu_428_p2              |     +    |      0|  0|   32|          32|          32|
+    |position_fu_354_p2                |     +    |      0|  0|   32|          32|          32|
+    |tmp1_fu_423_p2                    |     +    |      0|  0|   32|          32|           5|
+    |tmp_214_i_i_fu_304_p2             |     +    |      0|  0|   32|           2|          32|
+    |tmp_s_fu_206_p2                   |     +    |      0|  0|   11|          11|           2|
+    |x_fu_282_p2                       |     +    |      0|  0|   32|          32|           3|
+    |tmp_225_i_i_fu_391_p2             |     -    |      0|  0|   29|           4|          29|
+    |tmp_i_i_fu_253_p2                 |     -    |      0|  0|   32|          32|          32|
+    |ap_block_state4_pp0_stage0_iter1  |    and   |      0|  0|    1|           1|           1|
+    |ap_block_state5_pp0_stage0_iter2  |    and   |      0|  0|    1|           1|           1|
+    |ap_block_state6                   |    and   |      0|  0|    1|           1|           1|
+    |valid_fu_318_p2                   |    and   |      0|  0|   32|          32|          32|
+    |exitcond_flatten_fu_229_p2        |   icmp   |      0|  0|   15|          40|          40|
+    |icmp5_fu_369_p2                   |   icmp   |      0|  0|   12|          29|           1|
+    |icmp_fu_268_p2                    |   icmp   |      0|  0|   12|          30|           1|
+    |tmp_208_i_i2_fu_240_p2            |   icmp   |      0|  0|   12|          32|          32|
+    |tmp_209_i_i_fu_444_p2             |   icmp   |      0|  0|   12|          32|           1|
+    |tmp_211_i_i_fu_288_p2             |   icmp   |      0|  0|   12|          32|           3|
+    |tmp_223_i_i_fu_385_p2             |   icmp   |      0|  0|   12|          32|           4|
+    |tmp_229_i_i_fu_405_p2             |   lshr   |      0|  0|   85|          32|          32|
+    |ap_block_pp0_stage0_01001         |    or    |      0|  0|    1|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|    1|           1|           1|
+    |tmp_237_fu_348_p2                 |    or    |      0|  0|   64|          64|          64|
+    |carry_fu_411_p3                   |  select  |      0|  0|   32|           1|          32|
+    |n_fu_274_p3                       |  select  |      0|  0|   32|           1|          32|
+    |tmp_215_i_i_fu_310_p3             |  select  |      0|  0|   32|           1|           2|
+    |x_i_i_mid2_fu_245_p3              |  select  |      0|  0|   32|           1|          32|
+    |tmp_213_i_i_fu_298_p2             |    shl   |      0|  0|   85|           1|          32|
+    |tmp_220_i_i_fu_342_p2             |    shl   |      0|  0|  182|          64|          64|
+    |ap_enable_pp0                     |    xor   |      0|  0|    2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|    2|           2|           1|
+    +----------------------------------+----------+-------+---+-----+------------+------------+
+    |Total                             |          |      0|  0|  944|         649|         580|
+    +----------------------------------+----------+-------+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |   4|          5|    1|          5|
+    |ap_done                  |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   3|          2|    1|          2|
+    |height_blk_n             |   3|          2|    1|          2|
+    |indvar_flatten_reg_161   |   3|          2|   40|         80|
+    |position_3_fu_128        |   3|          3|   32|         96|
+    |resize_quads_V_blk_n     |   3|          2|    1|          2|
+    |resize_words_V_blk_n     |   3|          2|    1|          2|
+    |resize_words_V_din       |   3|          3|   64|        192|
+    |tmp_fu_132               |   3|          3|   64|        192|
+    |width_blk_n              |   3|          2|    1|          2|
+    |x_i_i_reg_172            |   3|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  40|         32|  240|        643|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                 |   4|   0|    4|          0|
+    |ap_done_reg               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2   |   1|   0|    1|          0|
+    |bound_reg_489             |  40|   0|   40|          0|
+    |exitcond_flatten_reg_494  |   1|   0|    1|          0|
+    |height_read_reg_478       |  10|   0|   10|          0|
+    |icmp5_reg_521             |   1|   0|    1|          0|
+    |indvar_flatten_reg_161    |  40|   0|   40|          0|
+    |n_reg_503                 |  32|   0|   32|          0|
+    |position_3_fu_128         |  32|   0|   32|          0|
+    |tmp_237_reg_516           |  64|   0|   64|          0|
+    |tmp_fu_132                |  64|   0|   64|          0|
+    |width_cast_i_i_reg_483    |  10|   0|   32|         22|
+    |width_read_reg_472        |  10|   0|   10|          0|
+    |x_i_i_reg_172             |  32|   0|   32|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 344|   0|  366|         22|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+-------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|ap_start                |  in |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|ap_done                 | out |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|ap_continue             |  in |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|ap_ready                | out |    1| ap_ctrl_hs | (anonymous namespace.11 | return value |
+|width_dout              |  in |   10|   ap_fifo  |          width          |    pointer   |
+|width_empty_n           |  in |    1|   ap_fifo  |          width          |    pointer   |
+|width_read              | out |    1|   ap_fifo  |          width          |    pointer   |
+|height_dout             |  in |   10|   ap_fifo  |          height         |    pointer   |
+|height_empty_n          |  in |    1|   ap_fifo  |          height         |    pointer   |
+|height_read             | out |    1|   ap_fifo  |          height         |    pointer   |
+|resize_words_V_din      | out |   64|   ap_fifo  |      resize_words_V     |    pointer   |
+|resize_words_V_full_n   |  in |    1|   ap_fifo  |      resize_words_V     |    pointer   |
+|resize_words_V_write    | out |    1|   ap_fifo  |      resize_words_V     |    pointer   |
+|resize_quads_V_dout     |  in |   32|   ap_fifo  |      resize_quads_V     |    pointer   |
+|resize_quads_V_empty_n  |  in |    1|   ap_fifo  |      resize_quads_V     |    pointer   |
+|resize_quads_V_read     | out |    1|   ap_fifo  |      resize_quads_V     |    pointer   |
++------------------------+-----+-----+------------+-------------------------+--------------+
+

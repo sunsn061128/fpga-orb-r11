@@ -1,0 +1,32 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../inputs/FPGA_ORB_HLS/fastv2/next/hls/tb_descriptor2018.cpp in release mode
+   Compiling ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/descriptor2018_hls.cpp in release mode
+   Generating csim.exe
+DESCRIPTOR2018_CASE_PASS frame=0 level=0 count=64 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=1 count=45 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=2 count=44 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=3 count=38 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=4 count=29 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=5 count=24 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=6 count=19 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=7 count=17 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=0 count=204 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=1 count=165 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=2 count=140 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=3 count=117 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=4 count=105 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=5 count=87 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=6 count=70 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=7 count=54 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=0 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=1 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=2 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=3 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=4 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=5 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=6 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=7 count=0 cycles=1
+DESCRIPTOR2018_STREAM_PASS transactions=30 features=1222
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

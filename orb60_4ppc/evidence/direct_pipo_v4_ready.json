@@ -1,0 +1,21 @@
+{
+  "State": "PHYSICALLY_ACCEPTED",
+  "Job": "C:\\h\\orb4\\20261013_005322_route_2ae035d0",
+  "Part": "xc7z015clg485-2",
+  "PLMHz": 100,
+  "WNS_ns": 0.201,
+  "WHS_ns": 0.035,
+  "RoutedNets": 75459,
+  "LUT": 41920,
+  "FF": 37571,
+  "BRAMTiles": 66,
+  "DSP": 62,
+  "SlicePercent": 100,
+  "PairedFiles": 82,
+  "BitSHA256": "F210713476B194887639B38381BFB804561DE3AEF0B568A2B97653ADF54DCAFD",
+  "ELFSHA256": "086B5A0F35203B35C68915895F08B3F62AF523113FA08CEE6BE934DA629EA127",
+  "PhysicalAcceptance": "PASS_NORMAL_V100_P100_NOISE_V10_ZERO_V10",
+  "NewPLFPS": 110.57213338979884,
+  "AcceptedFallback": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261012_235156_4ppc100mhz_2018_3",
+  "Release": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_071953_4ppc100mhz_2018_3"
+}

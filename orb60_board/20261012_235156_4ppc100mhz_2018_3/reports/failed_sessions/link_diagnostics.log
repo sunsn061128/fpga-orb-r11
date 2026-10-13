@@ -1,0 +1,326 @@
+attempting to launch hw_server
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+****** Xilinx hw_server v2018.3
+
+  **** Build date : Dec  7 2018-00:40:27
+
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+  1  Digilent JTAG-SMT2 C306ACCBABCD
+     2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z015 (idcode 0373b093 irlen 6 fpga)
+JTAG_RATES=125000 250000 500000 1000000 2000000 3000000 3750000 5000000 6000000 7500000 10000000 15000000 30000000
+Category commands
+
+jtag claim             - Claim JTAG device.
+jtag device_properties - Get/set device properties.
+jtag disclaim          - Disclaim JTAG device.
+jtag frequency         - Get/set JTAG frequency.
+jtag lock              - Lock JTAG scan chain.
+jtag sequence          - Create JTAG sequence object.
+jtag servers           - List, open or close JTAG servers.
+jtag skew              - Get/set JTAG skew.
+jtag targets           - List JTAG targets or switch between JTAG targets.
+jtag unlock            - Unlock JTAG scan chain.
+
+Type "help" followed by above "command", or the above "command" followed by
+"-help" for more details
+
+NAME
+    targets - List targets or switch between targets.
+
+SYNOPSIS
+    targets [options]
+        List available targets.
+
+    targets <target id>
+        Select <target id> as active target.
+
+OPTIONS
+    -set
+        Set current target to entry single entry in list.  This is
+        useful in comibination with -filter option.  An error will be
+        generate if list is empty or contains more than one entry.
+    -regexp
+        Use regexp for filter matching
+    -nocase
+        Use case insensitive filter matching
+    -filter <filter-expression>
+        Specify filter expression to control which targets are
+        included in list based on its properties.  Filter expressions
+        are similar to Tcl expr syntax.  Target properties are
+        references by name, while Tcl variables are accessed using the
+        $ syntax, string must be quoted.  Operators ==, !=, <=, >=, <,
+        >, && and || are supported as well as ().  There operators
+        behave like Tcl expr operators.  String matching operator =~
+        and !~ match lhs string with rhs pattern using either regexp
+        or string match.
+    -target-properties
+        Returns a Tcl list of dict's containing target properties.
+    -index <index>
+        Include targets based on jtag scan chain position.  This is
+        identical to specifying -filter {jtag_device_index==<index>}.
+    -timeout <sec>
+        Poll until the targets specified by filter option are found
+        on the scan chain, or until timeout. This option is valid only
+        with filter option.
+        The timeout value is in seconds. Default timeout is 3 seconds
+
+
+EXAMPLE
+    targets
+        List all targets.
+
+    targets -filter {name =~ "ARM*#1"}
+        List targets with name starting with "ARM" and ending with "#1".
+
+    targets 2
+        Set target with id 2 as the current target.
+
+    targets -set -filter {name =~ "ARM*#1"}
+        Set current target to target with name starting with "ARM" and
+        ending with "#1".
+
+    targets -set -filter {name =~ "MicroBlaze*"} -index 0
+        Set current target to target with name starting with "MicroBlaze"
+        and which is on 1st Jtag Device.
+
+RETURNS
+    The return value depends on the options used.
+
+    <none>
+        Targets list when no options are used.
+
+    -filter
+        Filtered targets list.
+
+    -target-properties
+        Tcl list consisting of target properties.
+
+    An error is returned when target selection fails.
+
+
+NAME
+    rst - Target Reset.
+
+SYNOPSIS
+    rst [options]
+        Reset the active target.
+
+OPTIONS
+    -processor
+        Reset the active processor target.
+
+    -cores
+        Reset the active processor group. This reset type is supported
+        only on Zynq. A processor group is defined as a set of processors
+        and on-chip peripherals like OCM.
+
+    -system
+        Reset the active System.
+
+    -srst
+        Generate system reset for active target.  With JTAG this is
+        done by generating a pulse on the SRST pin on the JTAG cable
+        assocated with the active target.
+
+    -por
+        Generate power on reset for active target.  With JTAG this is
+        done by generating a pulse on the POR pin on the JTAG cable
+        assocated with the active target.
+
+    -ps
+        Generate PS only reset on Zynq MP. This is supported only through
+        MicroBlaze PMU target.
+
+RETURNS
+    Nothing, if reset if successful.
+    Error string, if reset is unsupported.
+
+
+NAME
+    jtag sequence - Create JTAG sequence object.
+
+SYNOPSIS
+    jtag sequence
+        Create JTAG sequence object.
+
+DESCRIPTION
+    The jtag sequence command creates a new sequence object.  After
+    creation the sequence is empty.  The following sequence object
+    commands are available:
+
+    sequence state new-state [count]
+        Move JTAG state machine to <new-state> and then generate
+        <count> JTAG clocks.  If <clock> is given and <new-state> is
+        not a looping state (RESET, IDLE, IRSHIFT, IRPAUSE, DRSHIFT or
+        DRPAUSE) then state machine will move towards RESET state.
+
+    sequence irshift [options] [bits [data]]
+    sequence drshift [options] bits [data]
+        Shift data in IRSHIFT or DRSHIFT state.  Data is either given
+        as the last argument or if -tdi option is given then data will
+        be all zeros or all ones depending on the argument given to
+        -tdi.  The <bits> and <data> arguments are not used for
+        irshift when the -register option is specified.  Available
+        options:
+
+        -register <name>
+            Select instruction register by name.  This option is only
+            supported for irshift.
+        -tdi <value>
+            TDI value to use for all clocks in SHIFT state.
+        -binary
+            Format of <data> is binary, for example data from a file
+            or from binary format.
+        -integer
+            Format of <data> is an integer.  The least significant bit
+            of data is shifted first.
+        -bits
+            Format of <data> is a binary text string.  The first bit
+            in the string is shifted first.
+        -hex
+            Format of <data> is a hexadecimal text string.  The least
+            significant bit of the first byte in the string is shifted
+            first.
+        -capture
+            Cature TDO data during shift and return from sequence run
+            command.
+        -state <new-state>
+            State to enter after shift is complete.  The default is RESET.
+
+    sequence delay usec
+        Generate delay between sequence commands.  No JTAG clocks will
+        be generated during the delay.  The delay is guaranteed to be
+        at least <usec> microseconds, but can be longer for cables
+        that do not support delays without generating JTAG clocks.
+
+    sequence get_pin pin
+        Get value of <pin>.  Supported pins is cable specific.
+
+    sequence set_pin pin value
+        Set value of <pin> to <value>.  Supported pins is cable
+        specific.
+
+    sequence atomic enable
+        Set or clear atomic sequences.  This is useful to creating
+        sequences that are guaranteed to run with precise timing or
+        fail.  Atomic sequences should be as short as possible to
+        minimize the risk of failure.
+
+    sequence run [options]
+        Run JTAG operations in sequence for the currently selected
+        jtag target.  This command will return the result from shift
+        commands using -capture option and from get_pin commands.
+        Available options:
+
+        -binary
+            Format return value(s) as binary.  The first bit shifted
+            out is the least significant bit in the first byte
+            returned.
+        -integer
+            Format return values(s) as integer.  The first bit shifted
+            out is the least significant bit of the integer.
+        -bits
+            Format return value(s) as binary text string.  The first
+            bit shifted out is the first character in the string.
+        -hex
+            Format return value(s) as hexadecimal text string.  The
+            first bit shifted out is the least significant bit of the
+            first byte of the in the string.
+        -single
+            Combine all return values as a single piece of data.
+            Without this option the return value is a list with one
+            entry for every shift with -capture and every get_pin.
+
+    sequence clear
+        Remove all commands from sequence.
+
+    sequence delete
+        Delete sequence.
+
+EXAMPLE
+    set seqname [jtag sequence]
+    $seqname state RESET
+    $seqname drshift -capture -tdi 0 256
+    set result [$seqname run]
+    $seqname delete
+
+RETURNS
+    Jtag sequence object.
+
+
+NAME
+    configparams - List, get or set configuration parameters.
+
+SYNOPSIS
+    configparams <options>
+        List name and description for available configuration
+        parameters.  Configuration parameters can be global or
+        connection specific, therefore the list of available
+        configuration parameters and their value may change
+        depending on current connection.
+
+    configparams <options> <name>
+        Get configuration parameter value(s).
+
+    configparams <options> <name> <value>
+        Set configuration parameter value.
+
+OPTIONS
+    -all
+        Include values for all contexts in result.
+
+    -context [context]
+        Specify context of value to get or set.  The default context
+	is "" which represet the global default.  Not all options
+	support context specific values.
+
+    -target-id <id>
+        Specify target id or value to get or set.  This is an
+        alternative to the -context option.
+
+EXAMPLE
+    configparams force-mem-accesses 1
+        Disable access protection for dow, mrd, and mwr commands.
+
+    configparams sdk-launch-timeout 100
+        Change the SDK launch timeout to 100 seconds, used for running
+        SDK batch mode commands.
+
+RETURNS
+    Depends on the arguments specified.
+
+    <none>
+        List of parameters and description of each parameter.
+
+    <parameter name>
+        Parameter value or error, if unsupported paramter is specified.
+
+    <parameter name> <parameter value>
+        Nothing if the value is set, or error, if unsupported parameter is
+        specified.
+
+

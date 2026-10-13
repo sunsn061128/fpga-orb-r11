@@ -1,0 +1,17 @@
+{
+  "state": "SUCCEEDED",
+  "part": "xc7z015clg485-2",
+  "top": "s_wrapper",
+  "frequency_mhz": 125,
+  "tool": "Vivado 2018.3",
+  "layer_hls": "C:\\h\\orb4\\20261013_144219_layer4_52645026",
+  "descriptor_hls": "C:\\h\\orb4\\20261013_173703_descriptor_95026780",
+  "axi_layer": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\clock125\\v4_layer_full21_axi",
+  "axi_descriptor": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\r17_opt\\read8\\read8_axi_descriptor_8ns",
+  "job": "C:\\h\\orb4\\20261013_181237_board_fc1b8d97",
+  "full_layer_cosim": "C:\\h\\orb4\\20261013_144219_layer4_52645026",
+  "full_descriptor_cosim": "C:\\h\\orb4\\20261013_173703_descriptor_95026780",
+  "pid": 18540,
+  "returncode": 0,
+  "seconds": 1931.594
+}

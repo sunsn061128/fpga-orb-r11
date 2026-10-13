@@ -1,0 +1,160 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_22'
+================================================================
+* Date:           Mon Oct 12 19:33:41 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.626|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    7|    7|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------+--------------------------+-----+-----+-----+-----+----------+
+        |                                     |                          |  Latency  |  Interval | Pipeline |
+        |               Instance              |          Module          | min | max | min | max |   Type   |
+        +-------------------------------------+--------------------------+-----+-----+-----+-----+----------+
+        |grp_p_anonymous_namespace_24_fu_148  |p_anonymous_namespace_24  |    6|    6|    1|    1| function |
+        +-------------------------------------+--------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|    996|   5272|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      3|
+|Register         |        -|      -|    145|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|   1141|   5275|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      1|     11|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+--------------------------+---------+-------+-----+------+
+    |               Instance              |          Module          | BRAM_18K| DSP48E|  FF |  LUT |
+    +-------------------------------------+--------------------------+---------+-------+-----+------+
+    |grp_p_anonymous_namespace_24_fu_148  |p_anonymous_namespace_24  |        0|      0|  996|  5272|
+    +-------------------------------------+--------------------------+---------+-------+-----+------+
+    |Total                                |                          |        0|      0|  996|  5272|
+    +-------------------------------------+--------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_return  |   3|          2|    8|         16|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |   3|          2|    8|         16|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_ce_reg                |  1|   0|    1|          0|
+    |ap_return_int_reg        |  8|   0|    8|          0|
+    |window_0_2_read_int_reg  |  8|   0|    8|          0|
+    |window_0_3_read_int_reg  |  8|   0|    8|          0|
+    |window_0_4_read_int_reg  |  8|   0|    8|          0|
+    |window_1_1_read_int_reg  |  8|   0|    8|          0|
+    |window_1_5_read_int_reg  |  8|   0|    8|          0|
+    |window_2_0_read_int_reg  |  8|   0|    8|          0|
+    |window_2_6_read_int_reg  |  8|   0|    8|          0|
+    |window_3_0_read_int_reg  |  8|   0|    8|          0|
+    |window_3_3_read_int_reg  |  8|   0|    8|          0|
+    |window_3_6_read_int_reg  |  8|   0|    8|          0|
+    |window_4_0_read_int_reg  |  8|   0|    8|          0|
+    |window_4_6_read_int_reg  |  8|   0|    8|          0|
+    |window_5_1_read_int_reg  |  8|   0|    8|          0|
+    |window_5_5_read_int_reg  |  8|   0|    8|          0|
+    |window_6_2_read_int_reg  |  8|   0|    8|          0|
+    |window_6_3_read_int_reg  |  8|   0|    8|          0|
+    |window_6_4_read_int_reg  |  8|   0|    8|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    |145|   0|  145|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-----------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs | (anonymous namespace.22 | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs | (anonymous namespace.22 | return value |
+|ap_return        | out |    8| ap_ctrl_hs | (anonymous namespace.22 | return value |
+|ap_ce            |  in |    1| ap_ctrl_hs | (anonymous namespace.22 | return value |
+|window_0_2_read  |  in |    8|   ap_none  |     window_0_2_read     |    scalar    |
+|window_0_3_read  |  in |    8|   ap_none  |     window_0_3_read     |    scalar    |
+|window_0_4_read  |  in |    8|   ap_none  |     window_0_4_read     |    scalar    |
+|window_1_1_read  |  in |    8|   ap_none  |     window_1_1_read     |    scalar    |
+|window_1_5_read  |  in |    8|   ap_none  |     window_1_5_read     |    scalar    |
+|window_2_0_read  |  in |    8|   ap_none  |     window_2_0_read     |    scalar    |
+|window_2_6_read  |  in |    8|   ap_none  |     window_2_6_read     |    scalar    |
+|window_3_0_read  |  in |    8|   ap_none  |     window_3_0_read     |    scalar    |
+|window_3_3_read  |  in |    8|   ap_none  |     window_3_3_read     |    scalar    |
+|window_3_6_read  |  in |    8|   ap_none  |     window_3_6_read     |    scalar    |
+|window_4_0_read  |  in |    8|   ap_none  |     window_4_0_read     |    scalar    |
+|window_4_6_read  |  in |    8|   ap_none  |     window_4_6_read     |    scalar    |
+|window_5_1_read  |  in |    8|   ap_none  |     window_5_1_read     |    scalar    |
+|window_5_5_read  |  in |    8|   ap_none  |     window_5_5_read     |    scalar    |
+|window_6_2_read  |  in |    8|   ap_none  |     window_6_2_read     |    scalar    |
+|window_6_3_read  |  in |    8|   ap_none  |     window_6_3_read     |    scalar    |
+|window_6_4_read  |  in |    8|   ap_none  |     window_6_4_read     |    scalar    |
++-----------------+-----+-----+------------+-------------------------+--------------+
+

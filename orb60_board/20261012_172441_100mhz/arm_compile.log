@@ -1,0 +1,4 @@
+In file included from C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\board.c:16:0:
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~

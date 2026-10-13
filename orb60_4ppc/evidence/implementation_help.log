@@ -1,0 +1,521 @@
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source {vivado\implementation_help.tcl}
+# opt_design -help
+opt_design
+
+Description: 
+Optimize the current netlist. This will perform the retarget, propconst, sweep and bram_power_opt optimizations by default.
+
+Syntax: 
+opt_design  [-retarget] [-propconst] [-sweep] [-bram_power_opt] [-remap]
+            [-aggressive_remap] [-resynth_area] [-resynth_seq_area]
+            [-directive <arg>] [-muxf_remap] [-hier_fanout_limit <arg>]
+            [-bufg_opt] [-shift_register_opt] [-dsp_register_opt]
+            [-control_set_merge] [-merge_equivalent_drivers] [-carry_remap]
+            [-debug_log] [-quiet] [-verbose]
+
+Usage: 
+  Name                         Description
+  ----------------------------------------
+  [-retarget]                  Retarget
+  [-propconst]                 Propagate constants across leaf-level 
+                               instances
+  [-sweep]                     Remove unconnected leaf-level instances
+  [-bram_power_opt]            Perform Block RAM power optimizations
+  [-remap]                     Remap logic optimally in LUTs
+  [-aggressive_remap]          High effort remap optimization
+  [-resynth_area]              Resynthesis
+  [-resynth_seq_area]          Resynthesis (with Sequential optimizations)
+  [-directive]                 Mode of behavior (directive) for this command.
+                               Please refer to Arguments section of this help
+                               for values for this option
+                               Default: Default
+  [-muxf_remap]                Optimize all MuxFx cells to LUT3
+  [-hier_fanout_limit]         Replicate by module with threshold N
+  [-bufg_opt]                  Insert, Merge and Split BUFGs
+  [-shift_register_opt]        Pull register stage from shift register
+  [-dsp_register_opt]          Push/Pull Registers out of a DSP
+  [-control_set_merge]         Merge all equivalent control set drivers to a 
+                               single driver
+  [-merge_equivalent_drivers]  Merge all LUT,Flop equivalent driver 
+                               replications
+  [-carry_remap]               reamp carries into luts
+  [-debug_log]                 show debug message
+  [-quiet]                     Ignore command errors
+  [-verbose]                   Suspend message limits during command 
+                               execution
+
+Categories: 
+Tools
+
+Description:
+
+  Optimizes a design netlist for the target part. Optimization can provide
+  improvements to synthesized netlists from third-party tools, or for
+  netlists that may not have been optimized during synthesis.
+
+  Run this command after synthesis but prior to implementation to optimize
+  the design and simplify the netlist before placing and routing the design.
+  Assign the DONT_TOUCH property to prevent the optimization of individual
+  cells.
+
+  Note: To see what actions opt_design is taking in optimizing your design,
+  you can use the -verbose option to get a more detailed transcript of the
+  process. This can help you in understanding and debugging some of the
+  changes made to your design.
+
+  The opt_design command performs the following optimizations by default:
+
+   *  Retarget
+
+   *  Constant Propagation
+
+   *  Sweep
+
+   *  Global Buffer (BUFG) optimizations
+
+   *  DSP Register optimizations
+
+   *  Shift-Register Logic optimizations
+
+   *  Block RAM Power optimizations
+
+   *  Implement MIG cores
+
+   *  Implement Debug cores
+
+  Note: Using command-line options for specific optimizations results in
+  opt_design performing only the specified optimizations and disabling all
+  others, even the ones that are usually performed by default.
+
+  To perform LUT Remapping, you must specify -remap.
+
+  To perform area-based re-synthesis, you must specify -resynth_area, or
+  -directive ExploreArea.
+
+  To perform sequential area-based re-synthesis, you must specify
+  -resynth_seq_area, or -directive ExploreSequentialArea.
+
+Arguments:
+
+  -retarget - (Optional) Retarget one type of block to another when
+  retargetting the design from one device family to another. For example,
+  retarget instantiated MUXCY or XORCY components into a CARRY4 block; or
+  retarget DCM to MMCM. The retarget optimization also absorbs inverters into
+  downstream logic where possible.
+
+  Note: The -retarget argument is optional, as are the other optimizations.
+  However this optimization is run by default unless explicitly overridden by
+  another optimization.
+
+  -propconst - (Optional) Propagate constant inputs through the circuit,
+  resulting in a simplified netlist. Propagation of constants can eliminate
+  redundant combinational logic from the netlist.
+
+  -sweep - (Optional) Remove unnecessary logic, removing loadless cells and
+  nets.
+
+  -bram_power_opt - (Optional) Enables power optimization on Block RAM cells.
+  Changes the WRITE_MODE on unread ports of true dual-port RAMs to NO_CHANGE,
+  and applies intelligent clock gating to Block RAM outputs.
+
+  Note: Specific BRAM cells can be excluded from this optimization using the
+  set_power_opt command.
+
+  -remap - (Optional) Remap the design to combine multiple LUTs into a single
+  LUT to reduce the depth of the logic.
+
+  -aggressive_remap - (Optional) Similar to the -remap option to reduce LUT
+  logic depth but more exhaustive. This may reduce more LUT levels at the
+  expense of longer optimization runtime.
+
+  -resynth_area - (Optional) Perform re-synthesis in area mode to reduce the
+  number of LUTs.
+
+  -resynth_seq_area - (Optional) Perform re-synthesis to reduce both
+  combinational and sequential logic. Performs a superset of the optimization
+  provided by -resynth_area.
+
+  -directive <arg> - (Optional) Direct the mode of optimization with specific
+  design objectives. Only one directive can be specified for a single
+  opt_design command, and values are case-sensitive. Supported values
+  include:
+
+   *  Explore - Run multiple passes of optimization to improve results.
+
+   *  ExploreArea - Run multiple passes of optimization, with an emphasis on
+      reducing area.
+
+   *  ExploreWithRemap - Similar to ExploreArea but adds the remap
+      optimization to compress logic levels.
+
+   *  ExploreSequentialArea - Run multiple passes of optimization, with an
+      emphasis on reducing registers and related combinational logic.
+
+   *  AddRemap - Run the default optimization, and include LUT remapping to
+      reduce logic levels.
+
+   *  NoBramPowerOpt - Runs opt_design without the default BRAM power
+      optimization.
+
+   *  RuntimeOptimized - Run the fewest iterations, trading optimization
+      results for faster runtime.
+
+   *  Default - Run the default optimization.
+
+  Refer to the Vivado Design Suite User Guide: Implementation (UG904) for
+  more information on the effects of each directive.
+
+  Note: The -directive option controls the overall optimization strategy, and
+  is not compatible with any specific optimization options. It can only be
+  used with -debug_log, -quiet and -verbose.
+
+  -muxf_remap - (Optional) Convert MUXFs to LUT3s opportunistically when it
+  can potentially improve route-ability of the design without affecting
+  timing.
+
+  -hier_fanout_limit <arg> - (Optional) Net drivers with fanout greater than
+  the specified limit (<arg>) will be replicated according to the logical
+  hierarchy. For each hierarchical instance driven by the high-fanout net, if
+  the fanout within the hierarchy is greater than the specified limit, then
+  the net within the hierarchy is driven by a replica of the driver of the
+  high-fanout net.
+
+  -bufg_opt - (Optional) Perform various optimizations related to global
+  buffers (BUFG/BUFGCE): Insert a buffer on unbuffered clock nets (fanout >
+  30). Insert BUFGs on high fanout nets where the control set pin count on
+  the net exceeds the tool threshold. Perform load-splitting when a
+  high-fanout net drives both combinational and sequential logic: the
+  combinational portion bypasses the BUFG because the added delay is too
+  large.
+
+  Note: The phys_opt_design command can be used to optimize the combinational
+  portion, while the sequential portion can be driven by BUFG.
+
+  -shift_register_opt - (Optional) For high-fanout nets originating from an
+  SRL, add output register pipeline stages to improve timing prior to the
+  high-fanout net replication. This optimization is performed as part of the
+  default optimization.
+
+  -dsp_register_opt - (Optional) Pull registers out of a DSP, or push
+  registers into a DSP, to improve timing and resource utilization as needed.
+  This optimization is performed as part of the default optimization.
+
+  -control_set_merge - (Optional) Reduce the drivers of logically-equivalent
+  control signals to a single driver. This is like a reverse fanout
+  replication, and results in nets that are better suited for module-based
+  replication.
+
+  -merge_equivalent_drivers - (Optional) This option merges equivalent
+  drivers on both control signals and non-control signals, to reduce logic in
+  the design.
+
+  -carry_remap - (Optional) Remap carry signals into LUTs.
+
+  -debug_log - (Optional) Generate log file for debugging purposes.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command. This option displays detailed information
+  about the logic that is affected by each optimization.
+
+Examples:
+
+  The following example performs all four default optimizations: retarget,
+  constant propagation, sweep, and BRAM power optimization. The command
+  returns detailed results with the -verbose switch:
+
+    opt_design -verbose 
+    
+
+  This example excludes specific BRAM cells from power optimization using the
+  set_power_opt command, and then runs opt_design with the four default
+  optimizations:
+
+    
+    set_power_opt -exclude_cells [get_cells \  
+       -filter {PRIMITIVE_TYPE =~ BMEM.*.*} \  
+       -of_objects [get_pins -leaf -filter {DIRECTION == IN} \  
+       -of_objects [get_nets -of_objects [get_pins clock/bufgctrl_clk_mld/O]]]]  
+    opt_design 
+    
+
+  The following example performs the sweep and retarget optimizations:
+
+    
+    opt_design -sweep -retarget 
+    
+
+  Note: Because -sweep and -retarget are expressly enabled in the prior
+  example, -propconst optimization and -bram_power_opt are implicitly
+  disabled.
+
+  The following example directs the opt_design command to use various
+  algorithms to achieve potentially better results:
+
+    opt_design -directive Explore 
+    
+
+  The following example directs the opt_design command to use various
+  algorithms to achieve potentially better results, while focusing on area
+  reduction:
+
+    opt_design -directive ExploreArea 
+    
+
+See Also:
+
+   *  phys_opt_design
+   *  place_design
+   *  power_opt_design
+   *  route_design
+   *  set_power_opt
+   *  synth_design
+# place_design -help
+place_design
+
+Description: 
+Automatically place ports and leaf-level instances
+
+Syntax: 
+place_design  [-directive <arg>] [-no_timing_driven] [-timing_summary]
+              [-unplace] [-post_place_opt] [-no_fanout_opt] [-no_bufg_opt]
+              [-quiet] [-verbose]
+
+Usage: 
+  Name                 Description
+  --------------------------------
+  [-directive]         Mode of behavior (directive) for this command. Please 
+                       refer to Arguments section of this help for values for
+                       this option.
+                       Default: Default
+  [-no_timing_driven]  Do not run in timing driven mode
+  [-timing_summary]    Enable accurate post-placement timing summary.
+  [-unplace]           Unplace all the instances which are not locked by 
+                       Constraints.
+  [-post_place_opt]    Run only the post commit optimizer
+  [-no_fanout_opt]     Disable fanout replication during global placement
+  [-no_bufg_opt]       Disable global buffer insertion during placement
+  [-quiet]             Ignore command errors
+  [-verbose]           Suspend message limits during command execution
+
+Categories: 
+Tools
+
+Description:
+
+  Place the specified ports and logic cells in the current design, or all
+  ports and logic cells, onto device resources on the target part. The tool
+  optimizes placement to minimize negative timing slack and reduce overall
+  wire length, while also attempting to spread out placement to reduce
+  routing congestion.
+
+  Placement is one step of the complete design implementation process, which
+  can be run automatically through the use of the launch_runs command when
+  running the Vivado tools in Project Mode.
+
+  In Non-Project Mode, the implementation process must be run manually with
+  the individual commands: opt_design, place_design, phys_opt_design,
+  power_opt_design, and route_design. Refer to the Vivado Design Suite User
+  Guide: Design Flows Overview (UG892) for a complete description of Project
+  Mode and Non-Project Mode.
+
+  Both placement and routing can be completed incrementally, based on prior
+  results stored in a Design Checkpoint file (DCP), using the incremental
+  implementation flow. Refer to the read_checkpoint command, or to Vivado
+  Design Suite User Guide: Implementation (UG904) for more information on
+  incremental place and route.
+
+  Note: The place_design can be multi-threaded to speed the process. Refer to
+  the set_param command for more information on setting the
+  general.maxThreads parameter.
+
+  You can also manually place some elements of the design using place_ports,
+  or by setting LOC properties on the cell, and then automatically place the
+  remainder of the design using place_design.
+
+  This command requires an open synthesized design, and it is recommended
+  that you run the opt_design command prior to running place_design to avoid
+  placing a suboptimal netlist.
+
+Arguments:
+
+  -directive <arg> - (Optional) Direct placement to achieve specific design
+  objectives. Only one directive can be specified for a single place_design
+  command, and values are case-sensitive. Supported values include:
+
+   *  Explore - Increased placer effort in detail placement and
+      post-placement optimization .
+
+   *  EarlyBlockPlacement - Timing-driven placement of RAM and DSP blocks.
+      The RAM and DSP block locations are finalized early in the placement
+      process and are used as anchors to place the remaining logic.
+
+   *  WLDrivenBlockPlacement - Wire length-driven placement of RAM and DSP
+      blocks. Override timing-driven placement by directing the Vivado placer
+      to minimize the distance of connections to and from blocks.
+
+   *  ExtraNetDelay_high - Increases estimated delay of high fanout and
+      long-distance nets. Three levels of pessimism are supported: high,
+      medium, and low. ExtraNetDelay_high applies the highest level of
+      pessimism.
+
+   *  ExtraNetDelay_low - Increases estimated delay of high fanout and
+      long-distance nets. Three levels of pessimism are supported: high,
+      medium, and low. ExtraNetDelay_low applies the lowest level of
+      pessimism.
+
+   *  AltSpreadLogic_high - Spreads logic throughout the device to avoid
+      creating congested regions. Three levels are supported: high, medium,
+      and low. AltSpreadLogic_high achieves the highest level of spreading.
+
+   *  AltSpreadLogic_medium - Spreads logic throughout the device to avoid
+      creating congested regions. Three levels are supported: high, medium,
+      and low. AltSpreadLogic_medium achieves a medium level of spreading
+      compared to low and high.
+
+   *  AltSpreadLogic_low - Spreads logic throughout the device to avoid
+      creating congested regions. Three levels are supported: high, medium,
+      and low. AltSpreadLogic_low achieves the lowest level of spreading.
+
+   *  ExtraPostPlacementOpt - Increased placer effort in post-placement
+      optimization.
+
+   *  ExtraTimingOpt - Use an alternate algorithm for timing-driven placement
+      with greater effort for timing.
+
+   *  SSI_SpreadLogic_high - Distribute logic across SLRs.
+      SSI_SpreadLogic_high achieves the highest level of distribution.
+
+   *  SSI_SpreadLogic_low - Distribute logic across SLRs. SSI_SpreadLogic_low
+      achieves a minimum level of logic distribution, while reducing
+      placement runtime.
+
+   *  SSI_SpreadSLLs - Partition across SLRs and allocate extra area for
+      regions of higher connectivity.
+
+   *  SSI_BalanceSLLs - Partition across SLRs while attempting to balance
+      SLLs between SLRs.
+
+   *  SSI_BalanceSLRs - Partition across SLRs to balance number of cells
+      between SLRs.
+
+   *  SSI_HighUtilSLRs - Direct the placer to attempt to place logic closer
+      together in each SLR.
+
+   *  RuntimeOptimized - Run fewest iterations, trade higher design
+      performance for faster runtime.
+
+   *  Quick - Absolute, fastest runtime, non-timing-driven, performs the
+      minimum required placement for a legal design.
+
+   *  Default - Run place_design with default settings.
+
+  Note: The -directive option controls the overall placement strategy, and is
+  not compatible with some place_design options. It can be used with
+  -no_fanout_opt, -no_bufg_opt, -quiet and -verbose. Only the Explore, Quick,
+  and Default directives are compatible with high reuse designs and the
+  incremental implementation flow as defined by read_checkpoint -incremental.
+  Refer to the Vivado Design Suite User Guide: Implementation (UG904) for
+  more information on placement strategies and the use of the -directive
+  option.
+
+  -no_timing_driven - (Optional) Disables the default timing driven placement
+  algorithm. This results in a faster placement based on wire lengths, but
+  ignores any timing constraints during the placement process.
+
+  -timing_summary - (Optional) Report the post-placement worst negative slack
+  (WNS) using results from static timing analysis. The WNS value is identical
+  to that of report_timing_summary when run on the post-placement design. By
+  default the placer reports an estimated WNS based on incremental placement
+  updates during the design implementation. The -timing_summary option incurs
+  additional runtime to run a full timing analysis.
+
+  -unplace - (Optional) Unplace all the instances which are not locked by
+  constraints. Cells with fixed placement (IS_LOC_FIXED set to true), are not
+  affected.
+
+  Note: Use the set_property to change IS_LOC_FIXED to FALSE prior to
+  unplacing fixed cells.
+
+  -post_place_opt - (Optional) Run optimization after placement to improve
+  critical path timing at the expense of additional placement and routing
+  runtime. This optimization can be run at any stage after placement. The
+  optimization examines the worst case timing paths and tries to improve
+  placement to reduce delay.
+
+  Note: Any placement changes will result in unrouted connections, so
+  route_design will need to be run after -post_place_opt.
+
+  -no_fanout_opt - (Optional) Disable the fanout optimization during
+  placement. By default, to improve delay the Vivado placer replicates
+  drivers of high-fanout nets and replicates drivers of loads that are
+  far-apart. This option disables that feature.
+
+  -no_bufg_opt - (Optional) By default, global buffers are inserted during
+  placement to drive high-fanout nets. This option disables global buffer
+  insertion to reduce the number of routing resources consumed by high fanout
+  nets that are not timing-critical.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example places the current design, runs optimization, routes
+  the design, runs post placement optimization, and then reroutes the design
+  to cleanup any unconnected nets as a result of post placement optimization:
+
+    place_design  
+    phys_opt_design  
+    route_design  
+    place_design -post_place_opt  
+    phys_opt_design  
+    route_design  
+    
+
+  The following example directs the Vivado placer to try different placement
+  algorithms to achieve a better placement result:
+
+    place_design -directive Explore 
+    
+
+  This example unplaces the current design:
+
+    place_design -unplace   
+    
+
+See Also:
+
+   *  launch_runs
+   *  opt_design
+   *  place_ports
+   *  phys_opt_design
+   *  power_opt_design
+   *  read_checkpoint
+   *  route_design
+   *  set_property
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 20:33:32 2026...

@@ -1,0 +1,10 @@
+{
+  "state": "FAILED",
+  "frame": "zero",
+  "frames": 10,
+  "mode": "Verified",
+  "job": "C:\\h\\orb4\\20261012_214837_route_1eda9d67",
+  "volatile_sram_only": true,
+  "error": "No actual terminal mailbox",
+  "seconds": 51.375
+}

@@ -1,0 +1,359 @@
+{
+  "CurrentBaseline": "u1",
+  "Board": "ACZ7015",
+  "Part": "xc7z015clg485-2",
+  "Top": "s_wrapper",
+  "Scope": "Actual immutable-resident-DDR PS-loop timing, with external acquisition/transfer and JTAG excluded. R11 historical processing rate and RTL memory-model rates are separate.",
+  "MainPhysicalSeries": [
+    {
+      "Name": "orb60_2ppc_100",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 100,
+      "FPS": 69.45138958340279,
+      "WallMS": 14.39856,
+      "ProcessingMS": 11.69,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "ORB60两核2PPC；PS配对后normal100帧板测",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261012_172441_100mhz/acceptance.json"
+    },
+    {
+      "Name": "4ppc_initial",
+      "Family": "2018.3_4ppc",
+      "PLMHz": 100,
+      "FPS": 82.5198934833215,
+      "WallMS": 12.11829,
+      "ProcessingMS": 9.422,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "首次4PPC；每帧仍由PS复制输入",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261012_223016_4ppc100mhz_2018_3/acceptance.json",
+      "Timing": {
+        "part": "xc7z015clg485-2",
+        "frequency_mhz": "100",
+        "wns_ns": "0.123",
+        "whs_ns": "0.039"
+      },
+      "Resources": {
+        "Slice LUTs": 42337.0,
+        "Slice Registers": 37808.0,
+        "Block RAM Tile": 64.0,
+        "DSPs": 61.0,
+        "Slice": 11550.0
+      }
+    },
+    {
+      "Name": "ps_direct_ddr",
+      "Family": "2018.3_4ppc",
+      "PLMHz": 100,
+      "FPS": 106.04251456493938,
+      "WallMS": 9.43018,
+      "ProcessingMS": 9.419,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "同一PL bit；首层直接读取生产者移交的不可变DDR",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261012_235156_4ppc100mhz_2018_3/acceptance.json",
+      "Timing": {
+        "part": "xc7z015clg485-2",
+        "frequency_mhz": "100",
+        "wns_ns": "0.123",
+        "whs_ns": "0.039"
+      },
+      "Resources": {
+        "Slice LUTs": 42337.0,
+        "Slice Registers": 37808.0,
+        "Block RAM Tile": 64.0,
+        "DSPs": 61.0,
+        "Slice": 11550.0
+      }
+    },
+    {
+      "Name": "r15",
+      "Family": "2018.3_4ppc",
+      "PLMHz": 100,
+      "FPS": 110.57213338979884,
+      "WallMS": 9.04387,
+      "ProcessingMS": 9.032,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "DDR直接填充两个PIPO bank，patch加载与计算重叠",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_071953_4ppc100mhz_2018_3/acceptance.json",
+      "Timing": {
+        "part": "xc7z015clg485-2",
+        "frequency_mhz": "100",
+        "wns_ns": "0.201",
+        "whs_ns": "0.035"
+      },
+      "Resources": {
+        "Slice LUTs": 41920.0,
+        "Slice Registers": 37571.0,
+        "Block RAM Tile": 66.0,
+        "DSPs": 62.0,
+        "Slice": 11550.0
+      }
+    },
+    {
+      "Name": "r16",
+      "Family": "2018.3_4ppc",
+      "PLMHz": 100,
+      "FPS": 120.43578484387909,
+      "WallMS": 8.303180000000001,
+      "ProcessingMS": 8.292,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "固定长度行读取流水化，raw II=9、blur II=8",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_100119_4ppc100mhz_2018_3/acceptance.json",
+      "Timing": {
+        "part": "xc7z015clg485-2",
+        "frequency_mhz": "100",
+        "wns_ns": "0.076",
+        "whs_ns": "0.018"
+      },
+      "Resources": {
+        "Slice LUTs": 42365.0,
+        "Slice Registers": 38099.0,
+        "Block RAM Tile": 66.0,
+        "DSPs": 62.0,
+        "Slice": 11547.0
+      }
+    },
+    {
+      "Name": "r17",
+      "Family": "2018.3_4ppc",
+      "PLMHz": 125,
+      "FPS": 143.27365985400414,
+      "WallMS": 6.9796499999999995,
+      "ProcessingMS": 6.968,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "8ns重建；CORDIC II=2、评分表BRAM和候选更新II=2",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_171727_4ppc125mhz_2018_3/acceptance.json",
+      "Timing": {
+        "part": "xc7z015clg485-2",
+        "frequency_mhz": "125",
+        "wns_ns": "0.157",
+        "whs_ns": "0.053"
+      },
+      "Resources": {
+        "Slice LUTs": 38597.0,
+        "Slice Registers": 36065.0,
+        "Block RAM Tile": 66.5,
+        "DSPs": 62.0,
+        "Slice": 11542.0
+      }
+    },
+    {
+      "Name": "u1",
+      "Family": "2018.3_4ppc",
+      "PLMHz": 125,
+      "FPS": 158.29021244129413,
+      "WallMS": 6.31751,
+      "ProcessingMS": 6.306,
+      "Frames": 100,
+      "Features": 280,
+      "Change": "raw/blur AXI读窗口2→8，加latency=64提前发起请求",
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_194107_4ppc125mhz_2018_3/acceptance.json",
+      "Timing": {
+        "part": "xc7z015clg485-2",
+        "frequency_mhz": "125",
+        "wns_ns": "0.157",
+        "whs_ns": "0.046"
+      },
+      "Resources": {
+        "Slice LUTs": 38875.0,
+        "Slice Registers": 36102.0,
+        "Block RAM Tile": 66.5,
+        "DSPs": 62.0,
+        "Slice": 11549.0
+      }
+    }
+  ],
+  "Legacy2024Physical": [
+    {
+      "Name": "integrated4_2024_100",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 100,
+      "Input": "normal",
+      "FPS": 118.48376328128934,
+      "WallMS": 8.439975,
+      "ProcessingMS": 8.429,
+      "Frames": 1000,
+      "Features": 280,
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_075554_integrated4_board/acceptance.json"
+    },
+    {
+      "Name": "integrated4_2024_100",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 100,
+      "Input": "noise",
+      "FPS": 109.72607543623796,
+      "WallMS": 9.113603999999999,
+      "ProcessingMS": 9.102,
+      "Frames": 1000,
+      "Features": 942,
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_075554_integrated4_board/acceptance.json"
+    },
+    {
+      "Name": "integrated4_2024_100",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 100,
+      "Input": "zero",
+      "FPS": 120.21347508906315,
+      "WallMS": 8.318535,
+      "ProcessingMS": 8.307,
+      "Frames": 1000,
+      "Features": 0,
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_075554_integrated4_board/acceptance.json"
+    },
+    {
+      "Name": "integrated4_2024_125",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 125,
+      "Input": "normal",
+      "FPS": 146.94142165531568,
+      "WallMS": 6.805433,
+      "ProcessingMS": 6.794,
+      "Frames": 1000,
+      "Features": 280,
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_075554_integrated4_board/acceptance.json"
+    },
+    {
+      "Name": "integrated4_2024_125",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 125,
+      "Input": "noise",
+      "FPS": 135.3891178018006,
+      "WallMS": 7.386118000000001,
+      "ProcessingMS": 7.375,
+      "Frames": 1000,
+      "Features": 942,
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_075554_integrated4_board/acceptance.json"
+    },
+    {
+      "Name": "integrated4_2024_125",
+      "Family": "2024.2_PL_2018.3_PS",
+      "PLMHz": 125,
+      "Input": "zero",
+      "FPS": 149.13411242982122,
+      "WallMS": 6.705374,
+      "ProcessingMS": 6.694,
+      "Frames": 1000,
+      "Features": 0,
+      "PhysicalState": "PHYSICALLY_ACCEPTED",
+      "ProductionState": "COMPLETE_UNVERIFIED",
+      "Evidence": "orb60_board/20261013_075554_integrated4_board/acceptance.json"
+    }
+  ],
+  "Read8Only": {
+    "baseline": "r17",
+    "job": "C:\\h\\orb4\\20261013_181237_board_fc1b8d97",
+    "baseline_fps": 143.27365985400414,
+    "trial_fps": 143.25293023868804,
+    "gain_percent": -0.014468545954104961,
+    "baseline_counters": {
+      "image_cycles": [
+        233802,
+        172243,
+        124308,
+        83722,
+        57822,
+        40916,
+        28838,
+        21270
+      ],
+      "descriptor_cycles": [
+        147154,
+        101729,
+        88494,
+        72793,
+        56271,
+        44058,
+        33597,
+        27024
+      ],
+      "frequency_mhz": 125,
+      "initial_image_ms": 1.870416,
+      "descriptor_sum_ms": 4.56896,
+      "overlap_model_ms": 6.82072,
+      "wall_ms": 6.9796499999999995,
+      "residual_ms": 0.1589299999999998,
+      "descriptor_dominates_pairs": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "trial": {
+      "image_cycles": [
+        233853,
+        172295,
+        124326,
+        83610,
+        57785,
+        40870,
+        28844,
+        21270
+      ],
+      "descriptor_cycles": [
+        147067,
+        101776,
+        88475,
+        72739,
+        56324,
+        44067,
+        33606,
+        27029
+      ],
+      "frequency_mhz": 125,
+      "initial_image_ms": 1.870824,
+      "descriptor_sum_ms": 4.568664,
+      "overlap_model_ms": 6.821712,
+      "wall_ms": 6.980659999999999,
+      "residual_ms": 0.15894799999999965,
+      "descriptor_dominates_pairs": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "scope": "Same fixture, budgets, PS source and resident DDR; clocks reported explicitly. Counter overlap model excludes final statistics and responses; residual is not CPU-only time."
+  },
+  "BaselineManifestSHA256": {
+    "r15": "E791A44E3693EF922B9A2D21BC72B4715719D750EAC8CDEF6BDECA5BD71878C6",
+    "r16": "64B22FC42E6E3E67913FB5F85E4DDA8C1D1E7DC4F3AA1A4EFCFB719344573387",
+    "r17": "3E5B806209F3A39C155CF53ED5F55956E2E7877CA5FB3732145E2AA4C4129036",
+    "u1": "A103EF8DA2FA1899687EB11DC9908E3AC1608F540694BFA639D6DD8FF9E61BE4"
+  }
+}

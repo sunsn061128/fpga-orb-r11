@@ -1,0 +1,6 @@
+{
+  "State": "PASS",
+  "SourceJob": "C:\\h\\orb4\\20261012_214837_route_1eda9d67",
+  "SourcePairing": "reports/source_pairing.json",
+  "PackageHashes": "manifest.json"
+}

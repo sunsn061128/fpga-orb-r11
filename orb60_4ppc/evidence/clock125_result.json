@@ -1,0 +1,81 @@
+{
+  "state": "PHYSICALLY_ACCEPTED",
+  "completed": "2026-10-13T17:21:39.086052",
+  "baseline": "r16",
+  "baseline_path": "C:\\Users\\dmsun\\Desktop\\PLD\\r16",
+  "frequency_mhz": 125,
+  "cpu_clock_hz": 666666687,
+  "source_job": "C:\\h\\orb4\\20261013_163156_board_bf4e9cdf",
+  "package": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_171727_4ppc125mhz_2018_3",
+  "normal_production_fps": 143.27365985400414,
+  "baseline_fps": 120.43578484387909,
+  "gain_percent": 18.96269870265701,
+  "timing": {
+    "part": "xc7z015clg485-2",
+    "frequency_mhz": "125",
+    "wns_ns": "0.157",
+    "whs_ns": "0.053"
+  },
+  "resources": {
+    "Slice LUTs": 38597.0,
+    "Slice Registers": 36065.0,
+    "Block RAM Tile": 66.5,
+    "DSPs": 62.0,
+    "Slice": 11542.0
+  },
+  "physical_results": {
+    "normal_Verified": {
+      "state": "SUCCEEDED",
+      "frame": "normal",
+      "mode": "Verified",
+      "frames": 100,
+      "features": 280,
+      "result": "EXACT_VERIFIED",
+      "log": "C:\\h\\orb4\\20261013_163156_board_bf4e9cdf\\20261013_170654_normal_Verified_100.log"
+    },
+    "normal_Production": {
+      "state": "SUCCEEDED",
+      "frame": "normal",
+      "mode": "Production",
+      "frames": 100,
+      "features": 280,
+      "result": "COMPLETE_UNVERIFIED",
+      "log": "C:\\h\\orb4\\20261013_163156_board_bf4e9cdf\\20261013_170949_normal_Production_100.log"
+    },
+    "noise_Verified": {
+      "state": "SUCCEEDED",
+      "frame": "noise",
+      "mode": "Verified",
+      "frames": 10,
+      "features": 942,
+      "result": "EXACT_VERIFIED",
+      "log": "C:\\h\\orb4\\20261013_163156_board_bf4e9cdf\\20261013_171132_noise_Verified_10.log"
+    },
+    "zero_Verified": {
+      "state": "SUCCEEDED",
+      "frame": "zero",
+      "mode": "Verified",
+      "frames": 10,
+      "features": 0,
+      "result": "EXACT_VERIFIED",
+      "log": "C:\\h\\orb4\\20261013_163156_board_bf4e9cdf\\20261013_171406_zero_Verified_10.log"
+    }
+  },
+  "package_manifest_sha256": "50984D4CA90F71799E6D6C1B36FB38A43D69717D89E42F6E1E84740D7EB8B106",
+  "bit_sha256": "1A99411CB46D01886DD15A80210618D9F99EBD34F6EFBA962B6C7FA0CD624146",
+  "elf_sha256": "5DE68F85794FDED70F0AFAB53D97754839CB0A05D3CB9FC5D56E5D8066D22606",
+  "package_hash_and_powershell_ast": "PASS",
+  "manifest_files": 109,
+  "portable_verified": {
+    "state": "EXACT_VERIFIED",
+    "frame": "normal",
+    "frames": 1,
+    "features": 280,
+    "log": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_171727_4ppc125mhz_2018_3\\20261013_171822_normal_Verified_1.log",
+    "log_sha256": "C99410BA8D7B2F4F0427CE387F88C8AA4A61BAB131D12E9CC1CC474B23207200"
+  },
+  "pairing_recovery": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\clock125\\v4_impl\\ps_pair_final.json",
+  "comparison": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\evidence\\clock125_comparison.json",
+  "input_scope": "Identical 960x720 eight-level normal fixture, budgets and PS source; full PS loop includes preparation, cache maintenance and scheduling. Immutable resident DDR; JTAG and external capture/transfer excluded.",
+  "optimization": "8 ns rescheduling; equivalent signed CORDIC shift and II=2; best_score RAM_S2P_BRAM with true RAW dependency and II=2. Four-pixel image stages preserved."
+}

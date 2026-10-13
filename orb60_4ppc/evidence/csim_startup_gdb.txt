@@ -1,0 +1,6 @@
+[New Thread 33604.0x7858]
+[New Thread 33604.0x673c]
+[New Thread 33604.0x2a14]
+[New Thread 33604.0x1fc4]
+[Current thread is 5 (Thread 33604.0x1fc4)]
+[Inferior 1 (process 33604) detached]

@@ -1,0 +1,36 @@
+ORB60_CLOCK_PROOF frequency=100 fclk_register=0x00300600 iopll_register=0x00036000
+
+Downloading Program -- C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x00102e67
+	section, .init: 0x00102e68 - 0x00102e7f
+	section, .fini: 0x00102e80 - 0x00102e97
+	section, .rodata: 0x00102e98 - 0x00102ebb
+	section, .data: 0x00102ec0 - 0x0010332f
+	section, .eh_frame: 0x00103330 - 0x00103333
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+
+  0%    0MB   0.0MB/s  ??:?? ETA
+ 99%    0MB   0.1MB/s  ??:?? ETA
+100%    0MB   0.1MB/s  00:00    
+
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/elf/orb60_board.elf
+ORB60_MAILBOX_WORDS=1623195649 1000 1623195650 1 4 0 1000 2 519 0 9102 9113604 0 9101 9107 109865 942 188762000 75401 39065 234031 171155 126263 93751 73477 55904 40519 31082 127096 102944 87445 73211 65708 54570 44072 34127 2342 1713 1264 939 736 655 544 439 1271 1030 875 732 657 546 441 342 204 165 140 117 105 87 70 54 0 204 369 509 626 731 818 888 0 0 0 0 0 0 0 0 0 0 1145328177 0 6291459 0 7 268 201 53872 53872 0 13467 13467 0 31083 4 0 0 0 6291458 0 7 54 54 888 63488 87888 864 3456 34125 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORB60_BOARD_RESULT mode=Production completed=1000/1000 status=4 features=942
+processing_avg_us=9102 min_us=9101 max_us=9107 fps_milli=109865 wall_us=9113604 verification_us=0
+input_contract=direct_immutable_ddr external_capture_transfer_excluded=1
+level=0 layer_cycles=234031 descriptor_cycles=127096 layer_PS_observed_us=2342 descriptor_PS_observed_us=1271 count=204 offset=0
+level=1 layer_cycles=171155 descriptor_cycles=102944 layer_PS_observed_us=1713 descriptor_PS_observed_us=1030 count=165 offset=204
+level=2 layer_cycles=126263 descriptor_cycles=87445 layer_PS_observed_us=1264 descriptor_PS_observed_us=875 count=140 offset=369
+level=3 layer_cycles=93751 descriptor_cycles=73211 layer_PS_observed_us=939 descriptor_PS_observed_us=732 count=117 offset=509
+level=4 layer_cycles=73477 descriptor_cycles=65708 layer_PS_observed_us=736 descriptor_PS_observed_us=657 count=105 offset=626
+level=5 layer_cycles=55904 descriptor_cycles=54570 layer_PS_observed_us=655 descriptor_PS_observed_us=546 count=87 offset=731
+level=6 layer_cycles=40519 descriptor_cycles=44072 layer_PS_observed_us=544 descriptor_PS_observed_us=441 count=70 offset=818
+level=7 layer_cycles=31082 descriptor_cycles=34127 layer_PS_observed_us=439 descriptor_PS_observed_us=342 count=54 offset=888
+ORB60_BOARD_COMPLETED COMPLETE_UNVERIFIED

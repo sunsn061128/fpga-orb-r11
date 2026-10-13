@@ -1,0 +1,700 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+                              (_vector_table)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o) (_boot)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(translation_table.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o) (MMUTable)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o) (FIQInterrupt)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o) (_start)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+                              C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o (Xil_DCacheInvalidateRange)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o) (UndefinedExceptionAddr)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o) (XTime_SetTime)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o) (__cpu_init)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+                              C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o (__aeabi_uidiv)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o) (__aeabi_idiv)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+                              c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+                              C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o (__aeabi_uldivmod)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+                              c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o) (exit)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o) (__libc_fini_array)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                              c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+                              C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o) (__libc_init_array)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+                              C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o (memcpy)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+                              C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o (memset)
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+                              c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o) (__call_exitprocs)
+C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+                              c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+UndefinedExceptionAddr
+                    0x4               C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+PrefetchAbortAddr   0x4               C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+DataAbortAddr       0x4               C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ps7_ddr_0        0x0000000000100000 0x000000003ff00000
+ps7_ram_0        0x0000000000000000 0x0000000000030000
+ps7_ram_1        0x00000000ffff0000 0x000000000000fe00
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000002000                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x2000
+                0x0000000000002000                _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x2000
+                0x0000000000000400                _ABORT_STACK_SIZE = DEFINED (_ABORT_STACK_SIZE)?_ABORT_STACK_SIZE:0x400
+                0x0000000000000800                _SUPERVISOR_STACK_SIZE = DEFINED (_SUPERVISOR_STACK_SIZE)?_SUPERVISOR_STACK_SIZE:0x800
+                0x0000000000000400                _IRQ_STACK_SIZE = DEFINED (_IRQ_STACK_SIZE)?_IRQ_STACK_SIZE:0x400
+                0x0000000000000400                _FIQ_STACK_SIZE = DEFINED (_FIQ_STACK_SIZE)?_FIQ_STACK_SIZE:0x400
+                0x0000000000000400                _UNDEF_STACK_SIZE = DEFINED (_UNDEF_STACK_SIZE)?_UNDEF_STACK_SIZE:0x400
+
+.text           0x0000000000100000     0x32fc
+ *(.vectors)
+ .vectors       0x0000000000100000      0x12c C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+                0x0000000000100000                _vector_table
+ *(.boot)
+ .boot          0x000000000010012c      0x3b0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+                0x000000000010012c                _prestart
+                0x000000000010012c                _boot
+ *(.text)
+ .text          0x00000000001004dc        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+ .text          0x00000000001004dc       0xdc c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+ .text          0x00000000001005b8      0x860 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .text          0x0000000000100e18        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .text          0x0000000000100e18        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .text          0x0000000000100e18        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(translation_table.o)
+ .text          0x0000000000100e18       0x78 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+                0x0000000000100e18                FIQInterrupt
+                0x0000000000100e2c                IRQInterrupt
+                0x0000000000100e40                UndefinedException
+                0x0000000000100e54                SWInterrupt
+                0x0000000000100e68                DataAbortInterrupt
+                0x0000000000100e7c                PrefetchAbortInterrupt
+ .text          0x0000000000100e90       0x78 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+                0x0000000000100ea4                _start
+ .text          0x0000000000100f08      0x994 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+                0x0000000000100f5c                Xil_DCacheInvalidateLine
+                0x0000000000100f94                Xil_DCacheInvalidateRange
+                0x000000000010107c                Xil_DCacheFlushLine
+                0x00000000001010c8                Xil_DCacheFlushRange
+                0x000000000010111c                Xil_DCacheStoreLine
+                0x0000000000101154                Xil_ICacheDisable
+                0x000000000010118c                Xil_ICacheInvalidateLine
+                0x00000000001011c4                Xil_ICacheInvalidateRange
+                0x000000000010121c                Xil_L1DCacheInvalidate
+                0x00000000001012d4                Xil_L1DCacheEnable
+                0x00000000001012f4                Xil_L1DCacheInvalidateLine
+                0x000000000010130c                Xil_L1DCacheInvalidateRange
+                0x0000000000101354                Xil_L1DCacheFlush
+                0x00000000001013e4                Xil_L1DCacheDisable
+                0x00000000001013fc                Xil_DCacheFlush
+                0x0000000000101458                Xil_DCacheDisable
+                0x0000000000101488                Xil_L1DCacheFlushLine
+                0x00000000001014a0                Xil_L1DCacheFlushRange
+                0x00000000001014e8                Xil_L1DCacheStoreLine
+                0x0000000000101500                Xil_L1ICacheEnable
+                0x000000000010151c                Xil_L1ICacheDisable
+                0x0000000000101538                Xil_L1ICacheInvalidate
+                0x0000000000101550                Xil_L1ICacheInvalidateLine
+                0x0000000000101568                Xil_L1ICacheInvalidateRange
+                0x00000000001015b0                Xil_L2CacheDisable
+                0x00000000001015c8                Xil_L2CacheInvalidate
+                0x0000000000101634                Xil_DCacheInvalidate
+                0x0000000000101654                Xil_ICacheInvalidate
+                0x00000000001016dc                Xil_L2CacheEnable
+                0x00000000001016f4                Xil_DCacheEnable
+                0x0000000000101718                Xil_ICacheEnable
+                0x0000000000101748                Xil_L2CacheInvalidateLine
+                0x000000000010175c                Xil_L2CacheInvalidateRange
+                0x00000000001017c4                Xil_L2CacheFlush
+                0x0000000000101808                Xil_L2CacheFlushLine
+                0x0000000000101820                Xil_L2CacheFlushRange
+                0x0000000000101888                Xil_L2CacheStoreLine
+ .text          0x000000000010189c       0x70 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+                0x00000000001018a0                Xil_DataAbortHandler
+                0x00000000001018a4                Xil_PrefetchAbortHandler
+                0x00000000001018a8                Xil_UndefinedExceptionHandler
+                0x00000000001018ac                Xil_ExceptionInit
+                0x00000000001018b0                Xil_ExceptionRegisterHandler
+                0x00000000001018c8                Xil_GetExceptionRegisterHandler
+                0x00000000001018e8                Xil_ExceptionRemoveHandler
+ .text          0x000000000010190c       0x4c C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+                0x000000000010190c                XTime_SetTime
+                0x0000000000101930                XTime_GetTime
+ .text          0x0000000000101958       0x3c C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+                0x0000000000101958                __cpu_init
+ .text          0x0000000000101994      0x20c c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+                0x0000000000101994                __aeabi_uidiv
+                0x0000000000101994                __udivsi3
+                0x0000000000101b80                __aeabi_uidivmod
+ .text          0x0000000000101ba0      0x240 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+                0x0000000000101ba0                __divsi3
+                0x0000000000101ba0                __aeabi_idiv
+                0x0000000000101dc0                __aeabi_idivmod
+ .text          0x0000000000101de0        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+                0x0000000000101de0                __aeabi_idiv0
+                0x0000000000101de0                __aeabi_ldiv0
+ .text          0x0000000000101de4       0x3c c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000101de4                __aeabi_uldivmod
+ .text          0x0000000000101e20      0x124 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+                0x0000000000101e20                __udivmoddi4
+ .text          0x0000000000101f44       0x34 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+                0x0000000000101f44                exit
+ .text          0x0000000000101f78       0x40 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+                0x0000000000101f78                __libc_fini_array
+ .text          0x0000000000101fb8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .text          0x0000000000101fb8       0x74 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+                0x0000000000101fb8                __libc_init_array
+ *fill*         0x000000000010202c       0x14 
+ .text          0x0000000000102040      0x5e0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+                0x0000000000102040                memcpy
+ .text          0x0000000000102620      0x110 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+                0x0000000000102620                memset
+ .text          0x0000000000102730      0x164 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+                0x0000000000102730                __call_exitprocs
+ .text          0x0000000000102894        0x4 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+                0x0000000000102894                _exit
+ .text          0x0000000000102898        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+ .text          0x0000000000102898        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+ *(.text.*)
+ .text.unlikely
+                0x0000000000102898      0x1f8 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .text.startup  0x0000000000102a90      0x86c C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+                0x0000000000102a90                main
+ *(.gnu.linkonce.t.*)
+ *(.plt)
+ *(.gnu_warning)
+ *(.gcc_execpt_table)
+ *(.glue_7)
+ .glue_7        0x00000000001032fc        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000001032fc        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000001032fc        0x0 linker stubs
+ *(.ARM.extab)
+ .ARM.extab     0x00000000001032fc        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ *(.gnu.linkonce.armextab.*)
+
+.v4_bx          0x00000000001032fc        0x0
+ .v4_bx         0x00000000001032fc        0x0 linker stubs
+
+.iplt           0x00000000001032fc        0x0
+ .iplt          0x00000000001032fc        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+
+.init           0x00000000001032fc       0x18
+ *(.init)
+ .init          0x00000000001032fc        0xc c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+                0x00000000001032fc                _init
+ .init          0x0000000000103308        0xc c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+
+.fini           0x0000000000103314       0x18
+ *(.fini)
+ .fini          0x0000000000103314        0xc c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+                0x0000000000103314                _fini
+ .fini          0x0000000000103320        0xc c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+
+.rodata         0x000000000010332c       0x24
+                0x000000000010332c                __rodata_start = .
+ *(.rodata)
+ .rodata        0x000000000010332c       0x1c C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .rodata        0x0000000000103348        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                0x0000000000103348                _global_impure_ptr
+ *(.rodata.*)
+ .rodata.str1.4
+                0x000000000010334c        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                                          0x2 (size before relaxing)
+ *(.gnu.linkonce.r.*)
+                0x0000000000103350                __rodata_end = .
+
+.rodata1        0x0000000000103350        0x0
+                0x0000000000103350                __rodata1_start = .
+ *(.rodata1)
+ *(.rodata1.*)
+                0x0000000000103350                __rodata1_end = .
+
+.sdata2         0x0000000000103350        0x0
+                0x0000000000103350                __sdata2_start = .
+ *(.sdata2)
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x0000000000103350                __sdata2_end = .
+
+.sbss2          0x0000000000103350        0x0
+                0x0000000000103350                __sbss2_start = .
+ *(.sbss2)
+ *(.sbss2.*)
+ *(.gnu.linkonce.sb2.*)
+                0x0000000000103350                __sbss2_end = .
+
+.data           0x0000000000103350      0x470
+                0x0000000000103350                __data_start = .
+ *(.data)
+ .data          0x0000000000103350        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+ .data          0x0000000000103350        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000103350                __dso_handle
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(translation_table.o)
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .data          0x0000000000103354        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .data          0x0000000000103354       0x38 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+                0x0000000000103354                XExc_VectorTable
+ .data          0x000000000010338c        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .data          0x000000000010338c        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .data          0x000000000010338c        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ *fill*         0x000000000010338c        0x4 
+ .data          0x0000000000103390      0x430 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                0x0000000000103390                _impure_ptr
+ .data          0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .data          0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .data          0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .data          0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000001037c0        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+ .data          0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+ .data          0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+ *(.data.*)
+ *(.gnu.linkonce.d.*)
+ *(.jcr)
+ *(.got)
+ *(.got.plt)
+                0x00000000001037c0                __data_end = .
+
+.tm_clone_table
+                0x00000000001037c0        0x0
+ .tm_clone_table
+                0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+ .tm_clone_table
+                0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+
+.igot.plt       0x00000000001037c0        0x0
+ .igot.plt      0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+
+.got2           0x00000000001037c0        0x0
+ .got2          0x00000000001037c0        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+
+.data1          0x00000000001037c0        0x0
+                0x00000000001037c0                __data1_start = .
+ *(.data1)
+ *(.data1.*)
+                0x00000000001037c0                __data1_end = .
+
+.got
+ *(.got)
+
+.ctors          0x00000000001037c0        0x0
+                0x00000000001037c0                __CTOR_LIST__ = .
+                0x00000000001037c0                ___CTORS_LIST___ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x00000000001037c0                __CTOR_END__ = .
+                0x00000000001037c0                ___CTORS_END___ = .
+
+.dtors          0x00000000001037c0        0x0
+                0x00000000001037c0                __DTOR_LIST__ = .
+                0x00000000001037c0                ___DTORS_LIST___ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x00000000001037c0                __DTOR_END__ = .
+                0x00000000001037c0                ___DTORS_END___ = .
+
+.fixup          0x00000000001037c0        0x0
+                0x00000000001037c0                __fixup_start = .
+ *(.fixup)
+                0x00000000001037c0                __fixup_end = .
+
+.eh_frame       0x00000000001037c0        0x4
+ *(.eh_frame)
+ .eh_frame      0x00000000001037c0        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+ .eh_frame      0x00000000001037c0        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+
+.eh_framehdr    0x00000000001037c4        0x0
+                0x00000000001037c4                __eh_framehdr_start = .
+ *(.eh_framehdr)
+                0x00000000001037c4                __eh_framehdr_end = .
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.mmu_tbl        0x0000000000104000     0x4000
+                0x0000000000104000                __mmu_tbl_start = .
+ *(.mmu_tbl)
+ .mmu_tbl       0x0000000000104000     0x4000 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(translation_table.o)
+                0x0000000000104000                MMUTable
+                0x0000000000108000                __mmu_tbl_end = .
+
+.ARM.exidx      0x0000000000108000        0x8
+                0x0000000000108000                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x0000000000108000        0x8 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ *(.gnu.linkonce.armexidix.*.*)
+                0x0000000000108008                __exidx_end = .
+
+.rel.dyn        0x0000000000108008        0x0
+ .rel.iplt      0x0000000000108008        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+
+.preinit_array  0x0000000000108008        0x0
+                0x0000000000108008                __preinit_array_start = .
+ *(SORT(.preinit_array.*))
+ *(.preinit_array)
+                0x0000000000108008                __preinit_array_end = .
+
+.init_array     0x0000000000108008        0x4
+                0x0000000000108008                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000000108008        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+                0x000000000010800c                __init_array_end = .
+
+.fini_array     0x000000000010800c        0x4
+                0x000000000010800c                __fini_array_start = .
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x000000000010800c        0x4 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000108010                __fini_array_end = .
+
+.ARM.attributes
+                0x0000000000108010       0x33
+                0x0000000000108010                __ARM.attributes_start = .
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000108010       0x21 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+ .ARM.attributes
+                0x0000000000108031       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000108064       0x3d C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .ARM.attributes
+                0x00000000001080a1       0x29 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .ARM.attributes
+                0x00000000001080ca       0x29 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .ARM.attributes
+                0x00000000001080f3       0x29 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(translation_table.o)
+ .ARM.attributes
+                0x000000000010811c       0x3d C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .ARM.attributes
+                0x0000000000108159       0x29 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .ARM.attributes
+                0x0000000000108182       0x3d C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .ARM.attributes
+                0x00000000001081bf       0x3d C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .ARM.attributes
+                0x00000000001081fc       0x3d C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .ARM.attributes
+                0x0000000000108239       0x29 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .ARM.attributes
+                0x0000000000108262       0x21 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000108283       0x21 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000000001082a4       0x21 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000001082c5       0x21 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000001082e6       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x0000000000108319       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000000000010834c       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000000000010837f       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000001083b2       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000001083e5       0x1b c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000000000108400       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000108433       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000000000108466       0x3d C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+ .ARM.attributes
+                0x00000000001084a3       0x33 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+ .ARM.attributes
+                0x00000000001084d6       0x21 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+                0x00000000001084f7                __ARM.attributes_end = .
+
+.sdata          0x0000000000108010        0x0
+                0x0000000000108010                __sdata_start = .
+ *(.sdata)
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x0000000000108010                __sdata_end = .
+
+.sbss           0x0000000000108010        0x0
+                0x0000000000108010                __sbss_start = .
+ *(.sbss)
+ *(.sbss.*)
+ *(.gnu.linkonce.sb.*)
+                0x0000000000108010                __sbss_end = .
+
+.tdata          0x0000000000108010        0x0
+                0x0000000000108010                __tdata_start = .
+ *(.tdata)
+ *(.tdata.*)
+ *(.gnu.linkonce.td.*)
+                0x0000000000108010                __tdata_end = .
+
+.tbss           0x0000000000108010        0x0
+                0x0000000000108010                __tbss_start = .
+ *(.tbss)
+ *(.tbss.*)
+ *(.gnu.linkonce.tb.*)
+                0x0000000000108010                __tbss_end = .
+
+.bss            0x0000000000108010      0x1b4
+                0x0000000000108010                __bss_start = .
+ *(.bss)
+ .bss           0x0000000000108010        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crti.o
+ .bss           0x0000000000108010       0x1c c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+ *fill*         0x000000000010802c        0x4 
+ .bss           0x0000000000108030      0x188 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(translation_table.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000001081b8        0x0 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+ .bss           0x00000000001081b8        0x0 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+ *(.bss.*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x00000000001081b8        0xc C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+                0x00000000001081b8                UndefinedExceptionAddr
+                0x00000000001081bc                PrefetchAbortAddr
+                0x00000000001081c0                DataAbortAddr
+                0x00000000001081c4                __bss_end = .
+                0x0000000000108010                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x0000000000103350                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x00000000001081c4     0x200c
+                0x00000000001081d0                . = ALIGN (0x10)
+ *fill*         0x00000000001081c4        0xc 
+                0x00000000001081d0                _heap = .
+                0x00000000001081d0                HeapBase = .
+                0x00000000001081d0                _heap_start = .
+                0x000000000010a1d0                . = (. + _HEAP_SIZE)
+ *fill*         0x00000000001081d0     0x2000 
+                0x000000000010a1d0                _heap_end = .
+                0x000000000010a1d0                HeapLimit = .
+
+.stack          0x000000000010a1d0     0x3800
+                0x000000000010a1d0                . = ALIGN (0x10)
+                0x000000000010a1d0                _stack_end = .
+                0x000000000010c1d0                . = (. + _STACK_SIZE)
+ *fill*         0x000000000010a1d0     0x2000 
+                0x000000000010c1d0                . = ALIGN (0x10)
+                0x000000000010c1d0                _stack = .
+                0x000000000010c1d0                __stack = _stack
+                0x000000000010c1d0                . = ALIGN (0x10)
+                0x000000000010c1d0                _irq_stack_end = .
+                0x000000000010c5d0                . = (. + _IRQ_STACK_SIZE)
+ *fill*         0x000000000010c1d0      0x400 
+                0x000000000010c5d0                . = ALIGN (0x10)
+                0x000000000010c5d0                __irq_stack = .
+                0x000000000010c5d0                _supervisor_stack_end = .
+                0x000000000010cdd0                . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x000000000010c5d0      0x800 
+                0x000000000010cdd0                . = ALIGN (0x10)
+                0x000000000010cdd0                __supervisor_stack = .
+                0x000000000010cdd0                _abort_stack_end = .
+                0x000000000010d1d0                . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x000000000010cdd0      0x400 
+                0x000000000010d1d0                . = ALIGN (0x10)
+                0x000000000010d1d0                __abort_stack = .
+                0x000000000010d1d0                _fiq_stack_end = .
+                0x000000000010d5d0                . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x000000000010d1d0      0x400 
+                0x000000000010d5d0                . = ALIGN (0x10)
+                0x000000000010d5d0                __fiq_stack = .
+                0x000000000010d5d0                _undef_stack_end = .
+                0x000000000010d9d0                . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x000000000010d5d0      0x400 
+                0x000000000010d9d0                . = ALIGN (0x10)
+                0x000000000010d9d0                __undef_stack = .
+                0x000000000010d9d0                _end = .
+LOAD C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+START GROUP
+LOAD C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a
+END GROUP
+START GROUP
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libg.a
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a
+END GROUP
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+LOAD c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtn.o
+OUTPUT(C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\elf\orb60_board.elf elf32-littlearm)
+
+.comment        0x0000000000000000       0x31
+ .comment       0x0000000000000000       0x31 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtbegin.o
+                                         0x32 (size before relaxing)
+ .comment       0x0000000000000031       0x32 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .comment       0x0000000000000031       0x32 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .comment       0x0000000000000031       0x32 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .comment       0x0000000000000031       0x32 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .comment       0x0000000000000031       0x32 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000031       0x32 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+ .comment       0x0000000000000031       0x32 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard/crtend.o
+
+.debug_info     0x0000000000000000     0x6173
+ .debug_info    0x0000000000000000     0x2651 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_info    0x0000000000002651       0x26 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .debug_info    0x0000000000002677       0x26 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .debug_info    0x000000000000269d      0x198 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .debug_info    0x0000000000002835       0x26 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .debug_info    0x000000000000285b     0x29cb C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_info    0x0000000000005226      0x308 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .debug_info    0x000000000000552e      0xb2d C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .debug_info    0x000000000000605b       0x26 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .debug_info    0x0000000000006081       0xf2 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+
+.debug_abbrev   0x0000000000000000      0xdd9
+ .debug_abbrev  0x0000000000000000      0x419 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_abbrev  0x0000000000000419       0x14 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .debug_abbrev  0x000000000000042d       0x14 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .debug_abbrev  0x0000000000000441       0xb4 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .debug_abbrev  0x00000000000004f5       0x14 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .debug_abbrev  0x0000000000000509      0x449 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_abbrev  0x0000000000000952      0x194 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .debug_abbrev  0x0000000000000ae6      0x264 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .debug_abbrev  0x0000000000000d4a       0x14 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .debug_abbrev  0x0000000000000d5e       0x7b C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+
+.debug_loc      0x0000000000000000     0x2a30
+ .debug_loc     0x0000000000000000     0x1221 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_loc     0x0000000000001221     0x16da C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_loc     0x00000000000028fb       0x3f C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .debug_loc     0x000000000000293a       0xf6 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+
+.debug_aranges  0x0000000000000000      0x158
+ .debug_aranges
+                0x0000000000000000       0x38 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_aranges
+                0x0000000000000038       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .debug_aranges
+                0x0000000000000058       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .debug_aranges
+                0x0000000000000078       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .debug_aranges
+                0x0000000000000098       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .debug_aranges
+                0x00000000000000b8       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_aranges
+                0x00000000000000d8       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .debug_aranges
+                0x00000000000000f8       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .debug_aranges
+                0x0000000000000118       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .debug_aranges
+                0x0000000000000138       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+
+.debug_ranges   0x0000000000000000      0x8b0
+ .debug_ranges  0x0000000000000000      0x670 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_ranges  0x0000000000000670      0x210 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_ranges  0x0000000000000880       0x30 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+
+.debug_line     0x0000000000000000     0x1812
+ .debug_line    0x0000000000000000      0x8ee C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_line    0x00000000000008ee       0x90 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .debug_line    0x000000000000097e      0x13e C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+ .debug_line    0x0000000000000abc      0x158 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .debug_line    0x0000000000000c14       0x55 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+ .debug_line    0x0000000000000c69      0x6ec C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_line    0x0000000000001355      0x174 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .debug_line    0x00000000000014c9      0x256 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .debug_line    0x000000000000171f       0x48 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+ .debug_line    0x0000000000001767       0xab C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+
+.debug_str      0x0000000000000000      0xeae
+ .debug_str     0x0000000000000000      0x736 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+                                        0x7e8 (size before relaxing)
+ .debug_str     0x0000000000000736       0xb1 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(asm_vectors.o)
+ .debug_str     0x00000000000007e7        0x7 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(boot.o)
+                                         0xaa (size before relaxing)
+ .debug_str     0x00000000000007ee      0x123 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+                                        0x271 (size before relaxing)
+ .debug_str     0x0000000000000911        0xb C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil-crt0.o)
+                                         0xae (size before relaxing)
+ .debug_str     0x000000000000091c      0x3dd C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+                                        0xa15 (size before relaxing)
+ .debug_str     0x0000000000000cf9      0x137 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+                                        0x33b (size before relaxing)
+ .debug_str     0x0000000000000e30       0x2a C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+                                        0x63e (size before relaxing)
+ .debug_str     0x0000000000000e5a        0xb C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(cpu_init.o)
+                                         0xae (size before relaxing)
+ .debug_str     0x0000000000000e65       0x49 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)
+                                        0x1be (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x644
+ .debug_frame   0x0000000000000000      0x188 C:\Users\dmsun\AppData\Local\Temp\cclnN1gd.o
+ .debug_frame   0x0000000000000188       0x70 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(vectors.o)
+ .debug_frame   0x00000000000001f8      0x300 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_cache.o)
+ .debug_frame   0x00000000000004f8       0x90 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xil_exception.o)
+ .debug_frame   0x0000000000000588       0x30 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(xtime_l.o)
+ .debug_frame   0x00000000000005b8       0x20 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000000005d8       0x20 c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000000005f8       0x2c c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000000624       0x20 C:\Users\dmsun\Desktop\PLD\orb60_board\20261012_172441_100mhz\inputs\lib\libxil.a(_exit.o)

@@ -1,0 +1,15 @@
+{
+  "state": "SUCCEEDED",
+  "job": "C:\\h\\orb4\\20261013_150739_size_fb3e1d50",
+  "tool": "Vivado 2018.3",
+  "sources": {
+    "layer4": {
+      "job": "C:\\h\\orb4\\20261013_144219_layer4_52645026",
+      "hls_state_at_freeze": "RUNNING"
+    }
+  },
+  "scope": "Individual IP out-of-context synthesis, no timing or integrated fit acceptance",
+  "pid": 29284,
+  "returncode": 0,
+  "seconds": 228.719
+}

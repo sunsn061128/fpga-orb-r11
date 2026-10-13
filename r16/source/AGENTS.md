@@ -1,0 +1,12 @@
+# ORB60 4PPC experiment
+
+- Target: ACZ7015, xc7z015clg485-2, board top s_wrapper; HLS tops fastv2_layer4_hls and fastv2_descriptor_hls; PS FCLK0 100 MHz. Exact 960x720 eight-level ORB and original feature budgets.
+- User-selected vendor migration: Vivado HLS/Vivado/SDK 2018.3; use C:/Users/dmsun/Documents/Codex/toolchains/fpga/bin/xilinx-2018.3.cmd. Native compiler MinGW 14.2.0. No global PATH changes or WSL.
+- Author sources: upstream/FPGA_ORB_HLS/fastv2/next/src/layer4_hls.cpp, front4_stream.hpp, layer4_images.hpp, descriptor_patch2018.hpp, scripts and tests. Snapshot origins: evidence/upstream_snapshot.json. Historical 2PPC files/releases outside this experiment remain frozen.
+- Generated: build/, C:/h/orb4/ HLS/IP/Vivado/SDK jobs, ../orb60_board/*_4ppc100mhz_2018_3 releases, quad_rom.hpp, common2018.hpp, image2018_helpers.hpp, descriptor2018_hls.cpp. Edit their generator scripts; never modify accepted release files.
+- Frozen accepted baseline: ../r15/ (100 MHz, normal 100-frame full PS-loop 110.5721 FPS); evidence/baseline_r15.json records its manifest hash. Preserve r15 files; new optimization outputs stay outside this baseline and use the same input, budgets and timing scope for comparison.
+- Native gate: C:/Users/dmsun/Documents/Codex/toolchains/fpga/bin/fpga-python.cmd scripts/host.py.
+- HLS: same Python profile, scripts/hls.py --kernel layer4|descriptor --mode export. RTL: modelsim-cocotb-2020.4.cmd fpga-python.cmd verification/run_datapath_axi.py; ModelSim 2020.4, cocotb 2.0.1, Python 3.11.6.
+- Routed build: scripts/board_build.py with explicit accepted HLS and AXI paths; packing retry scripts/board_route.py --from-job <failed full board job> --carry-remap 2 --no-fanout-opt reuses its linked synthesized netlist. Paired PS ELF: ps_board/build.ps1 -JobRoot <accepted job>. Volatile test: scripts/board_test.py with explicit accepted job/frame/mode. Package: scripts/board_release.py --job <accepted job> after all required physical tests.
+- PS input contract: level zero reads the aligned, immutable DDR input handed off by the producer before invocation; no per-frame CPU copy. Later levels retain three raw/two blur slots. Report wall FPS including preparation; distinguish resident-DDR input from any external capture/transfer cost.
+- Acceptance: independent exact pixels/points/summary/features and guards, legal AXI/stalls/reset/final-response completion, real four-lane II, complete routed setup/hold/constraint/DRC checks and new bit/ELF/register/source pairing before board tests. Production remains COMPLETE_UNVERIFIED.

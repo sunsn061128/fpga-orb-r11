@@ -1,0 +1,1534 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_26'
+================================================================
+* Date:           Mon Oct 12 19:33:54 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+-----+-------+----------+-----------+-----------+---------+----------+
+        |                                   |   Latency   | Iteration|  Initiation Interval  |   Trip  |          |
+        |             Loop Name             | min |  max  |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-----------------------------------+-----+-------+----------+-----------+-----------+---------+----------+
+        |- InitializeCells                  |  204|    204|         1|          1|          1|      204|    yes   |
+        |- ReduceCandidateTokens            |    ?|      ?|         1|          1|          1|        ?|    yes   |
+        |- BuildWinners                     |  204|    204|         1|          1|          1|      204|    yes   |
+        |- memcpy.result.words.gep17        |    8|      8|         2|          1|          1|        8|    yes   |
+        |- EmitCellOrder                    |  204|    204|         2|          1|          1|      204|    yes   |
+        |- EmitStrengthOrder                |  208|  45136|       208|          -|          -| 1 ~ 217 |    no    |
+        | + FindStrongestCell               |  204|    204|         2|          1|          1|      204|    yes   |
+        |- memcpy.selected.point_words.gep  |    0|    512|         3|          1|          1| 0 ~ 511 |    yes   |
+        |- memcpy.result.words.gep          |    8|      8|         2|          1|          1|        8|    yes   |
+        +-----------------------------------+-----+-------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      0|      0|   1416|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      0|    246|
+|Memory           |        6|      -|      0|      0|
+|Multiplexer      |        -|      -|      -|   1433|
+|Register         |        -|      -|   6248|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        6|      0|   6248|   3095|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        3|      0|      6|      6|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+-------+---+----+
+    |          Instance         |        Module        | BRAM_18K| DSP48E| FF| LUT|
+    +---------------------------+----------------------+---------+-------+---+----+
+    |fastv2_layer4_hlsBew_U342  |fastv2_layer4_hlsBew  |        0|      0|  0|  41|
+    |fastv2_layer4_hlsBew_U343  |fastv2_layer4_hlsBew  |        0|      0|  0|  41|
+    |fastv2_layer4_hlsBew_U344  |fastv2_layer4_hlsBew  |        0|      0|  0|  41|
+    |fastv2_layer4_hlsBew_U345  |fastv2_layer4_hlsBew  |        0|      0|  0|  41|
+    |fastv2_layer4_hlsCeG_U346  |fastv2_layer4_hlsCeG  |        0|      0|  0|  41|
+    |fastv2_layer4_hlsCeG_U347  |fastv2_layer4_hlsCeG  |        0|      0|  0|  41|
+    +---------------------------+----------------------+---------+-------+---+----+
+    |Total                      |                      |        0|      0|  0| 246|
+    +---------------------------+----------------------+---------+-------+---+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |      Memory     |        Module        | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |best_low_V_U     |p_anonymous_namesyd2  |        2|  0|   0|   204|   41|     1|         8364|
+    |point_words_0_U  |p_anonymous_nameszec  |        2|  0|   0|   217|   64|     1|        13888|
+    |point_words_1_U  |p_anonymous_nameszec  |        2|  0|   0|   217|   64|     1|        13888|
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |Total            |                      |        6|  0|   0|   638|  169|     3|        36140|
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |cell_count_i_i_fu_3800_p2          |     *    |      0|  0|  17|           4|           5|
+    |cell_1_fu_4428_p2                  |     +    |      0|  0|   8|           8|           1|
+    |cell_2_fu_8374_p2                  |     +    |      0|  0|   8|           8|           1|
+    |cell_3_fu_9954_p2                  |     +    |      0|  0|   8|           8|           1|
+    |cell_4_fu_9604_p2                  |     +    |      0|  0|   8|           8|           1|
+    |indvar_next3_i_i_i_i_fu_12389_p2   |     +    |      0|  0|   9|           9|           1|
+    |indvar_next4_i_i_i_i_fu_12482_p2   |     +    |      0|  0|   6|           4|           1|
+    |indvar_next_i_i_i_i_fu_12514_p2    |     +    |      0|  0|   6|           4|           1|
+    |output_index_1_fu_9904_p2          |     +    |      0|  0|  32|           1|          32|
+    |output_index_2_fu_9937_p2          |     +    |      0|  0|   8|           8|           1|
+    |summary_empty_cells_fu_8605_p2     |     +    |      0|  0|  32|          32|           1|
+    |summary_fallback_cel_fu_8616_p2    |     +    |      0|  0|  32|          32|           1|
+    |winner_count_fu_8637_p2            |     +    |      0|  0|  32|          32|           1|
+    |ap_block_pp5_stage0_11001          |    and   |      0|  0|   1|           1|           1|
+    |ap_block_pp6_stage0_11001          |    and   |      0|  0|   1|           1|           1|
+    |ap_block_pp7_stage0_11001          |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state18_io                |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state25_io                |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state30                   |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state32_io                |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state7_io                 |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_1681                  |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_1693                  |    and   |      0|  0|   1|           1|           1|
+    |ap_condition_1705                  |    and   |      0|  0|   1|           1|           1|
+    |sel_tmp2_i_i_fu_11046_p2           |    and   |      0|  0|   1|           1|           1|
+    |sel_tmp4_i_i_fu_11104_p2           |    and   |      0|  0|   1|           1|           1|
+    |sel_tmp7_i_i_fu_11158_p2           |    and   |      0|  0|   1|           1|           1|
+    |sel_tmp9_i_i_fu_11178_p2           |    and   |      0|  0|   1|           1|           1|
+    |sel_tmp_i_i_fu_8643_p2             |    and   |      0|  0|   1|           1|           1|
+    |tmp3_i_i_fu_11092_p2               |    and   |      0|  0|   1|           1|           1|
+    |tmp4_i_i_fu_11098_p2               |    and   |      0|  0|   1|           1|           1|
+    |tmp6_i_i_fu_11146_p2               |    and   |      0|  0|   1|           1|           1|
+    |tmp7_i_i_fu_11152_p2               |    and   |      0|  0|   1|           1|           1|
+    |exitcond3_i_i_i_i_fu_4422_p2       |   icmp   |      0|  0|   4|           8|           7|
+    |exitcond4_i_i_i_i_fu_8368_p2       |   icmp   |      0|  0|   4|           8|           7|
+    |exitcond5_i_i_i_i_fu_12508_p2      |   icmp   |      0|  0|   2|           4|           5|
+    |exitcond6_i_i_i_i_fu_9598_p2       |   icmp   |      0|  0|   4|           8|           7|
+    |exitcond7_i_i_i_i_fu_12384_p2      |   icmp   |      0|  0|   5|           9|           9|
+    |exitcond8_i_i_i_i_fu_12476_p2      |   icmp   |      0|  0|   2|           4|           5|
+    |exitcond_i_i_i_i_fu_9948_p2        |   icmp   |      0|  0|   4|           8|           7|
+    |notlhs1_i_i_fu_11122_p2            |   icmp   |      0|  0|  12|          32|          32|
+    |slt1_fu_11110_p2                   |   icmp   |      0|  0|  12|          32|          32|
+    |slt2_fu_11128_p2                   |   icmp   |      0|  0|  12|          32|          32|
+    |slt_fu_11080_p2                    |   icmp   |      0|  0|  12|          32|          32|
+    |tmp_291_i_i_i_i_fu_7334_p2         |   icmp   |      0|  0|   4|           8|           8|
+    |tmp_293_i_i_i_i_fu_8697_p2         |   icmp   |      0|  0|  12|          32|          32|
+    |tmp_294_i_i_i_i_fu_8709_p2         |   icmp   |      0|  0|  12|          32|          32|
+    |tmp_295_i_i_i_i_fu_8384_p2         |   icmp   |      0|  0|   5|           9|           9|
+    |tmp_302_i_i_i_i_fu_8714_p2         |   icmp   |      0|  0|  12|          32|          32|
+    |tmp_303_i_i_i_i_fu_8599_p2         |   icmp   |      0|  0|   4|           8|           1|
+    |tmp_304_i_i_i_i_fu_9931_p2         |   icmp   |      0|  0|   4|           8|           7|
+    |tmp_306_i_i_i_i_fu_9943_p2         |   icmp   |      0|  0|   4|           8|           8|
+    |tmp_307_i_i_i_i_fu_9614_p2         |   icmp   |      0|  0|   5|           9|           9|
+    |tmp_318_i_i_i_i_fu_8611_p2         |   icmp   |      0|  0|   4|           8|           8|
+    |tmp_321_i_i_i_i_fu_9834_p2         |   icmp   |      0|  0|   4|           8|           1|
+    |tmp_324_i_i_i_i_fu_10585_p2        |   icmp   |      0|  0|   5|           9|           9|
+    |tmp_343_i_i_i_i_fu_11004_p2        |   icmp   |      0|  0|   4|           8|           1|
+    |tmp_353_i_i_i_i_fu_11040_p2        |   icmp   |      0|  0|  12|          32|          32|
+    |ap_block_state1                    |    or    |      0|  0|   1|           1|           1|
+    |sel_tmp6_i_i_fu_11140_p2           |    or    |      0|  0|   1|           1|           1|
+    |best_cell_2_i_i_i_i_fu_11320_p3    |  select  |      0|  0|  32|           1|          32|
+    |best_point_0_1_i_i_i_fu_11288_p3   |  select  |      0|  0|  32|           1|          32|
+    |best_point_1_1_i_i_i_fu_11256_p3   |  select  |      0|  0|  32|           1|          32|
+    |best_point_2_1_i_i_i_fu_11224_p3   |  select  |      0|  0|  32|           1|          32|
+    |best_point_tile_1_fu_11052_p3      |  select  |      0|  0|  32|           1|          32|
+    |best_point_tile_2_fu_11164_p3      |  select  |      0|  0|  32|           1|          32|
+    |best_point_tile_3_fu_11184_p3      |  select  |      0|  0|  32|           1|          32|
+    |best_point_tile_4_fu_11192_p3      |  select  |      0|  0|  32|           1|          32|
+    |budget_2_fu_8702_p3                |  select  |      0|  0|  32|           1|          32|
+    |point_words_gep3637_s_fu_12415_p3  |  select  |      0|  0|  64|           1|          64|
+    |sel_tmp10_i_i_fu_11200_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp11_i_i_fu_11208_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp12_i_i_fu_11216_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp13_i_i_fu_11232_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp14_i_i_fu_11240_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp15_i_i_fu_11248_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp16_i_i_fu_11264_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp17_i_i_fu_11272_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp18_i_i_fu_11280_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp19_i_i_fu_11296_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp1_i_i_fu_8649_p3            |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp20_i_i_fu_11304_p3          |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp21_i_i_fu_11312_p3          |  select  |      0|  0|  32|           1|          32|
+    |summary_empty_cells_1_fu_8665_p3   |  select  |      0|  0|  32|           1|          32|
+    |summary_empty_cells_2_fu_8673_p3   |  select  |      0|  0|  32|           1|          32|
+    |summary_fallback_cel_1_fu_8630_p3  |  select  |      0|  0|  32|           1|          32|
+    |summary_fallback_cel_2_fu_8657_p3  |  select  |      0|  0|  32|           1|          32|
+    |tmp_599_summary_fall_fu_8622_p3    |  select  |      0|  0|  32|           1|          32|
+    |winner_count_1_fu_8681_p3          |  select  |      0|  0|  32|           1|          32|
+    |winner_count_2_fu_8689_p3          |  select  |      0|  0|  32|           1|          32|
+    |ap_enable_pp3                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp4                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp5                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp6                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp7                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp3_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp4_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp5_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp6_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp7_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |rev1_fu_11086_p2                   |    xor   |      0|  0|   2|           1|           2|
+    |rev2_fu_11116_p2                   |    xor   |      0|  0|   2|           1|           2|
+    |rev3_fu_11134_p2                   |    xor   |      0|  0|   2|           1|           2|
+    |rev_fu_11074_p2                    |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp3_i_i_fu_11060_p2           |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp8_i_i_fu_11172_p2           |    xor   |      0|  0|   2|           1|           2|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                              |          |      0|  0|1416|         619|        1453|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                              |  11|         32|    1|         32|
+    |ap_done                                |   3|          2|    1|          2|
+    |ap_enable_reg_pp3_iter1                |   3|          3|    1|          3|
+    |ap_enable_reg_pp4_iter1                |   3|          3|    1|          3|
+    |ap_enable_reg_pp5_iter1                |   3|          2|    1|          2|
+    |ap_enable_reg_pp5_iter2                |   3|          2|    1|          2|
+    |ap_enable_reg_pp6_iter1                |   3|          3|    1|          3|
+    |ap_enable_reg_pp7_iter1                |   3|          3|    1|          3|
+    |ap_phi_mux_best_cell_phi_fu_3619_p4    |   3|          2|    8|         16|
+    |ap_sig_ioackin_m_axi_selected_AWREADY  |   3|          2|    1|          2|
+    |ap_sig_ioackin_m_axi_selected_WREADY   |   3|          2|    1|          2|
+    |best_cell_i_i_i_i_reg_3603             |   3|          2|   32|         64|
+    |best_cell_reg_3615                     |   3|          2|    8|         16|
+    |best_low_V_address0                    |   3|          3|    8|         24|
+    |best_low_V_address1                    |   3|          3|    8|         24|
+    |best_low_V_d1                          |   3|          3|   41|        123|
+    |best_score_0_5_i_i_fu_2436             |   3|          2|    8|         16|
+    |best_score_100_5_i_s_fu_2836           |   3|          2|    8|         16|
+    |best_score_101_5_i_s_fu_2840           |   3|          2|    8|         16|
+    |best_score_102_5_i_s_fu_2844           |   3|          2|    8|         16|
+    |best_score_103_5_i_s_fu_2848           |   3|          2|    8|         16|
+    |best_score_104_5_i_s_fu_2852           |   3|          2|    8|         16|
+    |best_score_105_5_i_s_fu_2856           |   3|          2|    8|         16|
+    |best_score_106_5_i_s_fu_2860           |   3|          2|    8|         16|
+    |best_score_107_5_i_s_fu_2864           |   3|          2|    8|         16|
+    |best_score_108_5_i_s_fu_2868           |   3|          2|    8|         16|
+    |best_score_109_5_i_s_fu_2872           |   3|          2|    8|         16|
+    |best_score_10_5_i_i_fu_2476            |   3|          2|    8|         16|
+    |best_score_110_5_i_s_fu_2876           |   3|          2|    8|         16|
+    |best_score_111_5_i_s_fu_2880           |   3|          2|    8|         16|
+    |best_score_112_5_i_s_fu_2884           |   3|          2|    8|         16|
+    |best_score_113_5_i_s_fu_2888           |   3|          2|    8|         16|
+    |best_score_114_5_i_s_fu_2892           |   3|          2|    8|         16|
+    |best_score_115_5_i_s_fu_2896           |   3|          2|    8|         16|
+    |best_score_116_5_i_s_fu_2900           |   3|          2|    8|         16|
+    |best_score_117_5_i_s_fu_2904           |   3|          2|    8|         16|
+    |best_score_118_5_i_s_fu_2908           |   3|          2|    8|         16|
+    |best_score_119_5_i_s_fu_2912           |   3|          2|    8|         16|
+    |best_score_11_5_i_i_fu_2480            |   3|          2|    8|         16|
+    |best_score_120_5_i_s_fu_2916           |   3|          2|    8|         16|
+    |best_score_121_5_i_s_fu_2920           |   3|          2|    8|         16|
+    |best_score_122_5_i_s_fu_2924           |   3|          2|    8|         16|
+    |best_score_123_5_i_s_fu_2928           |   3|          2|    8|         16|
+    |best_score_124_5_i_s_fu_2932           |   3|          2|    8|         16|
+    |best_score_125_5_i_s_fu_2936           |   3|          2|    8|         16|
+    |best_score_126_5_i_s_fu_2940           |   3|          2|    8|         16|
+    |best_score_127_5_i_s_fu_2944           |   3|          2|    8|         16|
+    |best_score_128_5_i_s_fu_2948           |   3|          2|    8|         16|
+    |best_score_129_5_i_s_fu_2952           |   3|          2|    8|         16|
+    |best_score_12_5_i_i_fu_2484            |   3|          2|    8|         16|
+    |best_score_130_5_i_s_fu_2956           |   3|          2|    8|         16|
+    |best_score_131_5_i_s_fu_2960           |   3|          2|    8|         16|
+    |best_score_132_5_i_s_fu_2964           |   3|          2|    8|         16|
+    |best_score_133_5_i_s_fu_2968           |   3|          2|    8|         16|
+    |best_score_134_5_i_s_fu_2972           |   3|          2|    8|         16|
+    |best_score_135_5_i_s_fu_2976           |   3|          2|    8|         16|
+    |best_score_136_5_i_s_fu_2980           |   3|          2|    8|         16|
+    |best_score_137_5_i_s_fu_2984           |   3|          2|    8|         16|
+    |best_score_138_5_i_s_fu_2988           |   3|          2|    8|         16|
+    |best_score_139_5_i_s_fu_2992           |   3|          2|    8|         16|
+    |best_score_13_5_i_i_fu_2488            |   3|          2|    8|         16|
+    |best_score_140_5_i_s_fu_2996           |   3|          2|    8|         16|
+    |best_score_141_5_i_s_fu_3000           |   3|          2|    8|         16|
+    |best_score_142_5_i_s_fu_3004           |   3|          2|    8|         16|
+    |best_score_143_5_i_s_fu_3008           |   3|          2|    8|         16|
+    |best_score_144_5_i_s_fu_3012           |   3|          2|    8|         16|
+    |best_score_145_5_i_s_fu_3016           |   3|          2|    8|         16|
+    |best_score_146_5_i_s_fu_3020           |   3|          2|    8|         16|
+    |best_score_147_5_i_s_fu_3024           |   3|          2|    8|         16|
+    |best_score_148_5_i_s_fu_3028           |   3|          2|    8|         16|
+    |best_score_149_5_i_s_fu_3032           |   3|          2|    8|         16|
+    |best_score_14_5_i_i_fu_2492            |   3|          2|    8|         16|
+    |best_score_150_5_i_s_fu_3036           |   3|          2|    8|         16|
+    |best_score_151_5_i_s_fu_3040           |   3|          2|    8|         16|
+    |best_score_152_5_i_s_fu_3044           |   3|          2|    8|         16|
+    |best_score_153_5_i_s_fu_3048           |   3|          2|    8|         16|
+    |best_score_154_5_i_s_fu_3052           |   3|          2|    8|         16|
+    |best_score_155_5_i_s_fu_3056           |   3|          2|    8|         16|
+    |best_score_156_5_i_s_fu_3060           |   3|          2|    8|         16|
+    |best_score_157_5_i_s_fu_3064           |   3|          2|    8|         16|
+    |best_score_158_5_i_s_fu_3068           |   3|          2|    8|         16|
+    |best_score_159_5_i_s_fu_3072           |   3|          2|    8|         16|
+    |best_score_15_5_i_i_fu_2496            |   3|          2|    8|         16|
+    |best_score_160_5_i_s_fu_3076           |   3|          2|    8|         16|
+    |best_score_161_5_i_s_fu_3080           |   3|          2|    8|         16|
+    |best_score_162_5_i_s_fu_3084           |   3|          2|    8|         16|
+    |best_score_163_5_i_s_fu_3088           |   3|          2|    8|         16|
+    |best_score_164_5_i_s_fu_3092           |   3|          2|    8|         16|
+    |best_score_165_5_i_s_fu_3096           |   3|          2|    8|         16|
+    |best_score_166_5_i_s_fu_3100           |   3|          2|    8|         16|
+    |best_score_167_5_i_s_fu_3104           |   3|          2|    8|         16|
+    |best_score_168_5_i_s_fu_3108           |   3|          2|    8|         16|
+    |best_score_169_5_i_s_fu_3112           |   3|          2|    8|         16|
+    |best_score_16_5_i_i_fu_2500            |   3|          2|    8|         16|
+    |best_score_170_5_i_s_fu_3116           |   3|          2|    8|         16|
+    |best_score_171_5_i_s_fu_3120           |   3|          2|    8|         16|
+    |best_score_172_5_i_s_fu_3124           |   3|          2|    8|         16|
+    |best_score_173_5_i_s_fu_3128           |   3|          2|    8|         16|
+    |best_score_174_5_i_s_fu_3132           |   3|          2|    8|         16|
+    |best_score_175_5_i_s_fu_3136           |   3|          2|    8|         16|
+    |best_score_176_5_i_s_fu_3140           |   3|          2|    8|         16|
+    |best_score_177_5_i_s_fu_3144           |   3|          2|    8|         16|
+    |best_score_178_5_i_s_fu_3148           |   3|          2|    8|         16|
+    |best_score_179_5_i_s_fu_3152           |   3|          2|    8|         16|
+    |best_score_17_5_i_i_fu_2504            |   3|          2|    8|         16|
+    |best_score_180_5_i_s_fu_3156           |   3|          2|    8|         16|
+    |best_score_181_5_i_s_fu_3160           |   3|          2|    8|         16|
+    |best_score_182_5_i_s_fu_3164           |   3|          2|    8|         16|
+    |best_score_183_5_i_s_fu_3168           |   3|          2|    8|         16|
+    |best_score_184_5_i_s_fu_3172           |   3|          2|    8|         16|
+    |best_score_185_5_i_s_fu_3176           |   3|          2|    8|         16|
+    |best_score_186_5_i_s_fu_3180           |   3|          2|    8|         16|
+    |best_score_187_5_i_s_fu_3184           |   3|          2|    8|         16|
+    |best_score_188_5_i_s_fu_3188           |   3|          2|    8|         16|
+    |best_score_189_5_i_s_fu_3192           |   3|          2|    8|         16|
+    |best_score_18_5_i_i_fu_2508            |   3|          2|    8|         16|
+    |best_score_190_5_i_s_fu_3196           |   3|          2|    8|         16|
+    |best_score_191_5_i_s_fu_3200           |   3|          2|    8|         16|
+    |best_score_192_5_i_s_fu_3204           |   3|          2|    8|         16|
+    |best_score_193_5_i_s_fu_3208           |   3|          2|    8|         16|
+    |best_score_194_5_i_s_fu_3212           |   3|          2|    8|         16|
+    |best_score_195_5_i_s_fu_3216           |   3|          2|    8|         16|
+    |best_score_196_5_i_s_fu_3220           |   3|          2|    8|         16|
+    |best_score_197_5_i_s_fu_3224           |   3|          2|    8|         16|
+    |best_score_198_5_i_s_fu_3228           |   3|          2|    8|         16|
+    |best_score_199_5_i_s_fu_3232           |   3|          2|    8|         16|
+    |best_score_19_5_i_i_fu_2512            |   3|          2|    8|         16|
+    |best_score_1_5_i_i_fu_2440             |   3|          2|    8|         16|
+    |best_score_200_5_i_s_fu_3236           |   3|          2|    8|         16|
+    |best_score_201_5_i_s_fu_3240           |   3|          2|    8|         16|
+    |best_score_202_5_i_s_fu_3244           |   3|          2|    8|         16|
+    |best_score_203_100_fu_2016             |   3|          2|    8|         16|
+    |best_score_203_101_fu_2020             |   3|          2|    8|         16|
+    |best_score_203_102_fu_2024             |   3|          2|    8|         16|
+    |best_score_203_103_fu_2028             |   3|          2|    8|         16|
+    |best_score_203_104_fu_2032             |   3|          2|    8|         16|
+    |best_score_203_105_fu_2036             |   3|          2|    8|         16|
+    |best_score_203_106_fu_2040             |   3|          2|    8|         16|
+    |best_score_203_107_fu_2044             |   3|          2|    8|         16|
+    |best_score_203_108_fu_2048             |   3|          2|    8|         16|
+    |best_score_203_109_fu_2052             |   3|          2|    8|         16|
+    |best_score_203_10_fu_1656              |   3|          2|    8|         16|
+    |best_score_203_110_fu_2056             |   3|          2|    8|         16|
+    |best_score_203_111_fu_2060             |   3|          2|    8|         16|
+    |best_score_203_112_fu_2064             |   3|          2|    8|         16|
+    |best_score_203_113_fu_2068             |   3|          2|    8|         16|
+    |best_score_203_114_fu_2072             |   3|          2|    8|         16|
+    |best_score_203_115_fu_2076             |   3|          2|    8|         16|
+    |best_score_203_116_fu_2080             |   3|          2|    8|         16|
+    |best_score_203_117_fu_2084             |   3|          2|    8|         16|
+    |best_score_203_118_fu_2088             |   3|          2|    8|         16|
+    |best_score_203_119_fu_2092             |   3|          2|    8|         16|
+    |best_score_203_11_fu_1660              |   3|          2|    8|         16|
+    |best_score_203_120_fu_2096             |   3|          2|    8|         16|
+    |best_score_203_121_fu_2100             |   3|          2|    8|         16|
+    |best_score_203_122_fu_2104             |   3|          2|    8|         16|
+    |best_score_203_123_fu_2108             |   3|          2|    8|         16|
+    |best_score_203_124_fu_2112             |   3|          2|    8|         16|
+    |best_score_203_125_fu_2116             |   3|          2|    8|         16|
+    |best_score_203_126_fu_2120             |   3|          2|    8|         16|
+    |best_score_203_127_fu_2124             |   3|          2|    8|         16|
+    |best_score_203_128_fu_2128             |   3|          2|    8|         16|
+    |best_score_203_129_fu_2132             |   3|          2|    8|         16|
+    |best_score_203_12_fu_1664              |   3|          2|    8|         16|
+    |best_score_203_130_fu_2136             |   3|          2|    8|         16|
+    |best_score_203_131_fu_2140             |   3|          2|    8|         16|
+    |best_score_203_132_fu_2144             |   3|          2|    8|         16|
+    |best_score_203_133_fu_2148             |   3|          2|    8|         16|
+    |best_score_203_134_fu_2152             |   3|          2|    8|         16|
+    |best_score_203_135_fu_2156             |   3|          2|    8|         16|
+    |best_score_203_136_fu_2160             |   3|          2|    8|         16|
+    |best_score_203_137_fu_2164             |   3|          2|    8|         16|
+    |best_score_203_138_fu_2168             |   3|          2|    8|         16|
+    |best_score_203_139_fu_2172             |   3|          2|    8|         16|
+    |best_score_203_13_fu_1668              |   3|          2|    8|         16|
+    |best_score_203_140_fu_2176             |   3|          2|    8|         16|
+    |best_score_203_141_fu_2180             |   3|          2|    8|         16|
+    |best_score_203_142_fu_2184             |   3|          2|    8|         16|
+    |best_score_203_143_fu_2188             |   3|          2|    8|         16|
+    |best_score_203_144_fu_2192             |   3|          2|    8|         16|
+    |best_score_203_145_fu_2196             |   3|          2|    8|         16|
+    |best_score_203_146_fu_2200             |   3|          2|    8|         16|
+    |best_score_203_147_fu_2204             |   3|          2|    8|         16|
+    |best_score_203_148_fu_2208             |   3|          2|    8|         16|
+    |best_score_203_149_fu_2212             |   3|          2|    8|         16|
+    |best_score_203_14_fu_1672              |   3|          2|    8|         16|
+    |best_score_203_150_fu_2216             |   3|          2|    8|         16|
+    |best_score_203_151_fu_2220             |   3|          2|    8|         16|
+    |best_score_203_152_fu_2224             |   3|          2|    8|         16|
+    |best_score_203_153_fu_2228             |   3|          2|    8|         16|
+    |best_score_203_154_fu_2232             |   3|          2|    8|         16|
+    |best_score_203_155_fu_2236             |   3|          2|    8|         16|
+    |best_score_203_156_fu_2240             |   3|          2|    8|         16|
+    |best_score_203_157_fu_2244             |   3|          2|    8|         16|
+    |best_score_203_158_fu_2248             |   3|          2|    8|         16|
+    |best_score_203_159_fu_2252             |   3|          2|    8|         16|
+    |best_score_203_15_fu_1676              |   3|          2|    8|         16|
+    |best_score_203_160_fu_2256             |   3|          2|    8|         16|
+    |best_score_203_161_fu_2260             |   3|          2|    8|         16|
+    |best_score_203_162_fu_2264             |   3|          2|    8|         16|
+    |best_score_203_163_fu_2268             |   3|          2|    8|         16|
+    |best_score_203_164_fu_2272             |   3|          2|    8|         16|
+    |best_score_203_165_fu_2276             |   3|          2|    8|         16|
+    |best_score_203_166_fu_2280             |   3|          2|    8|         16|
+    |best_score_203_167_fu_2284             |   3|          2|    8|         16|
+    |best_score_203_168_fu_2288             |   3|          2|    8|         16|
+    |best_score_203_169_fu_2292             |   3|          2|    8|         16|
+    |best_score_203_16_fu_1680              |   3|          2|    8|         16|
+    |best_score_203_170_fu_2296             |   3|          2|    8|         16|
+    |best_score_203_171_fu_2300             |   3|          2|    8|         16|
+    |best_score_203_172_fu_2304             |   3|          2|    8|         16|
+    |best_score_203_173_fu_2308             |   3|          2|    8|         16|
+    |best_score_203_174_fu_2312             |   3|          2|    8|         16|
+    |best_score_203_175_fu_2316             |   3|          2|    8|         16|
+    |best_score_203_176_fu_2320             |   3|          2|    8|         16|
+    |best_score_203_177_fu_2324             |   3|          2|    8|         16|
+    |best_score_203_178_fu_2328             |   3|          2|    8|         16|
+    |best_score_203_179_fu_2332             |   3|          2|    8|         16|
+    |best_score_203_17_fu_1684              |   3|          2|    8|         16|
+    |best_score_203_180_fu_2336             |   3|          2|    8|         16|
+    |best_score_203_181_fu_2340             |   3|          2|    8|         16|
+    |best_score_203_182_fu_2344             |   3|          2|    8|         16|
+    |best_score_203_183_fu_2348             |   3|          2|    8|         16|
+    |best_score_203_184_fu_2352             |   3|          2|    8|         16|
+    |best_score_203_185_fu_2356             |   3|          2|    8|         16|
+    |best_score_203_186_fu_2360             |   3|          2|    8|         16|
+    |best_score_203_187_fu_2364             |   3|          2|    8|         16|
+    |best_score_203_188_fu_2368             |   3|          2|    8|         16|
+    |best_score_203_189_fu_2372             |   3|          2|    8|         16|
+    |best_score_203_18_fu_1688              |   3|          2|    8|         16|
+    |best_score_203_190_fu_2376             |   3|          2|    8|         16|
+    |best_score_203_191_fu_2380             |   3|          2|    8|         16|
+    |best_score_203_192_fu_2384             |   3|          2|    8|         16|
+    |best_score_203_193_fu_2388             |   3|          2|    8|         16|
+    |best_score_203_194_fu_2392             |   3|          2|    8|         16|
+    |best_score_203_195_fu_2396             |   3|          2|    8|         16|
+    |best_score_203_196_fu_2400             |   3|          2|    8|         16|
+    |best_score_203_197_fu_2404             |   3|          2|    8|         16|
+    |best_score_203_198_fu_2408             |   3|          2|    8|         16|
+    |best_score_203_199_fu_2412             |   3|          2|    8|         16|
+    |best_score_203_19_fu_1692              |   3|          2|    8|         16|
+    |best_score_203_1_fu_1620               |   3|          2|    8|         16|
+    |best_score_203_200_fu_2416             |   3|          2|    8|         16|
+    |best_score_203_201_fu_2420             |   3|          2|    8|         16|
+    |best_score_203_202_fu_2424             |   3|          2|    8|         16|
+    |best_score_203_203_fu_2428             |   3|          2|    8|         16|
+    |best_score_203_20_fu_1696              |   3|          2|    8|         16|
+    |best_score_203_21_fu_1700              |   3|          2|    8|         16|
+    |best_score_203_22_fu_1704              |   3|          2|    8|         16|
+    |best_score_203_23_fu_1708              |   3|          2|    8|         16|
+    |best_score_203_24_fu_1712              |   3|          2|    8|         16|
+    |best_score_203_25_fu_1716              |   3|          2|    8|         16|
+    |best_score_203_26_fu_1720              |   3|          2|    8|         16|
+    |best_score_203_27_fu_1724              |   3|          2|    8|         16|
+    |best_score_203_28_fu_1728              |   3|          2|    8|         16|
+    |best_score_203_29_fu_1732              |   3|          2|    8|         16|
+    |best_score_203_2_fu_1624               |   3|          2|    8|         16|
+    |best_score_203_30_fu_1736              |   3|          2|    8|         16|
+    |best_score_203_31_fu_1740              |   3|          2|    8|         16|
+    |best_score_203_32_fu_1744              |   3|          2|    8|         16|
+    |best_score_203_33_fu_1748              |   3|          2|    8|         16|
+    |best_score_203_34_fu_1752              |   3|          2|    8|         16|
+    |best_score_203_35_fu_1756              |   3|          2|    8|         16|
+    |best_score_203_36_fu_1760              |   3|          2|    8|         16|
+    |best_score_203_37_fu_1764              |   3|          2|    8|         16|
+    |best_score_203_38_fu_1768              |   3|          2|    8|         16|
+    |best_score_203_39_fu_1772              |   3|          2|    8|         16|
+    |best_score_203_3_fu_1628               |   3|          2|    8|         16|
+    |best_score_203_40_fu_1776              |   3|          2|    8|         16|
+    |best_score_203_41_fu_1780              |   3|          2|    8|         16|
+    |best_score_203_42_fu_1784              |   3|          2|    8|         16|
+    |best_score_203_43_fu_1788              |   3|          2|    8|         16|
+    |best_score_203_44_fu_1792              |   3|          2|    8|         16|
+    |best_score_203_45_fu_1796              |   3|          2|    8|         16|
+    |best_score_203_46_fu_1800              |   3|          2|    8|         16|
+    |best_score_203_47_fu_1804              |   3|          2|    8|         16|
+    |best_score_203_48_fu_1808              |   3|          2|    8|         16|
+    |best_score_203_49_fu_1812              |   3|          2|    8|         16|
+    |best_score_203_4_fu_1632               |   3|          2|    8|         16|
+    |best_score_203_50_fu_1816              |   3|          2|    8|         16|
+    |best_score_203_51_fu_1820              |   3|          2|    8|         16|
+    |best_score_203_52_fu_1824              |   3|          2|    8|         16|
+    |best_score_203_53_fu_1828              |   3|          2|    8|         16|
+    |best_score_203_54_fu_1832              |   3|          2|    8|         16|
+    |best_score_203_55_fu_1836              |   3|          2|    8|         16|
+    |best_score_203_56_fu_1840              |   3|          2|    8|         16|
+    |best_score_203_57_fu_1844              |   3|          2|    8|         16|
+    |best_score_203_58_fu_1848              |   3|          2|    8|         16|
+    |best_score_203_59_fu_1852              |   3|          2|    8|         16|
+    |best_score_203_5_fu_1636               |   3|          2|    8|         16|
+    |best_score_203_5_i_s_fu_3248           |   3|          2|    8|         16|
+    |best_score_203_60_fu_1856              |   3|          2|    8|         16|
+    |best_score_203_61_fu_1860              |   3|          2|    8|         16|
+    |best_score_203_62_fu_1864              |   3|          2|    8|         16|
+    |best_score_203_63_fu_1868              |   3|          2|    8|         16|
+    |best_score_203_64_fu_1872              |   3|          2|    8|         16|
+    |best_score_203_65_fu_1876              |   3|          2|    8|         16|
+    |best_score_203_66_fu_1880              |   3|          2|    8|         16|
+    |best_score_203_67_fu_1884              |   3|          2|    8|         16|
+    |best_score_203_68_fu_1888              |   3|          2|    8|         16|
+    |best_score_203_69_fu_1892              |   3|          2|    8|         16|
+    |best_score_203_6_fu_1640               |   3|          2|    8|         16|
+    |best_score_203_70_fu_1896              |   3|          2|    8|         16|
+    |best_score_203_71_fu_1900              |   3|          2|    8|         16|
+    |best_score_203_72_fu_1904              |   3|          2|    8|         16|
+    |best_score_203_73_fu_1908              |   3|          2|    8|         16|
+    |best_score_203_74_fu_1912              |   3|          2|    8|         16|
+    |best_score_203_75_fu_1916              |   3|          2|    8|         16|
+    |best_score_203_76_fu_1920              |   3|          2|    8|         16|
+    |best_score_203_77_fu_1924              |   3|          2|    8|         16|
+    |best_score_203_78_fu_1928              |   3|          2|    8|         16|
+    |best_score_203_79_fu_1932              |   3|          2|    8|         16|
+    |best_score_203_7_fu_1644               |   3|          2|    8|         16|
+    |best_score_203_80_fu_1936              |   3|          2|    8|         16|
+    |best_score_203_81_fu_1940              |   3|          2|    8|         16|
+    |best_score_203_82_fu_1944              |   3|          2|    8|         16|
+    |best_score_203_83_fu_1948              |   3|          2|    8|         16|
+    |best_score_203_84_fu_1952              |   3|          2|    8|         16|
+    |best_score_203_85_fu_1956              |   3|          2|    8|         16|
+    |best_score_203_86_fu_1960              |   3|          2|    8|         16|
+    |best_score_203_87_fu_1964              |   3|          2|    8|         16|
+    |best_score_203_88_fu_1968              |   3|          2|    8|         16|
+    |best_score_203_89_fu_1972              |   3|          2|    8|         16|
+    |best_score_203_8_fu_1648               |   3|          2|    8|         16|
+    |best_score_203_90_fu_1976              |   3|          2|    8|         16|
+    |best_score_203_91_fu_1980              |   3|          2|    8|         16|
+    |best_score_203_92_fu_1984              |   3|          2|    8|         16|
+    |best_score_203_93_fu_1988              |   3|          2|    8|         16|
+    |best_score_203_94_fu_1992              |   3|          2|    8|         16|
+    |best_score_203_95_fu_1996              |   3|          2|    8|         16|
+    |best_score_203_96_fu_2000              |   3|          2|    8|         16|
+    |best_score_203_97_fu_2004              |   3|          2|    8|         16|
+    |best_score_203_98_fu_2008              |   3|          2|    8|         16|
+    |best_score_203_99_fu_2012              |   3|          2|    8|         16|
+    |best_score_203_9_fu_1652               |   3|          2|    8|         16|
+    |best_score_203_fu_1616                 |   3|          2|    8|         16|
+    |best_score_20_5_i_i_fu_2516            |   3|          2|    8|         16|
+    |best_score_21_5_i_i_fu_2520            |   3|          2|    8|         16|
+    |best_score_22_5_i_i_fu_2524            |   3|          2|    8|         16|
+    |best_score_23_5_i_i_fu_2528            |   3|          2|    8|         16|
+    |best_score_24_5_i_i_fu_2532            |   3|          2|    8|         16|
+    |best_score_25_5_i_i_fu_2536            |   3|          2|    8|         16|
+    |best_score_26_5_i_i_fu_2540            |   3|          2|    8|         16|
+    |best_score_27_5_i_i_fu_2544            |   3|          2|    8|         16|
+    |best_score_28_5_i_i_fu_2548            |   3|          2|    8|         16|
+    |best_score_29_5_i_i_fu_2552            |   3|          2|    8|         16|
+    |best_score_2_5_i_i_fu_2444             |   3|          2|    8|         16|
+    |best_score_30_5_i_i_fu_2556            |   3|          2|    8|         16|
+    |best_score_31_5_i_i_fu_2560            |   3|          2|    8|         16|
+    |best_score_32_5_i_i_fu_2564            |   3|          2|    8|         16|
+    |best_score_33_5_i_i_fu_2568            |   3|          2|    8|         16|
+    |best_score_34_5_i_i_fu_2572            |   3|          2|    8|         16|
+    |best_score_35_5_i_i_fu_2576            |   3|          2|    8|         16|
+    |best_score_36_5_i_i_fu_2580            |   3|          2|    8|         16|
+    |best_score_37_5_i_i_fu_2584            |   3|          2|    8|         16|
+    |best_score_38_5_i_i_fu_2588            |   3|          2|    8|         16|
+    |best_score_39_5_i_i_fu_2592            |   3|          2|    8|         16|
+    |best_score_3_5_i_i_fu_2448             |   3|          2|    8|         16|
+    |best_score_40_5_i_i_fu_2596            |   3|          2|    8|         16|
+    |best_score_41_5_i_i_fu_2600            |   3|          2|    8|         16|
+    |best_score_42_5_i_i_fu_2604            |   3|          2|    8|         16|
+    |best_score_43_5_i_i_fu_2608            |   3|          2|    8|         16|
+    |best_score_44_5_i_i_fu_2612            |   3|          2|    8|         16|
+    |best_score_45_5_i_i_fu_2616            |   3|          2|    8|         16|
+    |best_score_46_5_i_i_fu_2620            |   3|          2|    8|         16|
+    |best_score_47_5_i_i_fu_2624            |   3|          2|    8|         16|
+    |best_score_48_5_i_i_fu_2628            |   3|          2|    8|         16|
+    |best_score_49_5_i_i_fu_2632            |   3|          2|    8|         16|
+    |best_score_4_5_i_i_fu_2452             |   3|          2|    8|         16|
+    |best_score_50_5_i_i_fu_2636            |   3|          2|    8|         16|
+    |best_score_51_5_i_i_fu_2640            |   3|          2|    8|         16|
+    |best_score_52_5_i_i_fu_2644            |   3|          2|    8|         16|
+    |best_score_53_5_i_i_fu_2648            |   3|          2|    8|         16|
+    |best_score_54_5_i_i_fu_2652            |   3|          2|    8|         16|
+    |best_score_55_5_i_i_fu_2656            |   3|          2|    8|         16|
+    |best_score_56_5_i_i_fu_2660            |   3|          2|    8|         16|
+    |best_score_57_5_i_i_fu_2664            |   3|          2|    8|         16|
+    |best_score_58_5_i_i_fu_2668            |   3|          2|    8|         16|
+    |best_score_59_5_i_i_fu_2672            |   3|          2|    8|         16|
+    |best_score_5_5_i_i_fu_2456             |   3|          2|    8|         16|
+    |best_score_60_5_i_i_fu_2676            |   3|          2|    8|         16|
+    |best_score_61_5_i_i_fu_2680            |   3|          2|    8|         16|
+    |best_score_62_5_i_i_fu_2684            |   3|          2|    8|         16|
+    |best_score_63_5_i_i_fu_2688            |   3|          2|    8|         16|
+    |best_score_64_5_i_i_fu_2692            |   3|          2|    8|         16|
+    |best_score_65_5_i_i_fu_2696            |   3|          2|    8|         16|
+    |best_score_66_5_i_i_fu_2700            |   3|          2|    8|         16|
+    |best_score_67_5_i_i_fu_2704            |   3|          2|    8|         16|
+    |best_score_68_5_i_i_fu_2708            |   3|          2|    8|         16|
+    |best_score_69_5_i_i_fu_2712            |   3|          2|    8|         16|
+    |best_score_6_5_i_i_fu_2460             |   3|          2|    8|         16|
+    |best_score_70_5_i_i_fu_2716            |   3|          2|    8|         16|
+    |best_score_71_5_i_i_fu_2720            |   3|          2|    8|         16|
+    |best_score_72_5_i_i_fu_2724            |   3|          2|    8|         16|
+    |best_score_73_5_i_i_fu_2728            |   3|          2|    8|         16|
+    |best_score_74_5_i_i_fu_2732            |   3|          2|    8|         16|
+    |best_score_75_5_i_i_fu_2736            |   3|          2|    8|         16|
+    |best_score_76_5_i_i_fu_2740            |   3|          2|    8|         16|
+    |best_score_77_5_i_i_fu_2744            |   3|          2|    8|         16|
+    |best_score_78_5_i_i_fu_2748            |   3|          2|    8|         16|
+    |best_score_79_5_i_i_fu_2752            |   3|          2|    8|         16|
+    |best_score_7_5_i_i_fu_2464             |   3|          2|    8|         16|
+    |best_score_80_5_i_i_fu_2756            |   3|          2|    8|         16|
+    |best_score_81_5_i_i_fu_2760            |   3|          2|    8|         16|
+    |best_score_82_5_i_i_fu_2764            |   3|          2|    8|         16|
+    |best_score_83_5_i_i_fu_2768            |   3|          2|    8|         16|
+    |best_score_84_5_i_i_fu_2772            |   3|          2|    8|         16|
+    |best_score_85_5_i_i_fu_2776            |   3|          2|    8|         16|
+    |best_score_86_5_i_i_fu_2780            |   3|          2|    8|         16|
+    |best_score_87_5_i_i_fu_2784            |   3|          2|    8|         16|
+    |best_score_88_5_i_i_fu_2788            |   3|          2|    8|         16|
+    |best_score_89_5_i_i_fu_2792            |   3|          2|    8|         16|
+    |best_score_8_5_i_i_fu_2468             |   3|          2|    8|         16|
+    |best_score_90_5_i_i_fu_2796            |   3|          2|    8|         16|
+    |best_score_91_5_i_i_fu_2800            |   3|          2|    8|         16|
+    |best_score_92_5_i_i_fu_2804            |   3|          2|    8|         16|
+    |best_score_93_5_i_i_fu_2808            |   3|          2|    8|         16|
+    |best_score_94_5_i_i_fu_2812            |   3|          2|    8|         16|
+    |best_score_95_5_i_i_fu_2816            |   3|          2|    8|         16|
+    |best_score_96_5_i_i_fu_2820            |   3|          2|    8|         16|
+    |best_score_97_5_i_i_fu_2824            |   3|          2|    8|         16|
+    |best_score_98_5_i_i_fu_2828            |   3|          2|    8|         16|
+    |best_score_99_5_i_i_fu_2832            |   3|          2|    8|         16|
+    |best_score_9_5_i_i_fu_2472             |   3|          2|    8|         16|
+    |candidates_V_blk_n                     |   3|          2|    1|          2|
+    |capacity_c_blk_n                       |   3|          2|    1|          2|
+    |cell2_i_i_i_i_reg_3521                 |   3|          2|    8|         16|
+    |cell3_i_i_i_i_reg_3532                 |   3|          2|    8|         16|
+    |cell_i_i_i_i_reg_3474                  |   3|          2|    8|         16|
+    |dual_c57_blk_n                         |   3|          2|    1|          2|
+    |fast_done_V_blk_n                      |   3|          2|    1|          2|
+    |fast_done_V_din                        |   3|          3|    8|         24|
+    |high_assign_1_i_i_reg_3579             |   3|          2|   32|         64|
+    |high_assign_3_i_i_reg_3497             |   3|          2|   32|         64|
+    |high_assign_5_i_i_reg_3555             |   3|          2|   32|         64|
+    |high_c56_blk_n                         |   3|          2|    1|          2|
+    |indvar7_i_i_i_i_reg_3627               |   3|          2|    9|         18|
+    |indvar9_i_i_i_i_reg_3638               |   3|          2|    4|          8|
+    |indvar_i_i_i_i_reg_3649                |   3|          2|    4|          8|
+    |low_assign_1_i_i_reg_3591              |   3|          2|   32|         64|
+    |low_assign_7_i_i_reg_3485              |   3|          2|   32|         64|
+    |low_assign_i_i_reg_3567                |   3|          2|   32|         64|
+    |m_axi_selected_AWADDR                  |   3|          3|   32|         96|
+    |m_axi_selected_AWLEN                   |   3|          3|   32|         96|
+    |m_axi_selected_WDATA                   |   3|          4|   64|        256|
+    |output_index4_i_i_i_s_reg_3543         |   3|          2|    8|         16|
+    |output_index_fu_2432                   |   3|          2|   32|         64|
+    |p_budget_c_blk_n                       |   3|          2|    1|          2|
+    |p_cell_cols_c55_blk_n                  |   3|          2|    1|          2|
+    |p_cell_rows_c_blk_n                    |   3|          2|    1|          2|
+    |p_cell_side_c_blk_n                    |   3|          2|    1|          2|
+    |p_tile_cols_c54_blk_n                  |   3|          2|    1|          2|
+    |p_tile_height_c_blk_n                  |   3|          2|    1|          2|
+    |p_tile_rows_c_blk_n                    |   3|          2|    1|          2|
+    |p_tile_width_c_blk_n                   |   3|          2|    1|          2|
+    |point_words_0_address0                 |   3|          4|    8|         32|
+    |point_words_0_d0                       |   3|          3|   64|        192|
+    |point_words_1_address0                 |   3|          4|    8|         32|
+    |point_words_1_d0                       |   3|          3|   64|        192|
+    |real_start                             |   3|          2|    1|          2|
+    |result_offset_blk_n                    |   3|          2|    1|          2|
+    |selected_blk_n_AW                      |   3|          2|    1|          2|
+    |selected_blk_n_B                       |   3|          2|    1|          2|
+    |selected_blk_n_W                       |   3|          2|    1|          2|
+    |selected_offset_blk_n                  |   3|          2|    1|          2|
+    |winner_count_i_i_i_i_reg_3509          |   3|          2|   32|         64|
+    |words_0                                |   3|          3|   36|        108|
+    |words_1                                |   4|          5|   64|        320|
+    |words_2                                |   4|          5|   37|        185|
+    |words_3                                |   4|          5|   64|        320|
+    |words_4                                |   4|          5|   37|        185|
+    |words_5                                |   4|          5|   38|        190|
+    |words_6                                |   4|          5|   64|        320|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  |1433|       1013| 4323|      10045|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+----+----+-----+-----------+
+    |                    Name                   | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                  |  31|   0|   31|          0|
+    |ap_done_reg                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp3_iter0                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp3_iter1                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp4_iter0                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp4_iter1                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp5_iter0                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp5_iter1                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp5_iter2                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp6_iter0                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp6_iter1                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp7_iter0                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp7_iter1                    |   1|   0|    1|          0|
+    |ap_reg_ioackin_m_axi_selected_AWREADY      |   1|   0|    1|          0|
+    |ap_reg_ioackin_m_axi_selected_WREADY       |   1|   0|    1|          0|
+    |best_cell_i_i_i_i_reg_3603                 |  32|   0|   32|          0|
+    |best_cell_reg_3615                         |   8|   0|    8|          0|
+    |best_score_0_5_i_i_fu_2436                 |   8|   0|    8|          0|
+    |best_score_100_5_i_s_fu_2836               |   8|   0|    8|          0|
+    |best_score_101_5_i_s_fu_2840               |   8|   0|    8|          0|
+    |best_score_102_5_i_s_fu_2844               |   8|   0|    8|          0|
+    |best_score_103_5_i_s_fu_2848               |   8|   0|    8|          0|
+    |best_score_104_5_i_s_fu_2852               |   8|   0|    8|          0|
+    |best_score_105_5_i_s_fu_2856               |   8|   0|    8|          0|
+    |best_score_106_5_i_s_fu_2860               |   8|   0|    8|          0|
+    |best_score_107_5_i_s_fu_2864               |   8|   0|    8|          0|
+    |best_score_108_5_i_s_fu_2868               |   8|   0|    8|          0|
+    |best_score_109_5_i_s_fu_2872               |   8|   0|    8|          0|
+    |best_score_10_5_i_i_fu_2476                |   8|   0|    8|          0|
+    |best_score_110_5_i_s_fu_2876               |   8|   0|    8|          0|
+    |best_score_111_5_i_s_fu_2880               |   8|   0|    8|          0|
+    |best_score_112_5_i_s_fu_2884               |   8|   0|    8|          0|
+    |best_score_113_5_i_s_fu_2888               |   8|   0|    8|          0|
+    |best_score_114_5_i_s_fu_2892               |   8|   0|    8|          0|
+    |best_score_115_5_i_s_fu_2896               |   8|   0|    8|          0|
+    |best_score_116_5_i_s_fu_2900               |   8|   0|    8|          0|
+    |best_score_117_5_i_s_fu_2904               |   8|   0|    8|          0|
+    |best_score_118_5_i_s_fu_2908               |   8|   0|    8|          0|
+    |best_score_119_5_i_s_fu_2912               |   8|   0|    8|          0|
+    |best_score_11_5_i_i_fu_2480                |   8|   0|    8|          0|
+    |best_score_120_5_i_s_fu_2916               |   8|   0|    8|          0|
+    |best_score_121_5_i_s_fu_2920               |   8|   0|    8|          0|
+    |best_score_122_5_i_s_fu_2924               |   8|   0|    8|          0|
+    |best_score_123_5_i_s_fu_2928               |   8|   0|    8|          0|
+    |best_score_124_5_i_s_fu_2932               |   8|   0|    8|          0|
+    |best_score_125_5_i_s_fu_2936               |   8|   0|    8|          0|
+    |best_score_126_5_i_s_fu_2940               |   8|   0|    8|          0|
+    |best_score_127_5_i_s_fu_2944               |   8|   0|    8|          0|
+    |best_score_128_5_i_s_fu_2948               |   8|   0|    8|          0|
+    |best_score_129_5_i_s_fu_2952               |   8|   0|    8|          0|
+    |best_score_12_5_i_i_fu_2484                |   8|   0|    8|          0|
+    |best_score_130_5_i_s_fu_2956               |   8|   0|    8|          0|
+    |best_score_131_5_i_s_fu_2960               |   8|   0|    8|          0|
+    |best_score_132_5_i_s_fu_2964               |   8|   0|    8|          0|
+    |best_score_133_5_i_s_fu_2968               |   8|   0|    8|          0|
+    |best_score_134_5_i_s_fu_2972               |   8|   0|    8|          0|
+    |best_score_135_5_i_s_fu_2976               |   8|   0|    8|          0|
+    |best_score_136_5_i_s_fu_2980               |   8|   0|    8|          0|
+    |best_score_137_5_i_s_fu_2984               |   8|   0|    8|          0|
+    |best_score_138_5_i_s_fu_2988               |   8|   0|    8|          0|
+    |best_score_139_5_i_s_fu_2992               |   8|   0|    8|          0|
+    |best_score_13_5_i_i_fu_2488                |   8|   0|    8|          0|
+    |best_score_140_5_i_s_fu_2996               |   8|   0|    8|          0|
+    |best_score_141_5_i_s_fu_3000               |   8|   0|    8|          0|
+    |best_score_142_5_i_s_fu_3004               |   8|   0|    8|          0|
+    |best_score_143_5_i_s_fu_3008               |   8|   0|    8|          0|
+    |best_score_144_5_i_s_fu_3012               |   8|   0|    8|          0|
+    |best_score_145_5_i_s_fu_3016               |   8|   0|    8|          0|
+    |best_score_146_5_i_s_fu_3020               |   8|   0|    8|          0|
+    |best_score_147_5_i_s_fu_3024               |   8|   0|    8|          0|
+    |best_score_148_5_i_s_fu_3028               |   8|   0|    8|          0|
+    |best_score_149_5_i_s_fu_3032               |   8|   0|    8|          0|
+    |best_score_14_5_i_i_fu_2492                |   8|   0|    8|          0|
+    |best_score_150_5_i_s_fu_3036               |   8|   0|    8|          0|
+    |best_score_151_5_i_s_fu_3040               |   8|   0|    8|          0|
+    |best_score_152_5_i_s_fu_3044               |   8|   0|    8|          0|
+    |best_score_153_5_i_s_fu_3048               |   8|   0|    8|          0|
+    |best_score_154_5_i_s_fu_3052               |   8|   0|    8|          0|
+    |best_score_155_5_i_s_fu_3056               |   8|   0|    8|          0|
+    |best_score_156_5_i_s_fu_3060               |   8|   0|    8|          0|
+    |best_score_157_5_i_s_fu_3064               |   8|   0|    8|          0|
+    |best_score_158_5_i_s_fu_3068               |   8|   0|    8|          0|
+    |best_score_159_5_i_s_fu_3072               |   8|   0|    8|          0|
+    |best_score_15_5_i_i_fu_2496                |   8|   0|    8|          0|
+    |best_score_160_5_i_s_fu_3076               |   8|   0|    8|          0|
+    |best_score_161_5_i_s_fu_3080               |   8|   0|    8|          0|
+    |best_score_162_5_i_s_fu_3084               |   8|   0|    8|          0|
+    |best_score_163_5_i_s_fu_3088               |   8|   0|    8|          0|
+    |best_score_164_5_i_s_fu_3092               |   8|   0|    8|          0|
+    |best_score_165_5_i_s_fu_3096               |   8|   0|    8|          0|
+    |best_score_166_5_i_s_fu_3100               |   8|   0|    8|          0|
+    |best_score_167_5_i_s_fu_3104               |   8|   0|    8|          0|
+    |best_score_168_5_i_s_fu_3108               |   8|   0|    8|          0|
+    |best_score_169_5_i_s_fu_3112               |   8|   0|    8|          0|
+    |best_score_16_5_i_i_fu_2500                |   8|   0|    8|          0|
+    |best_score_170_5_i_s_fu_3116               |   8|   0|    8|          0|
+    |best_score_171_5_i_s_fu_3120               |   8|   0|    8|          0|
+    |best_score_172_5_i_s_fu_3124               |   8|   0|    8|          0|
+    |best_score_173_5_i_s_fu_3128               |   8|   0|    8|          0|
+    |best_score_174_5_i_s_fu_3132               |   8|   0|    8|          0|
+    |best_score_175_5_i_s_fu_3136               |   8|   0|    8|          0|
+    |best_score_176_5_i_s_fu_3140               |   8|   0|    8|          0|
+    |best_score_177_5_i_s_fu_3144               |   8|   0|    8|          0|
+    |best_score_178_5_i_s_fu_3148               |   8|   0|    8|          0|
+    |best_score_179_5_i_s_fu_3152               |   8|   0|    8|          0|
+    |best_score_17_5_i_i_fu_2504                |   8|   0|    8|          0|
+    |best_score_180_5_i_s_fu_3156               |   8|   0|    8|          0|
+    |best_score_181_5_i_s_fu_3160               |   8|   0|    8|          0|
+    |best_score_182_5_i_s_fu_3164               |   8|   0|    8|          0|
+    |best_score_183_5_i_s_fu_3168               |   8|   0|    8|          0|
+    |best_score_184_5_i_s_fu_3172               |   8|   0|    8|          0|
+    |best_score_185_5_i_s_fu_3176               |   8|   0|    8|          0|
+    |best_score_186_5_i_s_fu_3180               |   8|   0|    8|          0|
+    |best_score_187_5_i_s_fu_3184               |   8|   0|    8|          0|
+    |best_score_188_5_i_s_fu_3188               |   8|   0|    8|          0|
+    |best_score_189_5_i_s_fu_3192               |   8|   0|    8|          0|
+    |best_score_18_5_i_i_fu_2508                |   8|   0|    8|          0|
+    |best_score_190_5_i_s_fu_3196               |   8|   0|    8|          0|
+    |best_score_191_5_i_s_fu_3200               |   8|   0|    8|          0|
+    |best_score_192_5_i_s_fu_3204               |   8|   0|    8|          0|
+    |best_score_193_5_i_s_fu_3208               |   8|   0|    8|          0|
+    |best_score_194_5_i_s_fu_3212               |   8|   0|    8|          0|
+    |best_score_195_5_i_s_fu_3216               |   8|   0|    8|          0|
+    |best_score_196_5_i_s_fu_3220               |   8|   0|    8|          0|
+    |best_score_197_5_i_s_fu_3224               |   8|   0|    8|          0|
+    |best_score_198_5_i_s_fu_3228               |   8|   0|    8|          0|
+    |best_score_199_5_i_s_fu_3232               |   8|   0|    8|          0|
+    |best_score_19_5_i_i_fu_2512                |   8|   0|    8|          0|
+    |best_score_1_5_i_i_fu_2440                 |   8|   0|    8|          0|
+    |best_score_200_5_i_s_fu_3236               |   8|   0|    8|          0|
+    |best_score_201_5_i_s_fu_3240               |   8|   0|    8|          0|
+    |best_score_202_5_i_s_fu_3244               |   8|   0|    8|          0|
+    |best_score_203_100_fu_2016                 |   8|   0|    8|          0|
+    |best_score_203_100_s_reg_17009             |   8|   0|    8|          0|
+    |best_score_203_101_fu_2020                 |   8|   0|    8|          0|
+    |best_score_203_101_s_reg_17016             |   8|   0|    8|          0|
+    |best_score_203_102_fu_2024                 |   8|   0|    8|          0|
+    |best_score_203_102_s_reg_17023             |   8|   0|    8|          0|
+    |best_score_203_103_fu_2028                 |   8|   0|    8|          0|
+    |best_score_203_103_s_reg_17030             |   8|   0|    8|          0|
+    |best_score_203_104_fu_2032                 |   8|   0|    8|          0|
+    |best_score_203_104_s_reg_17037             |   8|   0|    8|          0|
+    |best_score_203_105_fu_2036                 |   8|   0|    8|          0|
+    |best_score_203_105_s_reg_17044             |   8|   0|    8|          0|
+    |best_score_203_106_fu_2040                 |   8|   0|    8|          0|
+    |best_score_203_106_s_reg_17051             |   8|   0|    8|          0|
+    |best_score_203_107_fu_2044                 |   8|   0|    8|          0|
+    |best_score_203_107_s_reg_17058             |   8|   0|    8|          0|
+    |best_score_203_108_fu_2048                 |   8|   0|    8|          0|
+    |best_score_203_108_s_reg_17065             |   8|   0|    8|          0|
+    |best_score_203_109_fu_2052                 |   8|   0|    8|          0|
+    |best_score_203_109_s_reg_17072             |   8|   0|    8|          0|
+    |best_score_203_10_fu_1656                  |   8|   0|    8|          0|
+    |best_score_203_10_l_reg_16379              |   8|   0|    8|          0|
+    |best_score_203_110_fu_2056                 |   8|   0|    8|          0|
+    |best_score_203_110_s_reg_17079             |   8|   0|    8|          0|
+    |best_score_203_111_fu_2060                 |   8|   0|    8|          0|
+    |best_score_203_111_s_reg_17086             |   8|   0|    8|          0|
+    |best_score_203_112_fu_2064                 |   8|   0|    8|          0|
+    |best_score_203_112_s_reg_17093             |   8|   0|    8|          0|
+    |best_score_203_113_fu_2068                 |   8|   0|    8|          0|
+    |best_score_203_113_s_reg_17100             |   8|   0|    8|          0|
+    |best_score_203_114_fu_2072                 |   8|   0|    8|          0|
+    |best_score_203_114_s_reg_17107             |   8|   0|    8|          0|
+    |best_score_203_115_fu_2076                 |   8|   0|    8|          0|
+    |best_score_203_115_s_reg_17114             |   8|   0|    8|          0|
+    |best_score_203_116_fu_2080                 |   8|   0|    8|          0|
+    |best_score_203_116_s_reg_17121             |   8|   0|    8|          0|
+    |best_score_203_117_fu_2084                 |   8|   0|    8|          0|
+    |best_score_203_117_s_reg_17128             |   8|   0|    8|          0|
+    |best_score_203_118_fu_2088                 |   8|   0|    8|          0|
+    |best_score_203_118_s_reg_17135             |   8|   0|    8|          0|
+    |best_score_203_119_fu_2092                 |   8|   0|    8|          0|
+    |best_score_203_119_s_reg_17142             |   8|   0|    8|          0|
+    |best_score_203_11_fu_1660                  |   8|   0|    8|          0|
+    |best_score_203_11_l_reg_16386              |   8|   0|    8|          0|
+    |best_score_203_120_fu_2096                 |   8|   0|    8|          0|
+    |best_score_203_120_s_reg_17149             |   8|   0|    8|          0|
+    |best_score_203_121_fu_2100                 |   8|   0|    8|          0|
+    |best_score_203_121_s_reg_17156             |   8|   0|    8|          0|
+    |best_score_203_122_fu_2104                 |   8|   0|    8|          0|
+    |best_score_203_122_s_reg_17163             |   8|   0|    8|          0|
+    |best_score_203_123_fu_2108                 |   8|   0|    8|          0|
+    |best_score_203_123_s_reg_17170             |   8|   0|    8|          0|
+    |best_score_203_124_fu_2112                 |   8|   0|    8|          0|
+    |best_score_203_124_s_reg_17177             |   8|   0|    8|          0|
+    |best_score_203_125_fu_2116                 |   8|   0|    8|          0|
+    |best_score_203_125_s_reg_17184             |   8|   0|    8|          0|
+    |best_score_203_126_fu_2120                 |   8|   0|    8|          0|
+    |best_score_203_126_s_reg_17191             |   8|   0|    8|          0|
+    |best_score_203_127_fu_2124                 |   8|   0|    8|          0|
+    |best_score_203_127_s_reg_17198             |   8|   0|    8|          0|
+    |best_score_203_128_fu_2128                 |   8|   0|    8|          0|
+    |best_score_203_128_s_reg_17205             |   8|   0|    8|          0|
+    |best_score_203_129_fu_2132                 |   8|   0|    8|          0|
+    |best_score_203_129_s_reg_17212             |   8|   0|    8|          0|
+    |best_score_203_12_fu_1664                  |   8|   0|    8|          0|
+    |best_score_203_12_l_reg_16393              |   8|   0|    8|          0|
+    |best_score_203_130_fu_2136                 |   8|   0|    8|          0|
+    |best_score_203_130_s_reg_17219             |   8|   0|    8|          0|
+    |best_score_203_131_fu_2140                 |   8|   0|    8|          0|
+    |best_score_203_131_s_reg_17226             |   8|   0|    8|          0|
+    |best_score_203_132_fu_2144                 |   8|   0|    8|          0|
+    |best_score_203_132_s_reg_17233             |   8|   0|    8|          0|
+    |best_score_203_133_fu_2148                 |   8|   0|    8|          0|
+    |best_score_203_133_s_reg_17240             |   8|   0|    8|          0|
+    |best_score_203_134_fu_2152                 |   8|   0|    8|          0|
+    |best_score_203_134_s_reg_17247             |   8|   0|    8|          0|
+    |best_score_203_135_fu_2156                 |   8|   0|    8|          0|
+    |best_score_203_135_s_reg_17254             |   8|   0|    8|          0|
+    |best_score_203_136_fu_2160                 |   8|   0|    8|          0|
+    |best_score_203_136_s_reg_17261             |   8|   0|    8|          0|
+    |best_score_203_137_fu_2164                 |   8|   0|    8|          0|
+    |best_score_203_137_s_reg_17268             |   8|   0|    8|          0|
+    |best_score_203_138_fu_2168                 |   8|   0|    8|          0|
+    |best_score_203_138_s_reg_17275             |   8|   0|    8|          0|
+    |best_score_203_139_fu_2172                 |   8|   0|    8|          0|
+    |best_score_203_139_s_reg_17282             |   8|   0|    8|          0|
+    |best_score_203_13_fu_1668                  |   8|   0|    8|          0|
+    |best_score_203_13_l_reg_16400              |   8|   0|    8|          0|
+    |best_score_203_140_fu_2176                 |   8|   0|    8|          0|
+    |best_score_203_140_s_reg_17289             |   8|   0|    8|          0|
+    |best_score_203_141_fu_2180                 |   8|   0|    8|          0|
+    |best_score_203_141_s_reg_17296             |   8|   0|    8|          0|
+    |best_score_203_142_fu_2184                 |   8|   0|    8|          0|
+    |best_score_203_142_s_reg_17303             |   8|   0|    8|          0|
+    |best_score_203_143_fu_2188                 |   8|   0|    8|          0|
+    |best_score_203_143_s_reg_17310             |   8|   0|    8|          0|
+    |best_score_203_144_fu_2192                 |   8|   0|    8|          0|
+    |best_score_203_144_s_reg_17317             |   8|   0|    8|          0|
+    |best_score_203_145_fu_2196                 |   8|   0|    8|          0|
+    |best_score_203_145_s_reg_17324             |   8|   0|    8|          0|
+    |best_score_203_146_fu_2200                 |   8|   0|    8|          0|
+    |best_score_203_146_s_reg_17331             |   8|   0|    8|          0|
+    |best_score_203_147_fu_2204                 |   8|   0|    8|          0|
+    |best_score_203_147_s_reg_17338             |   8|   0|    8|          0|
+    |best_score_203_148_fu_2208                 |   8|   0|    8|          0|
+    |best_score_203_148_s_reg_17345             |   8|   0|    8|          0|
+    |best_score_203_149_fu_2212                 |   8|   0|    8|          0|
+    |best_score_203_149_s_reg_17352             |   8|   0|    8|          0|
+    |best_score_203_14_fu_1672                  |   8|   0|    8|          0|
+    |best_score_203_14_l_reg_16407              |   8|   0|    8|          0|
+    |best_score_203_150_fu_2216                 |   8|   0|    8|          0|
+    |best_score_203_150_s_reg_17359             |   8|   0|    8|          0|
+    |best_score_203_151_fu_2220                 |   8|   0|    8|          0|
+    |best_score_203_151_s_reg_17366             |   8|   0|    8|          0|
+    |best_score_203_152_fu_2224                 |   8|   0|    8|          0|
+    |best_score_203_152_s_reg_17373             |   8|   0|    8|          0|
+    |best_score_203_153_fu_2228                 |   8|   0|    8|          0|
+    |best_score_203_153_s_reg_17380             |   8|   0|    8|          0|
+    |best_score_203_154_fu_2232                 |   8|   0|    8|          0|
+    |best_score_203_154_s_reg_17387             |   8|   0|    8|          0|
+    |best_score_203_155_fu_2236                 |   8|   0|    8|          0|
+    |best_score_203_155_s_reg_17394             |   8|   0|    8|          0|
+    |best_score_203_156_fu_2240                 |   8|   0|    8|          0|
+    |best_score_203_156_s_reg_17401             |   8|   0|    8|          0|
+    |best_score_203_157_fu_2244                 |   8|   0|    8|          0|
+    |best_score_203_157_s_reg_17408             |   8|   0|    8|          0|
+    |best_score_203_158_fu_2248                 |   8|   0|    8|          0|
+    |best_score_203_158_s_reg_17415             |   8|   0|    8|          0|
+    |best_score_203_159_fu_2252                 |   8|   0|    8|          0|
+    |best_score_203_159_s_reg_17422             |   8|   0|    8|          0|
+    |best_score_203_15_fu_1676                  |   8|   0|    8|          0|
+    |best_score_203_15_l_reg_16414              |   8|   0|    8|          0|
+    |best_score_203_160_fu_2256                 |   8|   0|    8|          0|
+    |best_score_203_160_s_reg_17429             |   8|   0|    8|          0|
+    |best_score_203_161_fu_2260                 |   8|   0|    8|          0|
+    |best_score_203_161_s_reg_17436             |   8|   0|    8|          0|
+    |best_score_203_162_fu_2264                 |   8|   0|    8|          0|
+    |best_score_203_162_s_reg_17443             |   8|   0|    8|          0|
+    |best_score_203_163_fu_2268                 |   8|   0|    8|          0|
+    |best_score_203_163_s_reg_17450             |   8|   0|    8|          0|
+    |best_score_203_164_fu_2272                 |   8|   0|    8|          0|
+    |best_score_203_164_s_reg_17457             |   8|   0|    8|          0|
+    |best_score_203_165_fu_2276                 |   8|   0|    8|          0|
+    |best_score_203_165_s_reg_17464             |   8|   0|    8|          0|
+    |best_score_203_166_fu_2280                 |   8|   0|    8|          0|
+    |best_score_203_166_s_reg_17471             |   8|   0|    8|          0|
+    |best_score_203_167_fu_2284                 |   8|   0|    8|          0|
+    |best_score_203_167_s_reg_17478             |   8|   0|    8|          0|
+    |best_score_203_168_fu_2288                 |   8|   0|    8|          0|
+    |best_score_203_168_s_reg_17485             |   8|   0|    8|          0|
+    |best_score_203_169_fu_2292                 |   8|   0|    8|          0|
+    |best_score_203_169_s_reg_17492             |   8|   0|    8|          0|
+    |best_score_203_16_fu_1680                  |   8|   0|    8|          0|
+    |best_score_203_16_l_reg_16421              |   8|   0|    8|          0|
+    |best_score_203_170_fu_2296                 |   8|   0|    8|          0|
+    |best_score_203_170_s_reg_17499             |   8|   0|    8|          0|
+    |best_score_203_171_fu_2300                 |   8|   0|    8|          0|
+    |best_score_203_171_s_reg_17506             |   8|   0|    8|          0|
+    |best_score_203_172_fu_2304                 |   8|   0|    8|          0|
+    |best_score_203_172_s_reg_17513             |   8|   0|    8|          0|
+    |best_score_203_173_fu_2308                 |   8|   0|    8|          0|
+    |best_score_203_173_s_reg_17520             |   8|   0|    8|          0|
+    |best_score_203_174_fu_2312                 |   8|   0|    8|          0|
+    |best_score_203_174_s_reg_17527             |   8|   0|    8|          0|
+    |best_score_203_175_fu_2316                 |   8|   0|    8|          0|
+    |best_score_203_175_s_reg_17534             |   8|   0|    8|          0|
+    |best_score_203_176_fu_2320                 |   8|   0|    8|          0|
+    |best_score_203_176_s_reg_17541             |   8|   0|    8|          0|
+    |best_score_203_177_fu_2324                 |   8|   0|    8|          0|
+    |best_score_203_177_s_reg_17548             |   8|   0|    8|          0|
+    |best_score_203_178_fu_2328                 |   8|   0|    8|          0|
+    |best_score_203_178_s_reg_17555             |   8|   0|    8|          0|
+    |best_score_203_179_fu_2332                 |   8|   0|    8|          0|
+    |best_score_203_179_s_reg_17562             |   8|   0|    8|          0|
+    |best_score_203_17_fu_1684                  |   8|   0|    8|          0|
+    |best_score_203_17_l_reg_16428              |   8|   0|    8|          0|
+    |best_score_203_180_fu_2336                 |   8|   0|    8|          0|
+    |best_score_203_180_s_reg_17569             |   8|   0|    8|          0|
+    |best_score_203_181_fu_2340                 |   8|   0|    8|          0|
+    |best_score_203_181_s_reg_17576             |   8|   0|    8|          0|
+    |best_score_203_182_fu_2344                 |   8|   0|    8|          0|
+    |best_score_203_182_s_reg_17583             |   8|   0|    8|          0|
+    |best_score_203_183_fu_2348                 |   8|   0|    8|          0|
+    |best_score_203_183_s_reg_17590             |   8|   0|    8|          0|
+    |best_score_203_184_fu_2352                 |   8|   0|    8|          0|
+    |best_score_203_184_s_reg_17597             |   8|   0|    8|          0|
+    |best_score_203_185_fu_2356                 |   8|   0|    8|          0|
+    |best_score_203_185_s_reg_17604             |   8|   0|    8|          0|
+    |best_score_203_186_fu_2360                 |   8|   0|    8|          0|
+    |best_score_203_186_s_reg_17611             |   8|   0|    8|          0|
+    |best_score_203_187_fu_2364                 |   8|   0|    8|          0|
+    |best_score_203_187_s_reg_17618             |   8|   0|    8|          0|
+    |best_score_203_188_fu_2368                 |   8|   0|    8|          0|
+    |best_score_203_188_s_reg_17625             |   8|   0|    8|          0|
+    |best_score_203_189_fu_2372                 |   8|   0|    8|          0|
+    |best_score_203_189_s_reg_17632             |   8|   0|    8|          0|
+    |best_score_203_18_fu_1688                  |   8|   0|    8|          0|
+    |best_score_203_18_l_reg_16435              |   8|   0|    8|          0|
+    |best_score_203_190_fu_2376                 |   8|   0|    8|          0|
+    |best_score_203_190_s_reg_17639             |   8|   0|    8|          0|
+    |best_score_203_191_fu_2380                 |   8|   0|    8|          0|
+    |best_score_203_191_s_reg_17646             |   8|   0|    8|          0|
+    |best_score_203_192_fu_2384                 |   8|   0|    8|          0|
+    |best_score_203_192_s_reg_17653             |   8|   0|    8|          0|
+    |best_score_203_193_fu_2388                 |   8|   0|    8|          0|
+    |best_score_203_193_s_reg_17660             |   8|   0|    8|          0|
+    |best_score_203_194_fu_2392                 |   8|   0|    8|          0|
+    |best_score_203_194_s_reg_17667             |   8|   0|    8|          0|
+    |best_score_203_195_fu_2396                 |   8|   0|    8|          0|
+    |best_score_203_195_s_reg_17674             |   8|   0|    8|          0|
+    |best_score_203_196_fu_2400                 |   8|   0|    8|          0|
+    |best_score_203_196_s_reg_17681             |   8|   0|    8|          0|
+    |best_score_203_197_fu_2404                 |   8|   0|    8|          0|
+    |best_score_203_197_s_reg_17688             |   8|   0|    8|          0|
+    |best_score_203_198_fu_2408                 |   8|   0|    8|          0|
+    |best_score_203_198_s_reg_17695             |   8|   0|    8|          0|
+    |best_score_203_199_fu_2412                 |   8|   0|    8|          0|
+    |best_score_203_199_s_reg_17702             |   8|   0|    8|          0|
+    |best_score_203_19_fu_1692                  |   8|   0|    8|          0|
+    |best_score_203_19_l_reg_16442              |   8|   0|    8|          0|
+    |best_score_203_1_fu_1620                   |   8|   0|    8|          0|
+    |best_score_203_1_lo_reg_16316              |   8|   0|    8|          0|
+    |best_score_203_200_fu_2416                 |   8|   0|    8|          0|
+    |best_score_203_200_s_reg_17709             |   8|   0|    8|          0|
+    |best_score_203_201_fu_2420                 |   8|   0|    8|          0|
+    |best_score_203_201_s_reg_17716             |   8|   0|    8|          0|
+    |best_score_203_202_fu_2424                 |   8|   0|    8|          0|
+    |best_score_203_202_s_reg_17723             |   8|   0|    8|          0|
+    |best_score_203_203_fu_2428                 |   8|   0|    8|          0|
+    |best_score_203_203_s_reg_17730             |   8|   0|    8|          0|
+    |best_score_203_20_fu_1696                  |   8|   0|    8|          0|
+    |best_score_203_20_l_reg_16449              |   8|   0|    8|          0|
+    |best_score_203_21_fu_1700                  |   8|   0|    8|          0|
+    |best_score_203_21_l_reg_16456              |   8|   0|    8|          0|
+    |best_score_203_22_fu_1704                  |   8|   0|    8|          0|
+    |best_score_203_22_l_reg_16463              |   8|   0|    8|          0|
+    |best_score_203_23_fu_1708                  |   8|   0|    8|          0|
+    |best_score_203_23_l_reg_16470              |   8|   0|    8|          0|
+    |best_score_203_24_fu_1712                  |   8|   0|    8|          0|
+    |best_score_203_24_l_reg_16477              |   8|   0|    8|          0|
+    |best_score_203_25_fu_1716                  |   8|   0|    8|          0|
+    |best_score_203_25_l_reg_16484              |   8|   0|    8|          0|
+    |best_score_203_26_fu_1720                  |   8|   0|    8|          0|
+    |best_score_203_26_l_reg_16491              |   8|   0|    8|          0|
+    |best_score_203_27_fu_1724                  |   8|   0|    8|          0|
+    |best_score_203_27_l_reg_16498              |   8|   0|    8|          0|
+    |best_score_203_28_fu_1728                  |   8|   0|    8|          0|
+    |best_score_203_28_l_reg_16505              |   8|   0|    8|          0|
+    |best_score_203_29_fu_1732                  |   8|   0|    8|          0|
+    |best_score_203_29_l_reg_16512              |   8|   0|    8|          0|
+    |best_score_203_2_fu_1624                   |   8|   0|    8|          0|
+    |best_score_203_2_lo_reg_16323              |   8|   0|    8|          0|
+    |best_score_203_30_fu_1736                  |   8|   0|    8|          0|
+    |best_score_203_30_l_reg_16519              |   8|   0|    8|          0|
+    |best_score_203_31_fu_1740                  |   8|   0|    8|          0|
+    |best_score_203_31_l_reg_16526              |   8|   0|    8|          0|
+    |best_score_203_32_fu_1744                  |   8|   0|    8|          0|
+    |best_score_203_32_l_reg_16533              |   8|   0|    8|          0|
+    |best_score_203_33_fu_1748                  |   8|   0|    8|          0|
+    |best_score_203_33_l_reg_16540              |   8|   0|    8|          0|
+    |best_score_203_34_fu_1752                  |   8|   0|    8|          0|
+    |best_score_203_34_l_reg_16547              |   8|   0|    8|          0|
+    |best_score_203_35_fu_1756                  |   8|   0|    8|          0|
+    |best_score_203_35_l_reg_16554              |   8|   0|    8|          0|
+    |best_score_203_36_fu_1760                  |   8|   0|    8|          0|
+    |best_score_203_36_l_reg_16561              |   8|   0|    8|          0|
+    |best_score_203_37_fu_1764                  |   8|   0|    8|          0|
+    |best_score_203_37_l_reg_16568              |   8|   0|    8|          0|
+    |best_score_203_38_fu_1768                  |   8|   0|    8|          0|
+    |best_score_203_38_l_reg_16575              |   8|   0|    8|          0|
+    |best_score_203_39_fu_1772                  |   8|   0|    8|          0|
+    |best_score_203_39_l_reg_16582              |   8|   0|    8|          0|
+    |best_score_203_3_fu_1628                   |   8|   0|    8|          0|
+    |best_score_203_3_lo_reg_16330              |   8|   0|    8|          0|
+    |best_score_203_40_fu_1776                  |   8|   0|    8|          0|
+    |best_score_203_40_l_reg_16589              |   8|   0|    8|          0|
+    |best_score_203_41_fu_1780                  |   8|   0|    8|          0|
+    |best_score_203_41_l_reg_16596              |   8|   0|    8|          0|
+    |best_score_203_42_fu_1784                  |   8|   0|    8|          0|
+    |best_score_203_42_l_reg_16603              |   8|   0|    8|          0|
+    |best_score_203_43_fu_1788                  |   8|   0|    8|          0|
+    |best_score_203_43_l_reg_16610              |   8|   0|    8|          0|
+    |best_score_203_44_fu_1792                  |   8|   0|    8|          0|
+    |best_score_203_44_l_reg_16617              |   8|   0|    8|          0|
+    |best_score_203_45_fu_1796                  |   8|   0|    8|          0|
+    |best_score_203_45_l_reg_16624              |   8|   0|    8|          0|
+    |best_score_203_46_fu_1800                  |   8|   0|    8|          0|
+    |best_score_203_46_l_reg_16631              |   8|   0|    8|          0|
+    |best_score_203_47_fu_1804                  |   8|   0|    8|          0|
+    |best_score_203_47_l_reg_16638              |   8|   0|    8|          0|
+    |best_score_203_48_fu_1808                  |   8|   0|    8|          0|
+    |best_score_203_48_l_reg_16645              |   8|   0|    8|          0|
+    |best_score_203_49_fu_1812                  |   8|   0|    8|          0|
+    |best_score_203_49_l_reg_16652              |   8|   0|    8|          0|
+    |best_score_203_4_fu_1632                   |   8|   0|    8|          0|
+    |best_score_203_4_lo_reg_16337              |   8|   0|    8|          0|
+    |best_score_203_50_fu_1816                  |   8|   0|    8|          0|
+    |best_score_203_50_l_reg_16659              |   8|   0|    8|          0|
+    |best_score_203_51_fu_1820                  |   8|   0|    8|          0|
+    |best_score_203_51_l_reg_16666              |   8|   0|    8|          0|
+    |best_score_203_52_fu_1824                  |   8|   0|    8|          0|
+    |best_score_203_52_l_reg_16673              |   8|   0|    8|          0|
+    |best_score_203_53_fu_1828                  |   8|   0|    8|          0|
+    |best_score_203_53_l_reg_16680              |   8|   0|    8|          0|
+    |best_score_203_54_fu_1832                  |   8|   0|    8|          0|
+    |best_score_203_54_l_reg_16687              |   8|   0|    8|          0|
+    |best_score_203_55_fu_1836                  |   8|   0|    8|          0|
+    |best_score_203_55_l_reg_16694              |   8|   0|    8|          0|
+    |best_score_203_56_fu_1840                  |   8|   0|    8|          0|
+    |best_score_203_56_l_reg_16701              |   8|   0|    8|          0|
+    |best_score_203_57_fu_1844                  |   8|   0|    8|          0|
+    |best_score_203_57_l_reg_16708              |   8|   0|    8|          0|
+    |best_score_203_58_fu_1848                  |   8|   0|    8|          0|
+    |best_score_203_58_l_reg_16715              |   8|   0|    8|          0|
+    |best_score_203_59_fu_1852                  |   8|   0|    8|          0|
+    |best_score_203_59_l_reg_16722              |   8|   0|    8|          0|
+    |best_score_203_5_fu_1636                   |   8|   0|    8|          0|
+    |best_score_203_5_i_s_fu_3248               |   8|   0|    8|          0|
+    |best_score_203_5_lo_reg_16344              |   8|   0|    8|          0|
+    |best_score_203_60_fu_1856                  |   8|   0|    8|          0|
+    |best_score_203_60_l_reg_16729              |   8|   0|    8|          0|
+    |best_score_203_61_fu_1860                  |   8|   0|    8|          0|
+    |best_score_203_61_l_reg_16736              |   8|   0|    8|          0|
+    |best_score_203_62_fu_1864                  |   8|   0|    8|          0|
+    |best_score_203_62_l_reg_16743              |   8|   0|    8|          0|
+    |best_score_203_63_fu_1868                  |   8|   0|    8|          0|
+    |best_score_203_63_l_reg_16750              |   8|   0|    8|          0|
+    |best_score_203_64_fu_1872                  |   8|   0|    8|          0|
+    |best_score_203_64_l_reg_16757              |   8|   0|    8|          0|
+    |best_score_203_65_fu_1876                  |   8|   0|    8|          0|
+    |best_score_203_65_l_reg_16764              |   8|   0|    8|          0|
+    |best_score_203_66_fu_1880                  |   8|   0|    8|          0|
+    |best_score_203_66_l_reg_16771              |   8|   0|    8|          0|
+    |best_score_203_67_fu_1884                  |   8|   0|    8|          0|
+    |best_score_203_67_l_reg_16778              |   8|   0|    8|          0|
+    |best_score_203_68_fu_1888                  |   8|   0|    8|          0|
+    |best_score_203_68_l_reg_16785              |   8|   0|    8|          0|
+    |best_score_203_69_fu_1892                  |   8|   0|    8|          0|
+    |best_score_203_69_l_reg_16792              |   8|   0|    8|          0|
+    |best_score_203_6_fu_1640                   |   8|   0|    8|          0|
+    |best_score_203_6_lo_reg_16351              |   8|   0|    8|          0|
+    |best_score_203_70_fu_1896                  |   8|   0|    8|          0|
+    |best_score_203_70_l_reg_16799              |   8|   0|    8|          0|
+    |best_score_203_71_fu_1900                  |   8|   0|    8|          0|
+    |best_score_203_71_l_reg_16806              |   8|   0|    8|          0|
+    |best_score_203_72_fu_1904                  |   8|   0|    8|          0|
+    |best_score_203_72_l_reg_16813              |   8|   0|    8|          0|
+    |best_score_203_73_fu_1908                  |   8|   0|    8|          0|
+    |best_score_203_73_l_reg_16820              |   8|   0|    8|          0|
+    |best_score_203_74_fu_1912                  |   8|   0|    8|          0|
+    |best_score_203_74_l_reg_16827              |   8|   0|    8|          0|
+    |best_score_203_75_fu_1916                  |   8|   0|    8|          0|
+    |best_score_203_75_l_reg_16834              |   8|   0|    8|          0|
+    |best_score_203_76_fu_1920                  |   8|   0|    8|          0|
+    |best_score_203_76_l_reg_16841              |   8|   0|    8|          0|
+    |best_score_203_77_fu_1924                  |   8|   0|    8|          0|
+    |best_score_203_77_l_reg_16848              |   8|   0|    8|          0|
+    |best_score_203_78_fu_1928                  |   8|   0|    8|          0|
+    |best_score_203_78_l_reg_16855              |   8|   0|    8|          0|
+    |best_score_203_79_fu_1932                  |   8|   0|    8|          0|
+    |best_score_203_79_l_reg_16862              |   8|   0|    8|          0|
+    |best_score_203_7_fu_1644                   |   8|   0|    8|          0|
+    |best_score_203_7_lo_reg_16358              |   8|   0|    8|          0|
+    |best_score_203_80_fu_1936                  |   8|   0|    8|          0|
+    |best_score_203_80_l_reg_16869              |   8|   0|    8|          0|
+    |best_score_203_81_fu_1940                  |   8|   0|    8|          0|
+    |best_score_203_81_l_reg_16876              |   8|   0|    8|          0|
+    |best_score_203_82_fu_1944                  |   8|   0|    8|          0|
+    |best_score_203_82_l_reg_16883              |   8|   0|    8|          0|
+    |best_score_203_83_fu_1948                  |   8|   0|    8|          0|
+    |best_score_203_83_l_reg_16890              |   8|   0|    8|          0|
+    |best_score_203_84_fu_1952                  |   8|   0|    8|          0|
+    |best_score_203_84_l_reg_16897              |   8|   0|    8|          0|
+    |best_score_203_85_fu_1956                  |   8|   0|    8|          0|
+    |best_score_203_85_l_reg_16904              |   8|   0|    8|          0|
+    |best_score_203_86_fu_1960                  |   8|   0|    8|          0|
+    |best_score_203_86_l_reg_16911              |   8|   0|    8|          0|
+    |best_score_203_87_fu_1964                  |   8|   0|    8|          0|
+    |best_score_203_87_l_reg_16918              |   8|   0|    8|          0|
+    |best_score_203_88_fu_1968                  |   8|   0|    8|          0|
+    |best_score_203_88_l_reg_16925              |   8|   0|    8|          0|
+    |best_score_203_89_fu_1972                  |   8|   0|    8|          0|
+    |best_score_203_89_l_reg_16932              |   8|   0|    8|          0|
+    |best_score_203_8_fu_1648                   |   8|   0|    8|          0|
+    |best_score_203_8_lo_reg_16365              |   8|   0|    8|          0|
+    |best_score_203_90_fu_1976                  |   8|   0|    8|          0|
+    |best_score_203_90_l_reg_16939              |   8|   0|    8|          0|
+    |best_score_203_91_fu_1980                  |   8|   0|    8|          0|
+    |best_score_203_91_l_reg_16946              |   8|   0|    8|          0|
+    |best_score_203_92_fu_1984                  |   8|   0|    8|          0|
+    |best_score_203_92_l_reg_16953              |   8|   0|    8|          0|
+    |best_score_203_93_fu_1988                  |   8|   0|    8|          0|
+    |best_score_203_93_l_reg_16960              |   8|   0|    8|          0|
+    |best_score_203_94_fu_1992                  |   8|   0|    8|          0|
+    |best_score_203_94_l_reg_16967              |   8|   0|    8|          0|
+    |best_score_203_95_fu_1996                  |   8|   0|    8|          0|
+    |best_score_203_95_l_reg_16974              |   8|   0|    8|          0|
+    |best_score_203_96_fu_2000                  |   8|   0|    8|          0|
+    |best_score_203_96_l_reg_16981              |   8|   0|    8|          0|
+    |best_score_203_97_fu_2004                  |   8|   0|    8|          0|
+    |best_score_203_97_l_reg_16988              |   8|   0|    8|          0|
+    |best_score_203_98_fu_2008                  |   8|   0|    8|          0|
+    |best_score_203_98_l_reg_16995              |   8|   0|    8|          0|
+    |best_score_203_99_fu_2012                  |   8|   0|    8|          0|
+    |best_score_203_99_l_reg_17002              |   8|   0|    8|          0|
+    |best_score_203_9_fu_1652                   |   8|   0|    8|          0|
+    |best_score_203_9_lo_reg_16372              |   8|   0|    8|          0|
+    |best_score_203_fu_1616                     |   8|   0|    8|          0|
+    |best_score_203_load_reg_16309              |   8|   0|    8|          0|
+    |best_score_20_5_i_i_fu_2516                |   8|   0|    8|          0|
+    |best_score_21_5_i_i_fu_2520                |   8|   0|    8|          0|
+    |best_score_22_5_i_i_fu_2524                |   8|   0|    8|          0|
+    |best_score_23_5_i_i_fu_2528                |   8|   0|    8|          0|
+    |best_score_24_5_i_i_fu_2532                |   8|   0|    8|          0|
+    |best_score_25_5_i_i_fu_2536                |   8|   0|    8|          0|
+    |best_score_26_5_i_i_fu_2540                |   8|   0|    8|          0|
+    |best_score_27_5_i_i_fu_2544                |   8|   0|    8|          0|
+    |best_score_28_5_i_i_fu_2548                |   8|   0|    8|          0|
+    |best_score_29_5_i_i_fu_2552                |   8|   0|    8|          0|
+    |best_score_2_5_i_i_fu_2444                 |   8|   0|    8|          0|
+    |best_score_30_5_i_i_fu_2556                |   8|   0|    8|          0|
+    |best_score_31_5_i_i_fu_2560                |   8|   0|    8|          0|
+    |best_score_32_5_i_i_fu_2564                |   8|   0|    8|          0|
+    |best_score_33_5_i_i_fu_2568                |   8|   0|    8|          0|
+    |best_score_34_5_i_i_fu_2572                |   8|   0|    8|          0|
+    |best_score_35_5_i_i_fu_2576                |   8|   0|    8|          0|
+    |best_score_36_5_i_i_fu_2580                |   8|   0|    8|          0|
+    |best_score_37_5_i_i_fu_2584                |   8|   0|    8|          0|
+    |best_score_38_5_i_i_fu_2588                |   8|   0|    8|          0|
+    |best_score_39_5_i_i_fu_2592                |   8|   0|    8|          0|
+    |best_score_3_5_i_i_fu_2448                 |   8|   0|    8|          0|
+    |best_score_40_5_i_i_fu_2596                |   8|   0|    8|          0|
+    |best_score_41_5_i_i_fu_2600                |   8|   0|    8|          0|
+    |best_score_42_5_i_i_fu_2604                |   8|   0|    8|          0|
+    |best_score_43_5_i_i_fu_2608                |   8|   0|    8|          0|
+    |best_score_44_5_i_i_fu_2612                |   8|   0|    8|          0|
+    |best_score_45_5_i_i_fu_2616                |   8|   0|    8|          0|
+    |best_score_46_5_i_i_fu_2620                |   8|   0|    8|          0|
+    |best_score_47_5_i_i_fu_2624                |   8|   0|    8|          0|
+    |best_score_48_5_i_i_fu_2628                |   8|   0|    8|          0|
+    |best_score_49_5_i_i_fu_2632                |   8|   0|    8|          0|
+    |best_score_4_5_i_i_fu_2452                 |   8|   0|    8|          0|
+    |best_score_50_5_i_i_fu_2636                |   8|   0|    8|          0|
+    |best_score_51_5_i_i_fu_2640                |   8|   0|    8|          0|
+    |best_score_52_5_i_i_fu_2644                |   8|   0|    8|          0|
+    |best_score_53_5_i_i_fu_2648                |   8|   0|    8|          0|
+    |best_score_54_5_i_i_fu_2652                |   8|   0|    8|          0|
+    |best_score_55_5_i_i_fu_2656                |   8|   0|    8|          0|
+    |best_score_56_5_i_i_fu_2660                |   8|   0|    8|          0|
+    |best_score_57_5_i_i_fu_2664                |   8|   0|    8|          0|
+    |best_score_58_5_i_i_fu_2668                |   8|   0|    8|          0|
+    |best_score_59_5_i_i_fu_2672                |   8|   0|    8|          0|
+    |best_score_5_5_i_i_fu_2456                 |   8|   0|    8|          0|
+    |best_score_60_5_i_i_fu_2676                |   8|   0|    8|          0|
+    |best_score_61_5_i_i_fu_2680                |   8|   0|    8|          0|
+    |best_score_62_5_i_i_fu_2684                |   8|   0|    8|          0|
+    |best_score_63_5_i_i_fu_2688                |   8|   0|    8|          0|
+    |best_score_64_5_i_i_fu_2692                |   8|   0|    8|          0|
+    |best_score_65_5_i_i_fu_2696                |   8|   0|    8|          0|
+    |best_score_66_5_i_i_fu_2700                |   8|   0|    8|          0|
+    |best_score_67_5_i_i_fu_2704                |   8|   0|    8|          0|
+    |best_score_68_5_i_i_fu_2708                |   8|   0|    8|          0|
+    |best_score_69_5_i_i_fu_2712                |   8|   0|    8|          0|
+    |best_score_6_5_i_i_fu_2460                 |   8|   0|    8|          0|
+    |best_score_70_5_i_i_fu_2716                |   8|   0|    8|          0|
+    |best_score_71_5_i_i_fu_2720                |   8|   0|    8|          0|
+    |best_score_72_5_i_i_fu_2724                |   8|   0|    8|          0|
+    |best_score_73_5_i_i_fu_2728                |   8|   0|    8|          0|
+    |best_score_74_5_i_i_fu_2732                |   8|   0|    8|          0|
+    |best_score_75_5_i_i_fu_2736                |   8|   0|    8|          0|
+    |best_score_76_5_i_i_fu_2740                |   8|   0|    8|          0|
+    |best_score_77_5_i_i_fu_2744                |   8|   0|    8|          0|
+    |best_score_78_5_i_i_fu_2748                |   8|   0|    8|          0|
+    |best_score_79_5_i_i_fu_2752                |   8|   0|    8|          0|
+    |best_score_7_5_i_i_fu_2464                 |   8|   0|    8|          0|
+    |best_score_80_5_i_i_fu_2756                |   8|   0|    8|          0|
+    |best_score_81_5_i_i_fu_2760                |   8|   0|    8|          0|
+    |best_score_82_5_i_i_fu_2764                |   8|   0|    8|          0|
+    |best_score_83_5_i_i_fu_2768                |   8|   0|    8|          0|
+    |best_score_84_5_i_i_fu_2772                |   8|   0|    8|          0|
+    |best_score_85_5_i_i_fu_2776                |   8|   0|    8|          0|
+    |best_score_86_5_i_i_fu_2780                |   8|   0|    8|          0|
+    |best_score_87_5_i_i_fu_2784                |   8|   0|    8|          0|
+    |best_score_88_5_i_i_fu_2788                |   8|   0|    8|          0|
+    |best_score_89_5_i_i_fu_2792                |   8|   0|    8|          0|
+    |best_score_8_5_i_i_fu_2468                 |   8|   0|    8|          0|
+    |best_score_90_5_i_i_fu_2796                |   8|   0|    8|          0|
+    |best_score_91_5_i_i_fu_2800                |   8|   0|    8|          0|
+    |best_score_92_5_i_i_fu_2804                |   8|   0|    8|          0|
+    |best_score_93_5_i_i_fu_2808                |   8|   0|    8|          0|
+    |best_score_94_5_i_i_fu_2812                |   8|   0|    8|          0|
+    |best_score_95_5_i_i_fu_2816                |   8|   0|    8|          0|
+    |best_score_96_5_i_i_fu_2820                |   8|   0|    8|          0|
+    |best_score_97_5_i_i_fu_2824                |   8|   0|    8|          0|
+    |best_score_98_5_i_i_fu_2828                |   8|   0|    8|          0|
+    |best_score_99_5_i_i_fu_2832                |   8|   0|    8|          0|
+    |best_score_9_5_i_i_fu_2472                 |   8|   0|    8|          0|
+    |budget_2_reg_17780                         |  32|   0|   32|          0|
+    |budget_reg_13846                           |   8|   0|   32|         24|
+    |cell2_i_i_i_i_reg_3521                     |   8|   0|    8|          0|
+    |cell3_i_i_i_i_reg_3532                     |   8|   0|    8|          0|
+    |cell_3_reg_19322                           |   8|   0|    8|          0|
+    |cell_count_i_i_reg_13834                   |   9|   0|    9|          0|
+    |cell_i_i_i_i_reg_3474                      |   8|   0|    8|          0|
+    |dual_c57_read_reg_13782                    |   1|   0|    1|          0|
+    |exitcond5_i_i_i_i_reg_19457                |   1|   0|    1|          0|
+    |exitcond7_i_i_i_i_reg_19363                |   1|   0|    1|          0|
+    |exitcond7_i_i_i_i_reg_19363_pp5_iter1_reg  |   1|   0|    1|          0|
+    |exitcond8_i_i_i_i_reg_19443                |   1|   0|    1|          0|
+    |exitcond_i_i_i_i_reg_19318                 |   1|   0|    1|          0|
+    |high_assign_1_i_i_reg_3579                 |  32|   0|   32|          0|
+    |high_assign_3_i_i_reg_3497                 |  32|   0|   32|          0|
+    |high_assign_5_i_i_reg_3555                 |  32|   0|   32|          0|
+    |high_c56_read_reg_13777                    |   8|   0|    8|          0|
+    |indvar7_i_i_i_i_reg_3627                   |   9|   0|    9|          0|
+    |indvar9_i_i_i_i_reg_3638                   |   4|   0|    4|          0|
+    |indvar_i_i_i_i_reg_3649                    |   4|   0|    4|          0|
+    |low_assign_1_i_i_reg_3591                  |  32|   0|   32|          0|
+    |low_assign_7_i_i_reg_3485                  |  32|   0|   32|          0|
+    |low_assign_i_i_reg_3567                    |  32|   0|   32|          0|
+    |output_index4_i_i_i_s_reg_3543             |   8|   0|    8|          0|
+    |output_index_2_reg_19309                   |   8|   0|    8|          0|
+    |output_index_fu_2432                       |  32|   0|   32|          0|
+    |p_budget_c_read_reg_13841                  |   8|   0|    8|          0|
+    |p_cell_cols_c55_read_reg_13798             |   5|   0|    5|          0|
+    |p_tile_cols_c54_read_reg_13810             |   5|   0|    5|          0|
+    |p_tile_width_c_read_reg_13822              |   6|   0|    6|          0|
+    |point_words_gep3637_s_reg_19387            |  64|   0|   64|          0|
+    |selected_addr_1_reg_13771                  |  29|   0|   32|          3|
+    |selected_addr_reg_13764                    |  29|   0|   32|          3|
+    |selected_capacity_as_reg_13787             |  31|   0|   32|          1|
+    |start_once_reg                             |   1|   0|    1|          0|
+    |summary_candidate_co_reg_17751             |  32|   0|   32|          0|
+    |summary_cell_rows_reg_13804                |   4|   0|   32|         28|
+    |summary_cell_side_reg_13792                |   6|   0|   32|         26|
+    |summary_tile_height_reg_13828              |   6|   0|   32|         26|
+    |summary_tile_rows_reg_13816                |   5|   0|   32|         27|
+    |tmp_111_reg_19372                          |   1|   0|    1|          0|
+    |tmp_112_i_i_reg_19236                      |  11|   0|   37|         26|
+    |tmp_113_i_i_reg_19252                      |  37|   0|   37|          0|
+    |tmp_114_i_i_reg_19262                      |  11|   0|   38|         27|
+    |tmp_114_reg_17737                          |  64|   0|   64|          0|
+    |tmp_115_i_i_reg_19466                      |  64|   0|   64|          0|
+    |tmp_123_i_i_reg_19392                      |  11|   0|   37|         26|
+    |tmp_124_i_i_reg_19404                      |  37|   0|   37|          0|
+    |tmp_125_i_i_reg_19410                      |  11|   0|   38|         27|
+    |tmp_126_i_i_reg_19452                      |  64|   0|   64|          0|
+    |tmp_294_i_i_i_i_reg_17786                  |   1|   0|    1|          0|
+    |tmp_296_i_i_i_i_reg_19230                  |  64|   0|   64|          0|
+    |tmp_297_i_i_i_i_reg_19241                  |  11|   0|   64|         53|
+    |tmp_298_i_i_i_i_reg_19246                  |  36|   0|   64|         28|
+    |tmp_299_i_i_i_i_reg_19257                  |  37|   0|   64|         27|
+    |tmp_300_i_i_i_i_reg_19267                  |  11|   0|   64|         53|
+    |tmp_301_i_i_i_i_reg_19272                  |   6|   0|   64|         58|
+    |tmp_307_i_i_i_i_reg_19287                  |   1|   0|    1|          0|
+    |tmp_316_i_i_i_i_reg_19300                  |   8|   0|    9|          1|
+    |tmp_321_i_i_i_i_reg_19291                  |   1|   0|    1|          0|
+    |tmp_325_i_i_i_i_reg_19416                  |  64|   0|   64|          0|
+    |tmp_326_i_i_i_i_reg_19422                  |  11|   0|   64|         53|
+    |tmp_327_i_i_i_i_reg_19398                  |  36|   0|   64|         28|
+    |tmp_328_i_i_i_i_reg_19427                  |  37|   0|   64|         27|
+    |tmp_329_i_i_i_i_reg_19432                  |  11|   0|   64|         53|
+    |tmp_330_i_i_i_i_reg_19437                  |   6|   0|   64|         58|
+    |winner_count_i_i_i_i_reg_3509              |  32|   0|   32|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+    |Total                                      |6248|   0| 6931|        683|
+    +-------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|start_full_n             |  in |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|ap_done                  | out |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|ap_continue              |  in |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|start_out                | out |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|start_write              | out |    1| ap_ctrl_hs | (anonymous namespace.26 | return value |
+|m_axi_selected_AWVALID   | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWREADY   |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWADDR    | out |   32|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWID      | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWLEN     | out |   32|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWSIZE    | out |    3|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWBURST   | out |    2|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWLOCK    | out |    2|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWCACHE   | out |    4|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWPROT    | out |    3|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWQOS     | out |    4|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWREGION  | out |    4|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_AWUSER    | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WVALID    | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WREADY    |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WDATA     | out |   64|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WSTRB     | out |    8|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WLAST     | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WID       | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_WUSER     | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARVALID   | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARREADY   |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARADDR    | out |   32|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARID      | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARLEN     | out |   32|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARSIZE    | out |    3|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARBURST   | out |    2|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARLOCK    | out |    2|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARCACHE   | out |    4|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARPROT    | out |    3|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARQOS     | out |    4|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARREGION  | out |    4|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_ARUSER    | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RVALID    |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RREADY    | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RDATA     |  in |   64|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RLAST     |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RID       |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RUSER     |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_RRESP     |  in |    2|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_BVALID    |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_BREADY    | out |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_BRESP     |  in |    2|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_BID       |  in |    1|    m_axi   |         selected        |    pointer   |
+|m_axi_selected_BUSER     |  in |    1|    m_axi   |         selected        |    pointer   |
+|selected_offset_dout     |  in |   29|   ap_fifo  |     selected_offset     |    pointer   |
+|selected_offset_empty_n  |  in |    1|   ap_fifo  |     selected_offset     |    pointer   |
+|selected_offset_read     | out |    1|   ap_fifo  |     selected_offset     |    pointer   |
+|result_offset_dout       |  in |   29|   ap_fifo  |      result_offset      |    pointer   |
+|result_offset_empty_n    |  in |    1|   ap_fifo  |      result_offset      |    pointer   |
+|result_offset_read       | out |    1|   ap_fifo  |      result_offset      |    pointer   |
+|p_budget_c_dout          |  in |    8|   ap_fifo  |        p_budget_c       |    pointer   |
+|p_budget_c_empty_n       |  in |    1|   ap_fifo  |        p_budget_c       |    pointer   |
+|p_budget_c_read          | out |    1|   ap_fifo  |        p_budget_c       |    pointer   |
+|p_tile_cols_c54_dout     |  in |    5|   ap_fifo  |     p_tile_cols_c54     |    pointer   |
+|p_tile_cols_c54_empty_n  |  in |    1|   ap_fifo  |     p_tile_cols_c54     |    pointer   |
+|p_tile_cols_c54_read     | out |    1|   ap_fifo  |     p_tile_cols_c54     |    pointer   |
+|p_tile_rows_c_dout       |  in |    5|   ap_fifo  |      p_tile_rows_c      |    pointer   |
+|p_tile_rows_c_empty_n    |  in |    1|   ap_fifo  |      p_tile_rows_c      |    pointer   |
+|p_tile_rows_c_read       | out |    1|   ap_fifo  |      p_tile_rows_c      |    pointer   |
+|p_tile_width_c_dout      |  in |    6|   ap_fifo  |      p_tile_width_c     |    pointer   |
+|p_tile_width_c_empty_n   |  in |    1|   ap_fifo  |      p_tile_width_c     |    pointer   |
+|p_tile_width_c_read      | out |    1|   ap_fifo  |      p_tile_width_c     |    pointer   |
+|p_tile_height_c_dout     |  in |    6|   ap_fifo  |     p_tile_height_c     |    pointer   |
+|p_tile_height_c_empty_n  |  in |    1|   ap_fifo  |     p_tile_height_c     |    pointer   |
+|p_tile_height_c_read     | out |    1|   ap_fifo  |     p_tile_height_c     |    pointer   |
+|p_cell_side_c_dout       |  in |    6|   ap_fifo  |      p_cell_side_c      |    pointer   |
+|p_cell_side_c_empty_n    |  in |    1|   ap_fifo  |      p_cell_side_c      |    pointer   |
+|p_cell_side_c_read       | out |    1|   ap_fifo  |      p_cell_side_c      |    pointer   |
+|p_cell_cols_c55_dout     |  in |    5|   ap_fifo  |     p_cell_cols_c55     |    pointer   |
+|p_cell_cols_c55_empty_n  |  in |    1|   ap_fifo  |     p_cell_cols_c55     |    pointer   |
+|p_cell_cols_c55_read     | out |    1|   ap_fifo  |     p_cell_cols_c55     |    pointer   |
+|p_cell_rows_c_dout       |  in |    4|   ap_fifo  |      p_cell_rows_c      |    pointer   |
+|p_cell_rows_c_empty_n    |  in |    1|   ap_fifo  |      p_cell_rows_c      |    pointer   |
+|p_cell_rows_c_read       | out |    1|   ap_fifo  |      p_cell_rows_c      |    pointer   |
+|high_c56_dout            |  in |    8|   ap_fifo  |         high_c56        |    pointer   |
+|high_c56_empty_n         |  in |    1|   ap_fifo  |         high_c56        |    pointer   |
+|high_c56_read            | out |    1|   ap_fifo  |         high_c56        |    pointer   |
+|dual_c57_dout            |  in |    1|   ap_fifo  |         dual_c57        |    pointer   |
+|dual_c57_empty_n         |  in |    1|   ap_fifo  |         dual_c57        |    pointer   |
+|dual_c57_read            | out |    1|   ap_fifo  |         dual_c57        |    pointer   |
+|capacity_c_dout          |  in |   31|   ap_fifo  |        capacity_c       |    pointer   |
+|capacity_c_empty_n       |  in |    1|   ap_fifo  |        capacity_c       |    pointer   |
+|capacity_c_read          | out |    1|   ap_fifo  |        capacity_c       |    pointer   |
+|candidates_V_dout        |  in |   64|   ap_fifo  |       candidates_V      |    pointer   |
+|candidates_V_empty_n     |  in |    1|   ap_fifo  |       candidates_V      |    pointer   |
+|candidates_V_read        | out |    1|   ap_fifo  |       candidates_V      |    pointer   |
+|words_0                  | out |   36|   ap_vld   |         words_0         |    pointer   |
+|words_0_ap_vld           | out |    1|   ap_vld   |         words_0         |    pointer   |
+|words_1                  | out |   64|   ap_vld   |         words_1         |    pointer   |
+|words_1_ap_vld           | out |    1|   ap_vld   |         words_1         |    pointer   |
+|words_2                  | out |   37|   ap_vld   |         words_2         |    pointer   |
+|words_2_ap_vld           | out |    1|   ap_vld   |         words_2         |    pointer   |
+|words_3                  | out |   64|   ap_vld   |         words_3         |    pointer   |
+|words_3_ap_vld           | out |    1|   ap_vld   |         words_3         |    pointer   |
+|words_4                  | out |   37|   ap_vld   |         words_4         |    pointer   |
+|words_4_ap_vld           | out |    1|   ap_vld   |         words_4         |    pointer   |
+|words_5                  | out |   38|   ap_vld   |         words_5         |    pointer   |
+|words_5_ap_vld           | out |    1|   ap_vld   |         words_5         |    pointer   |
+|words_6                  | out |   64|   ap_vld   |         words_6         |    pointer   |
+|words_6_ap_vld           | out |    1|   ap_vld   |         words_6         |    pointer   |
+|fast_done_V_din          | out |    8|   ap_fifo  |       fast_done_V       |    pointer   |
+|fast_done_V_full_n       |  in |    1|   ap_fifo  |       fast_done_V       |    pointer   |
+|fast_done_V_write        | out |    1|   ap_fifo  |       fast_done_V       |    pointer   |
++-------------------------+-----+-----+------------+-------------------------+--------------+
+

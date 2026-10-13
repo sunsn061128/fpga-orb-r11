@@ -1,0 +1,34 @@
+attempting to launch hw_server
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+****** Xilinx hw_server v2018.3
+
+  **** Build date : Dec  7 2018-00:40:27
+
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+  1  Digilent JTAG-SMT2 C306ACCBABCD
+     2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z015 (idcode 0373b093 irlen 6 fpga)
+ORB4_READONLY_PROBE_FAILED Memory read error at 0x1000000. Cannot access DDR: the controller is held in reset

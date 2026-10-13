@@ -1,0 +1,51 @@
+{
+  "Name": "r15",
+  "State": "FROZEN_ACCEPTED",
+  "Created": "2026-10-13T07:30:22.842856+08:00",
+  "Path": "C:\\Users\\dmsun\\Desktop\\PLD\\r15",
+  "Release": "C:\\Users\\dmsun\\Desktop\\PLD\\r15\\release",
+  "OriginalRelease": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_071953_4ppc100mhz_2018_3",
+  "SourceJob": "C:\\h\\orb4\\20261013_005322_route_2ae035d0",
+  "Board": "ACZ7015",
+  "Part": "xc7z015clg485-2",
+  "Top": "s_wrapper",
+  "PLMHz": 100,
+  "Toolchain": "Vivado HLS/Vivado/SDK 2018.3",
+  "Input": "normal 960x720; 8 levels; original budgets; 280 features; 100-frame Production",
+  "InputContract": "direct immutable resident DDR; producer handoff before invocation; external capture/transfer excluded",
+  "FPS": 110.57213338979884,
+  "ProcessingMS": 9.032,
+  "WallMS": 9.04387,
+  "Timing": {
+    "part": "xc7z015clg485-2",
+    "frequency_mhz": "100",
+    "wns_ns": "0.201",
+    "whs_ns": "0.035"
+  },
+  "Resources": {
+    "Slice LUTs": 41920.0,
+    "Slice Registers": 37571.0,
+    "Block RAM Tile": 66.0,
+    "DSPs": 62.0,
+    "Slice": 11550.0
+  },
+  "BitSHA256": "F210713476B194887639B38381BFB804561DE3AEF0B568A2B97653ADF54DCAFD",
+  "ELFSHA256": "086B5A0F35203B35C68915895F08B3F62AF523113FA08CEE6BE934DA629EA127",
+  "PhysicalGates": [
+    "normal Verified 100",
+    "normal Production 100",
+    "noise Verified 10",
+    "zero Verified 10"
+  ],
+  "PortableLauncher": "normal Verified 1 physically passed before freezing",
+  "CriticalPathEstimate": {
+    "InitialImageMS": 2.28801,
+    "DescriptorSumMS": 6.5774,
+    "OverlapModelMS": 8.86541,
+    "ResidualMS": 0.1784599999999994,
+    "AllDescriptorStagesLongerThanNextImage": true,
+    "Scope": "Estimate from averaged hardware counters, not a separate CPU-only measurement"
+  },
+  "ManifestSHA256": "E791A44E3693EF922B9A2D21BC72B4715719D750EAC8CDEF6BDECA5BD71878C6",
+  "ManifestFiles": 590
+}

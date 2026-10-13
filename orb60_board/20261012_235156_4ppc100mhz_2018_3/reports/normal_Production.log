@@ -1,0 +1,59 @@
+attempting to launch hw_server
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+****** Xilinx hw_server v2018.3
+
+  **** Build date : Dec  7 2018-00:40:27
+
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+Downloading Program -- C:/h/orb4/20261012_230833_ps_direct_16152a6f/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x00102da7
+	section, .init: 0x00102da8 - 0x00102dbf
+	section, .fini: 0x00102dc0 - 0x00102dd7
+	section, .rodata: 0x00102dd8 - 0x00102dfb
+	section, .data: 0x00102e00 - 0x0010326f
+	section, .eh_frame: 0x00103270 - 0x00103273
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+  0%    0MB   0.0MB/s  ??:?? ETA 99%    0MB   0.1MB/s  ??:?? ETA100%    0MB   0.1MB/s  00:00    
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/h/orb4/20261012_230833_ps_direct_16152a6f/elf/orb60_board.elf
+ORB60_MAILBOX_WORDS=1623195649 100 1623195650 1 4 0 100 2 519 0 9419 943018 0 9409 9429 106168 280 1107800 7547 3927 228643 162811 113841 78647 54924 39214 28506 21051 169765 119344 110000 92322 69922 56906 44510 38721 2287 1696 1191 1098 921 697 567 443 1698 1193 1100 923 699 569 445 388 64 45 44 38 29 24 19 17 0 64 109 153 191 220 244 263 0 0 0 0 0 0 0 0 0 0 1145328177 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORB60_BOARD_RESULT mode=Production completed=100/100 status=4 features=280
+processing_avg_us=9419 min_us=9409 max_us=9429 fps_milli=106168 wall_us=943018 verification_us=0
+level=0 layer_cycles=228643 descriptor_cycles=169765 layer_PS_observed_us=2287 descriptor_PS_observed_us=1698 count=64 offset=0
+level=1 layer_cycles=162811 descriptor_cycles=119344 layer_PS_observed_us=1696 descriptor_PS_observed_us=1193 count=45 offset=64
+level=2 layer_cycles=113841 descriptor_cycles=110000 layer_PS_observed_us=1191 descriptor_PS_observed_us=1100 count=44 offset=109
+level=3 layer_cycles=78647 descriptor_cycles=92322 layer_PS_observed_us=1098 descriptor_PS_observed_us=923 count=38 offset=153
+level=4 layer_cycles=54924 descriptor_cycles=69922 layer_PS_observed_us=921 descriptor_PS_observed_us=699 count=29 offset=191
+level=5 layer_cycles=39214 descriptor_cycles=56906 layer_PS_observed_us=697 descriptor_PS_observed_us=569 count=24 offset=220
+level=6 layer_cycles=28506 descriptor_cycles=44510 layer_PS_observed_us=567 descriptor_PS_observed_us=445 count=19 offset=244
+level=7 layer_cycles=21051 descriptor_cycles=38721 layer_PS_observed_us=443 descriptor_PS_observed_us=388 count=17 offset=263
+ORB60_BOARD_COMPLETED COMPLETE_UNVERIFIED

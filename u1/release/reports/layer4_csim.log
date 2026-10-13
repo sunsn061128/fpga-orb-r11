@@ -1,0 +1,27 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../inputs/FPGA_ORB_HLS/fastv2/next/hls/tb_layer4_stream.cpp in release mode
+   Compiling ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/layer4_hls.cpp in release mode
+   Generating csim.exe
+LAYER4_CASE_PASS case=0 level=7 cycles=1
+LAYER4_CASE_PASS case=1 level=7 cycles=1
+LAYER4_CASE_PASS case=2 level=7 cycles=1
+LAYER4_CASE_PASS case=3 level=7 cycles=1
+LAYER4_CASE_PASS case=4 level=5 cycles=1
+LAYER4_CASE_PASS case=5 level=7 cycles=1
+LAYER4_CASE_PASS case=6 level=0 cycles=1
+LAYER4_CASE_PASS case=7 level=7 cycles=0
+LAYER4_CASE_PASS case=8 level=7 cycles=1
+LAYER4_CASE_PASS case=9 level=7 cycles=1
+LAYER4_CASE_PASS case=10 level=7 cycles=1
+LAYER4_CASE_PASS case=11 level=1 cycles=1
+LAYER4_CASE_PASS case=12 level=2 cycles=1
+LAYER4_CASE_PASS case=13 level=3 cycles=1
+LAYER4_CASE_PASS case=14 level=4 cycles=1
+LAYER4_CASE_PASS case=15 level=6 cycles=1
+LAYER4_CASE_PASS case=16 level=0 cycles=1
+LAYER4_CASE_PASS case=17 level=0 cycles=1
+LAYER4_CASE_PASS case=18 level=2 cycles=1
+LAYER4_STREAM_PASS cases=21
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

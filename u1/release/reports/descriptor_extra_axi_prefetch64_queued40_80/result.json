@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "kernel": "descriptor",
+  "transactions": 1,
+  "direct_completion_barrier": true,
+  "reset_interruption": true,
+  "cases": [
+    {
+      "case": 0,
+      "cycles_ps_upper_bound": 64476,
+      "poll_wait_cycles": 63800,
+      "stats": [
+        6291458,
+        0,
+        0,
+        64,
+        64,
+        0,
+        77128,
+        103304,
+        1024,
+        4096,
+        63767,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "axi": [
+        {
+          "read_bytes": 77128,
+          "write_bytes": 0,
+          "ar": 1997,
+          "aw": 0,
+          "r": 9641,
+          "w": 0,
+          "b": 0,
+          "stalls": 757,
+          "boundary_bursts": 33,
+          "narrow_bursts": 0
+        },
+        {
+          "read_bytes": 103304,
+          "write_bytes": 0,
+          "ar": 2386,
+          "aw": 0,
+          "r": 12913,
+          "w": 0,
+          "b": 0,
+          "stalls": 807,
+          "boundary_bursts": 36,
+          "narrow_bursts": 0
+        },
+        {
+          "read_bytes": 1024,
+          "write_bytes": 0,
+          "ar": 9,
+          "aw": 0,
+          "r": 128,
+          "w": 0,
+          "b": 0,
+          "stalls": 7,
+          "boundary_bursts": 1,
+          "narrow_bursts": 0
+        },
+        {
+          "read_bytes": 0,
+          "write_bytes": 4160,
+          "ar": 0,
+          "aw": 66,
+          "r": 0,
+          "w": 520,
+          "b": 66,
+          "stalls": 243,
+          "boundary_bursts": 2,
+          "narrow_bursts": 0
+        }
+      ],
+      "peak_pending_reads": [
+        8,
+        8,
+        2,
+        0
+      ]
+    }
+  ],
+  "counts": [
+    {
+      "read_bytes": 78248,
+      "write_bytes": 0,
+      "ar": 2028,
+      "aw": 0,
+      "r": 9781,
+      "w": 0,
+      "b": 0,
+      "stalls": 767,
+      "boundary_bursts": 33,
+      "narrow_bursts": 0
+    },
+    {
+      "read_bytes": 104696,
+      "write_bytes": 0,
+      "ar": 2423,
+      "aw": 0,
+      "r": 13087,
+      "w": 0,
+      "b": 0,
+      "stalls": 821,
+      "boundary_bursts": 36,
+      "narrow_bursts": 0
+    },
+    {
+      "read_bytes": 1288,
+      "write_bytes": 0,
+      "ar": 12,
+      "aw": 0,
+      "r": 161,
+      "w": 0,
+      "b": 0,
+      "stalls": 10,
+      "boundary_bursts": 2,
+      "narrow_bursts": 0
+    },
+    {
+      "read_bytes": 0,
+      "write_bytes": 4160,
+      "ar": 0,
+      "aw": 66,
+      "r": 0,
+      "w": 520,
+      "b": 66,
+      "stalls": 243,
+      "boundary_bursts": 2,
+      "narrow_bursts": 0
+    }
+  ]
+}

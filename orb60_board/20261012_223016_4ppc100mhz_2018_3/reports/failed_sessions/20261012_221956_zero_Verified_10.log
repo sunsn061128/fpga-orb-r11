@@ -1,0 +1,55 @@
+attempting to launch hw_server
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+****** Xilinx hw_server v2018.3
+
+  **** Build date : Dec  7 2018-00:40:27
+
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+  1  Digilent JTAG-SMT2 C306ACCBABCD
+     2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z015 (idcode 0373b093 irlen 6 fpga)
+initializing  0%    0MB   0.0MB/s  ??:?? ETA  9%    0MB   0.5MB/s  ??:?? ETA 11%    0MB   0.3MB/s  ??:?? ETA 13%    0MB   0.3MB/s  ??:?? ETA 14%    0MB   0.2MB/s  ??:?? ETA 16%    0MB   0.2MB/s  ??:?? ETA 18%    0MB   0.2MB/s  00:15 ETA 20%    0MB   0.2MB/s  00:15 ETA 22%    0MB   0.2MB/s  00:15 ETA 24%    0MB   0.2MB/s  00:16 ETA 26%    0MB   0.2MB/s  00:16 ETA 28%    0MB   0.1MB/s  00:16 ETA 29%    1MB   0.1MB/s  00:16 ETA 31%    1MB   0.1MB/s  00:16 ETA 33%    1MB   0.1MB/s  00:15 ETA 35%    1MB   0.1MB/s  00:15 ETA 37%    1MB   0.1MB/s  00:15 ETA 39%    1MB   0.1MB/s  00:15 ETA 41%    1MB   0.1MB/s  00:14 ETA 42%    1MB   0.1MB/s  00:14 ETA 44%    1MB   0.1MB/s  00:14 ETA 46%    1MB   0.1MB/s  00:13 ETA 48%    1MB   0.1MB/s  00:13 ETA 50%    1MB   0.1MB/s  00:13 ETA 52%    1MB   0.1MB/s  00:12 ETA 54%    1MB   0.1MB/s  00:12 ETA 56%    1MB   0.1MB/s  00:11 ETA 57%    1MB   0.1MB/s  00:11 ETA 59%    2MB   0.1MB/s  00:10 ETA 61%    2MB   0.1MB/s  00:10 ETA 63%    2MB   0.1MB/s  00:09 ETA 65%    2MB   0.1MB/s  00:09 ETA 67%    2MB   0.1MB/s  00:08 ETA 69%    2MB   0.1MB/s  00:08 ETA 70%    2MB   0.1MB/s  00:07 ETA 72%    2MB   0.1MB/s  00:07 ETA 74%    2MB   0.1MB/s  00:07 ETA 76%    2MB   0.1MB/s  00:06 ETA 78%    2MB   0.1MB/s  00:06 ETA 80%    2MB   0.1MB/s  00:05 ETA 82%    2MB   0.1MB/s  00:04 ETA 84%    2MB   0.1MB/s  00:04 ETA 85%    2MB   0.1MB/s  00:03 ETA 87%    2MB   0.1MB/s  00:03 ETA 89%    3MB   0.1MB/s  00:02 ETA 91%    3MB   0.1MB/s  00:02 ETA 93%    3MB   0.1MB/s  00:01 ETA 95%    3MB   0.1MB/s  00:01 ETA 97%    3MB   0.1MB/s  00:00 ETA 98%    3MB   0.1MB/s  00:00 ETA100%    3MB   0.1MB/s  00:28    
+ARM_MMIO image=0x43c00000 descriptor=0x43c10000 no_legacy_PL_driver=1
+Downloading Program -- C:/h/orb4/20261012_214837_route_1eda9d67/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x0010333b
+	section, .init: 0x0010333c - 0x00103353
+	section, .fini: 0x00103354 - 0x0010336b
+	section, .rodata: 0x0010336c - 0x0010338f
+	section, .data: 0x00103390 - 0x001037ff
+	section, .eh_frame: 0x00103800 - 0x00103803
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+  0%    0MB   0.0MB/s  ??:?? ETA 99%    0MB   0.1MB/s  ??:?? ETA100%    0MB   0.1MB/s  00:00    
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/h/orb4/20261012_214837_route_1eda9d67/elf/orb60_board.elf
+  0%    0MB   0.0MB/s  ??:?? ETA  0%    0MB   0.1MB/s  ??:?? ETA  1%    0MB   0.1MB/s  ??:?? ETA  2%    0MB   0.1MB/s  ??:?? ETA  2%    0MB   0.1MB/s  ??:?? ETA  3%    0MB   0.1MB/s  01:19 ETA  4%    0MB   0.1MB/s  01:19 ETA  5%    0MB   0.1MB/s  01:18 ETA  5%    0MB   0.1MB/s  01:19 ETA  6%    0MB   0.1MB/s  01:18 ETA  7%    0MB   0.1MB/s  01:17 ETA  8%    0MB   0.1MB/s  01:16 ETA  8%    0MB   0.1MB/s  01:15 ETA  9%    0MB   0.1MB/s  01:13 ETA 10%    0MB   0.1MB/s  01:12 ETA 10%    0MB   0.1MB/s  01:11 ETA 11%    0MB   0.1MB/s  01:10 ETA 12%    0MB   0.1MB/s  01:09 ETA 13%    0MB   0.1MB/s  01:08 ETA 13%    0MB   0.1MB/s  01:07 ETA 14%    0MB   0.1MB/s  01:07 ETA 15%    0MB   0.1MB/s  01:06 ETA 16%    0MB   0.1MB/s  01:06 ETA 16%    0MB   0.1MB/s  01:06 ETAaborting, 15 pending requests... aborting, 14 pending requests... aborting, 13 pending requests... aborting, 12 pending requests... aborting, 11 pending requests... aborting, 10 pending requests... aborting, 9 pending requests... aborting, 8 pending requests... aborting, 7 pending requests... aborting, 6 pending requests... aborting, 5 pending requests... aborting, 4 pending requests... aborting, 3 pending requests... aborting, 2 pending requests... aborting, 1 pending requests... 
+Failed to download C:/h/orb4/20261012_214837_route_1eda9d67/zero/golden.bin
+ORB60_BOARD_ERROR: Memory write error at 0x60B8000. Invalid DAP IDCODE. Invalid DAP ACK value: 6

@@ -1,3 +1,27 @@
+# FPGA ORB：所有版本与优化效果
+
+当前基线 **u1：ACZ7015 / xc7z015clg485-2 / s_wrapper / 125 MHz，实测158.2902 FPS（6.31751 ms/帧）**，较r17提升10.48%。
+
+本分支归档全部已发布路线及关键试验，包含原始源码、冻结编译输入、配对bit/ELF、时序/资源报告和实际验收日志。先阅读[所有版本与效果对照](docs/ALL_VERSIONS_RESULTS_ZH.md)，机器数据见[VERSION_RESULTS.json](docs/VERSION_RESULTS.json)。
+
+| 路径 | 内容 |
+|---|---|
+| [u1/](u1/README_ZH.md) | 当前完整冻结基线，125MHz / 158.29FPS |
+| [r17/](r17/README_ZH.md)、[r16/](r16/README_ZH.md)、[r15/](r15/README_ZH.md) | 历史完整冻结基线，143.27 / 120.44 / 110.57FPS |
+| [orb60_4ppc/](orb60_4ppc/README.md) | 当前2018.3作者工作区、生成器、PS、测试和优化过程证据 |
+| [orb60_board/](orb60_board/) | 历次接受发布包；2PPC、初始4PPC、PS直接DDR及两个工具链路线的实际板测 |
+| [archive/2024_2/](archive/2024_2/README.md) | 原2024.2的2PPC/4PPC、100/125MHz源码、冻结输入、bit和报告 |
+| [experiments/read8_125mhz/](experiments/read8_125mhz/) | 读窗口扩大但无有效性能提升的候选及实际捕获 |
+| 原FPGA_ORB_HLS/、frozen/R11_DEFAULT/ | R11历史源码与默认ELF冻结输入，保持原发布内容 |
+
+性能主口径是固定960×720、八层、原预算、normal280特征、不可变常驻DDR的完整PS循环，含准备/缓存/配置/调度，排除外部采集/传输和JTAG。实际板测、RTL内存模型结果和R11历史处理速率在对照文档中分别注明。Production保持COMPLETE_UNVERIFIED；精确结论来自对应Verified验收。
+
+只读完整性校验：`pwsh -NoProfile -File tools/verify_versions.ps1`。此次整理未重新运行综合或板测；封存文件均保留原字节和许可证。历史绝对工具路径需要按主机配置，完整迁移重建未验证。
+
+---
+
+以下保留原R11发布说明。
+
 # FPGA ORB R11：源码与配对固件
 
 此仓库采用直接公开源码的方式，不再上传完整交接 ZIP。

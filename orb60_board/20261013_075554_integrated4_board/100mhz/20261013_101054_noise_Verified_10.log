@@ -1,0 +1,226 @@
+  1  Digilent JTAG-SMT2 C306ACCBABCD
+     2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z015 (idcode 0373b093 irlen 6 fpga)
+ORB60_CLOCK_PROOF frequency=100 fclk_register=0x00300600 iopll_register=0x00036000
+
+initializing
+  0%    0MB   0.0MB/s  ??:?? ETA
+  9%    0MB   0.6MB/s  ??:?? ETA
+ 11%    0MB   0.3MB/s  ??:?? ETA
+ 13%    0MB   0.3MB/s  ??:?? ETA
+ 14%    0MB   0.2MB/s  ??:?? ETA
+ 16%    0MB   0.2MB/s  ??:?? ETA
+ 18%    0MB   0.2MB/s  00:14 ETA
+ 20%    0MB   0.2MB/s  00:15 ETA
+ 22%    0MB   0.2MB/s  00:15 ETA
+ 24%    0MB   0.2MB/s  00:15 ETA
+ 26%    0MB   0.2MB/s  00:16 ETA
+ 28%    0MB   0.2MB/s  00:16 ETA
+ 29%    1MB   0.1MB/s  00:15 ETA
+ 31%    1MB   0.1MB/s  00:15 ETA
+ 33%    1MB   0.1MB/s  00:15 ETA
+ 35%    1MB   0.1MB/s  00:15 ETA
+ 37%    1MB   0.1MB/s  00:15 ETA
+ 39%    1MB   0.1MB/s  00:14 ETA
+ 41%    1MB   0.1MB/s  00:14 ETA
+ 42%    1MB   0.1MB/s  00:14 ETA
+ 44%    1MB   0.1MB/s  00:13 ETA
+ 46%    1MB   0.1MB/s  00:13 ETA
+ 48%    1MB   0.1MB/s  00:13 ETA
+ 50%    1MB   0.1MB/s  00:12 ETA
+ 52%    1MB   0.1MB/s  00:12 ETA
+ 54%    1MB   0.1MB/s  00:12 ETA
+ 56%    1MB   0.1MB/s  00:11 ETA
+ 57%    1MB   0.1MB/s  00:11 ETA
+ 59%    2MB   0.1MB/s  00:10 ETA
+ 61%    2MB   0.1MB/s  00:10 ETA
+ 63%    2MB   0.1MB/s  00:09 ETA
+ 65%    2MB   0.1MB/s  00:09 ETA
+ 67%    2MB   0.1MB/s  00:08 ETA
+ 69%    2MB   0.1MB/s  00:08 ETA
+ 70%    2MB   0.1MB/s  00:07 ETA
+ 72%    2MB   0.1MB/s  00:07 ETA
+ 74%    2MB   0.1MB/s  00:06 ETA
+ 76%    2MB   0.1MB/s  00:06 ETA
+ 78%    2MB   0.1MB/s  00:05 ETA
+ 80%    2MB   0.1MB/s  00:05 ETA
+ 82%    2MB   0.1MB/s  00:04 ETA
+ 84%    2MB   0.1MB/s  00:04 ETA
+ 85%    2MB   0.1MB/s  00:03 ETA
+ 87%    2MB   0.1MB/s  00:03 ETA
+ 89%    3MB   0.1MB/s  00:02 ETA
+ 91%    3MB   0.1MB/s  00:02 ETA
+ 93%    3MB   0.1MB/s  00:01 ETA
+ 95%    3MB   0.1MB/s  00:01 ETA
+ 97%    3MB   0.1MB/s  00:00 ETA
+ 98%    3MB   0.1MB/s  00:00 ETA
+100%    3MB   0.1MB/s  00:28    
+ARM_MMIO image=0x43c00000 descriptor=0x43c10000 no_legacy_PL_driver=1
+
+Downloading Program -- C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x00102e67
+	section, .init: 0x00102e68 - 0x00102e7f
+	section, .fini: 0x00102e80 - 0x00102e97
+	section, .rodata: 0x00102e98 - 0x00102ebb
+	section, .data: 0x00102ec0 - 0x0010332f
+	section, .eh_frame: 0x00103330 - 0x00103333
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+
+  0%    0MB   0.0MB/s  ??:?? ETA
+ 99%    0MB   0.1MB/s  ??:?? ETA
+100%    0MB   0.1MB/s  00:00    
+
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/elf/orb60_board.elf
+
+  0%    0MB   0.0MB/s  ??:?? ETA
+  0%    0MB   0.1MB/s  ??:?? ETA
+  1%    0MB   0.1MB/s  ??:?? ETA
+  2%    0MB   0.1MB/s  ??:?? ETA
+  2%    0MB   0.1MB/s  ??:?? ETA
+  3%    0MB   0.1MB/s  ??:?? ETA
+  4%    0MB   0.1MB/s  01:05 ETA
+  5%    0MB   0.1MB/s  01:04 ETA
+  6%    0MB   0.1MB/s  01:03 ETA
+  8%    0MB   0.1MB/s  01:02 ETA
+  9%    0MB   0.1MB/s  01:02 ETA
+ 10%    0MB   0.1MB/s  01:01 ETA
+ 11%    0MB   0.1MB/s  01:00 ETA
+ 12%    0MB   0.1MB/s  00:59 ETA
+ 13%    0MB   0.1MB/s  00:59 ETA
+ 14%    0MB   0.1MB/s  00:58 ETA
+ 15%    0MB   0.1MB/s  00:58 ETA
+ 15%    0MB   0.1MB/s  00:57 ETA
+ 16%    0MB   0.1MB/s  00:57 ETA
+ 17%    0MB   0.1MB/s  00:56 ETA
+ 17%    0MB   0.1MB/s  00:56 ETA
+ 18%    0MB   0.1MB/s  00:55 ETA
+ 19%    0MB   0.1MB/s  00:55 ETA
+ 20%    0MB   0.1MB/s  00:54 ETA
+ 20%    0MB   0.1MB/s  00:54 ETA
+ 21%    0MB   0.1MB/s  00:53 ETA
+ 22%    0MB   0.1MB/s  00:53 ETA
+ 23%    0MB   0.1MB/s  00:52 ETA
+ 23%    1MB   0.1MB/s  00:52 ETA
+ 24%    1MB   0.1MB/s  00:51 ETA
+ 25%    1MB   0.1MB/s  00:51 ETA
+ 25%    1MB   0.1MB/s  00:51 ETA
+ 26%    1MB   0.1MB/s  00:50 ETA
+ 27%    1MB   0.1MB/s  00:49 ETA
+ 28%    1MB   0.1MB/s  00:49 ETA
+ 28%    1MB   0.1MB/s  00:48 ETA
+ 29%    1MB   0.1MB/s  00:48 ETA
+ 30%    1MB   0.1MB/s  00:48 ETA
+ 31%    1MB   0.1MB/s  00:47 ETA
+ 31%    1MB   0.1MB/s  00:47 ETA
+ 32%    1MB   0.1MB/s  00:46 ETA
+ 33%    1MB   0.1MB/s  00:46 ETA
+ 34%    1MB   0.1MB/s  00:45 ETA
+ 34%    1MB   0.1MB/s  00:45 ETA
+ 35%    1MB   0.1MB/s  00:44 ETA
+ 36%    1MB   0.1MB/s  00:43 ETA
+ 36%    1MB   0.1MB/s  00:43 ETA
+ 37%    1MB   0.1MB/s  00:42 ETA
+ 38%    1MB   0.1MB/s  00:42 ETA
+ 39%    1MB   0.1MB/s  00:41 ETA
+ 39%    1MB   0.1MB/s  00:41 ETA
+ 40%    1MB   0.1MB/s  00:41 ETA
+ 41%    1MB   0.1MB/s  00:40 ETA
+ 42%    1MB   0.1MB/s  00:40 ETA
+ 42%    1MB   0.1MB/s  00:39 ETA
+ 43%    1MB   0.1MB/s  00:38 ETA
+ 44%    1MB   0.1MB/s  00:38 ETA
+ 45%    1MB   0.1MB/s  00:37 ETA
+ 46%    1MB   0.1MB/s  00:36 ETA
+ 47%    2MB   0.1MB/s  00:36 ETA
+ 47%    2MB   0.1MB/s  00:35 ETA
+ 48%    2MB   0.1MB/s  00:35 ETA
+ 49%    2MB   0.1MB/s  00:34 ETA
+ 50%    2MB   0.1MB/s  00:34 ETA
+ 50%    2MB   0.1MB/s  00:33 ETA
+ 51%    2MB   0.1MB/s  00:33 ETA
+ 52%    2MB   0.1MB/s  00:32 ETA
+ 53%    2MB   0.1MB/s  00:32 ETA
+ 53%    2MB   0.1MB/s  00:31 ETA
+ 54%    2MB   0.1MB/s  00:31 ETA
+ 55%    2MB   0.1MB/s  00:30 ETA
+ 55%    2MB   0.1MB/s  00:30 ETA
+ 56%    2MB   0.1MB/s  00:29 ETA
+ 57%    2MB   0.1MB/s  00:29 ETA
+ 58%    2MB   0.1MB/s  00:28 ETA
+ 59%    2MB   0.1MB/s  00:28 ETA
+ 60%    2MB   0.1MB/s  00:27 ETA
+ 61%    2MB   0.1MB/s  00:26 ETA
+ 62%    2MB   0.1MB/s  00:26 ETA
+ 62%    2MB   0.1MB/s  00:25 ETA
+ 64%    2MB   0.1MB/s  00:24 ETA
+ 64%    2MB   0.1MB/s  00:24 ETA
+ 65%    2MB   0.1MB/s  00:23 ETA
+ 66%    2MB   0.1MB/s  00:23 ETA
+ 66%    2MB   0.1MB/s  00:22 ETA
+ 67%    2MB   0.1MB/s  00:22 ETA
+ 68%    2MB   0.1MB/s  00:21 ETA
+ 69%    2MB   0.1MB/s  00:21 ETA
+ 69%    2MB   0.1MB/s  00:20 ETA
+ 70%    3MB   0.1MB/s  00:20 ETA
+ 71%    3MB   0.1MB/s  00:19 ETA
+ 72%    3MB   0.1MB/s  00:19 ETA
+ 72%    3MB   0.1MB/s  00:18 ETA
+ 73%    3MB   0.1MB/s  00:18 ETA
+ 74%    3MB   0.1MB/s  00:17 ETA
+ 75%    3MB   0.1MB/s  00:17 ETA
+ 76%    3MB   0.1MB/s  00:16 ETA
+ 76%    3MB   0.1MB/s  00:15 ETA
+ 77%    3MB   0.1MB/s  00:15 ETA
+ 78%    3MB   0.1MB/s  00:14 ETA
+ 79%    3MB   0.1MB/s  00:14 ETA
+ 79%    3MB   0.1MB/s  00:13 ETA
+ 80%    3MB   0.1MB/s  00:13 ETA
+ 81%    3MB   0.1MB/s  00:12 ETA
+ 81%    3MB   0.1MB/s  00:12 ETA
+ 82%    3MB   0.1MB/s  00:11 ETA
+ 83%    3MB   0.1MB/s  00:11 ETA
+ 84%    3MB   0.1MB/s  00:10 ETA
+ 84%    3MB   0.1MB/s  00:10 ETA
+ 85%    3MB   0.1MB/s  00:09 ETA
+ 86%    3MB   0.1MB/s  00:09 ETA
+ 87%    3MB   0.1MB/s  00:08 ETA
+ 87%    3MB   0.1MB/s  00:08 ETA
+ 88%    3MB   0.1MB/s  00:07 ETA
+ 89%    3MB   0.1MB/s  00:07 ETA
+ 90%    3MB   0.1MB/s  00:06 ETA
+ 91%    3MB   0.1MB/s  00:06 ETA
+ 91%    3MB   0.1MB/s  00:05 ETA
+ 92%    3MB   0.1MB/s  00:05 ETA
+ 93%    3MB   0.1MB/s  00:04 ETA
+ 94%    4MB   0.1MB/s  00:04 ETA
+ 94%    4MB   0.1MB/s  00:03 ETA
+ 95%    4MB   0.1MB/s  00:03 ETA
+ 96%    4MB   0.1MB/s  00:02 ETA
+ 96%    4MB   0.1MB/s  00:02 ETA
+ 97%    4MB   0.1MB/s  00:01 ETA
+ 98%    4MB   0.1MB/s  00:01 ETA
+ 99%    4MB   0.1MB/s  00:00 ETA
+ 99%    4MB   0.1MB/s  00:00 ETA
+100%    4MB   0.1MB/s  01:09    
+Successfully downloaded C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/noise/golden.bin
+ORB60_MAILBOX_WORDS=1623195649 10 1623195650 1 2 0 10 1 519 0 73075 2997327 1608685 72672 73354 13684 942 1887620 359343 448 234031 171164 126265 93751 73476 55908 40514 31082 127117 102944 87441 73225 65716 54560 44061 34127 2342 1713 1264 939 736 655 543 439 1272 1030 875 733 657 546 441 342 204 165 140 117 105 87 70 54 0 204 369 509 626 731 818 888 0 0 0 0 0 0 0 0 0 0 1145328177 0 6291459 0 7 268 201 53872 53872 0 13467 13467 0 31083 4 0 0 0 6291458 0 7 54 54 888 63488 87888 864 3456 34127 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORB60_BOARD_RESULT mode=Verified frame=noise status=2 error=0 completed=10/10 stage=519 detail=0
+processing_avg_us=73075 min_us=72672 max_us=73354 fps_milli=13684 wall_us=2997327 verify_us=1608685 features=942 candidates_total=1887620
+cache_total_us=359343 config_total_us=448 INPUT_COPY_EXCLUDED=1 PL_INTERNAL_CYCLES_EXCLUDE_STATS_WRITE=1
+input_contract=direct_immutable_ddr external_capture_transfer_excluded=1
+level=0 layer_cycles=234031 descriptor_cycles=127117 layer_PS_observed_us=2342 descriptor_PS_observed_us=1272 count=204 offset=0
+level=1 layer_cycles=171164 descriptor_cycles=102944 layer_PS_observed_us=1713 descriptor_PS_observed_us=1030 count=165 offset=204
+level=2 layer_cycles=126265 descriptor_cycles=87441 layer_PS_observed_us=1264 descriptor_PS_observed_us=875 count=140 offset=369
+level=3 layer_cycles=93751 descriptor_cycles=73225 layer_PS_observed_us=939 descriptor_PS_observed_us=733 count=117 offset=509
+level=4 layer_cycles=73476 descriptor_cycles=65716 layer_PS_observed_us=736 descriptor_PS_observed_us=657 count=105 offset=626
+level=5 layer_cycles=55908 descriptor_cycles=54560 layer_PS_observed_us=655 descriptor_PS_observed_us=546 count=87 offset=731
+level=6 layer_cycles=40514 descriptor_cycles=44061 layer_PS_observed_us=543 descriptor_PS_observed_us=441 count=70 offset=818
+level=7 layer_cycles=31082 descriptor_cycles=34127 layer_PS_observed_us=439 descriptor_PS_observed_us=342 count=54 offset=888
+ORB60_BOARD_COMPLETED CPU_EXACT_PASS

@@ -1,0 +1,352 @@
+Start testing: Oct 10 13:29 中国标准时间
+----------------------------------------------------------
+1/13 Testing: next_backend_angle_exact
+1/13 Test: next_backend_angle_exact
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_backend_angle_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_backend_angle_exact" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_BACKEND_ANGLE_PASS cases=117266 random=100000
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"next_backend_angle_exact" end time: Oct 10 13:29 中国标准时间
+"next_backend_angle_exact" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/13 Testing: next_front_storage_contract
+2/13 Test: next_front_storage_contract
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_front_contract_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_front_storage_contract" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+FRONT_CONTRACT_CASE level=7 high=40 low=40 dual=0 status=0 candidates=3104 selected=54 fallback=0
+FRONT_CONTRACT_CASE level=7 high=255 low=40 dual=1 status=0 candidates=3104 selected=54 fallback=54
+FRONT_CONTRACT_CASE level=7 high=120 low=120 dual=0 status=0 candidates=100 selected=41 fallback=0
+FRONT_CONTRACT_CASE level=6 high=40 low=40 dual=0 status=0 candidates=4674 selected=70 fallback=0
+FRONT_CONTRACT_CASE level=6 high=255 low=40 dual=1 status=0 candidates=4674 selected=70 fallback=70
+FRONT_CONTRACT_CASE level=6 high=120 low=120 dual=0 status=0 candidates=166 selected=61 fallback=0
+FRONT_CONTRACT_CASE level=5 high=40 low=40 dual=0 status=0 candidates=7118 selected=87 fallback=0
+FRONT_CONTRACT_CASE level=5 high=255 low=40 dual=1 status=0 candidates=7118 selected=87 fallback=88
+FRONT_CONTRACT_CASE level=5 high=120 low=120 dual=0 status=0 candidates=229 selected=82 fallback=0
+FRONT_CONTRACT_CASE level=4 high=40 low=40 dual=0 status=0 candidates=10645 selected=105 fallback=0
+FRONT_CONTRACT_CASE level=4 high=255 low=40 dual=1 status=0 candidates=10645 selected=105 fallback=108
+FRONT_CONTRACT_CASE level=4 high=120 low=120 dual=0 status=0 candidates=370 selected=104 fallback=0
+FRONT_CONTRACT_CASE level=3 high=40 low=40 dual=0 status=0 candidates=16073 selected=117 fallback=0
+FRONT_CONTRACT_CASE level=3 high=255 low=40 dual=1 status=0 candidates=16073 selected=117 fallback=117
+FRONT_CONTRACT_CASE level=3 high=120 low=120 dual=0 status=0 candidates=577 selected=116 fallback=0
+FRONT_CONTRACT_CASE level=2 high=40 low=40 dual=0 status=0 candidates=23559 selected=140 fallback=0
+FRONT_CONTRACT_CASE level=2 high=255 low=40 dual=1 status=0 candidates=23559 selected=140 fallback=140
+FRONT_CONTRACT_CASE level=2 high=120 low=120 dual=0 status=0 candidates=839 selected=139 fallback=0
+FRONT_CONTRACT_CASE level=1 high=40 low=40 dual=0 status=0 candidates=35104 selected=165 fallback=0
+FRONT_CONTRACT_CASE level=1 high=255 low=40 dual=1 status=0 candidates=35104 selected=165 fallback=165
+FRONT_CONTRACT_CASE level=1 high=120 low=120 dual=0 status=0 candidates=1245 selected=165 fallback=0
+FRONT_CONTRACT_CASE level=0 high=40 low=40 dual=0 status=0 candidates=51433 selected=204 fallback=0
+FRONT_CONTRACT_CASE level=0 high=255 low=40 dual=1 status=0 candidates=51433 selected=204 fallback=204
+FRONT_CONTRACT_CASE level=0 high=120 low=120 dual=0 status=0 candidates=1815 selected=204 fallback=0
+FRONT_CONTRACT_CASE level=0 high=1 low=1 dual=1 status=0 candidates=70398 selected=204 fallback=0
+FRONT_CONTRACT_CASE level=7 high=40 low=40 dual=0 status=4 candidates=3104 selected=54 fallback=0
+FRONT_CONTRACT_CASE level=7 high=255 low=255 dual=1 status=0 candidates=0 selected=0 fallback=0
+NEXT_FRONT_CONTRACT_PASS score_cases=10192 baseline_nonoverflow_bytes=PASS CPU=PASS truncated=4 fallback=946 dense_over8192=PASS faults=PASS guards=PASS
+<end of output>
+Test time =   2.57 sec
+----------------------------------------------------------
+Test Passed.
+"next_front_storage_contract" end time: Oct 10 13:29 中国标准时间
+"next_front_storage_contract" time elapsed: 00:00:02
+----------------------------------------------------------
+
+3/13 Testing: next_front_stream_vectors
+3/13 Test: next_front_stream_vectors
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_front_stream_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_front_stream_vectors" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_FRONT_RTL_CASE_PASS case=0 level=7 candidates=2934 status=0
+NEXT_FRONT_RTL_CASE_PASS case=1 level=7 candidates=0 status=0
+NEXT_FRONT_RTL_CASE_PASS case=2 level=7 candidates=3104 status=0
+NEXT_FRONT_RTL_CASE_PASS case=3 level=7 candidates=3104 status=0
+NEXT_FRONT_RTL_CASE_PASS case=4 level=5 candidates=7118 status=0
+NEXT_FRONT_RTL_CASE_PASS case=5 level=7 candidates=3104 status=4
+NEXT_FRONT_RTL_CASE_PASS case=6 level=0 candidates=70398 status=0
+NEXT_FRONT_RTL_CASE_PASS case=7 level=7 candidates=0 status=1
+NEXT_FRONT_RTL_CASE_PASS case=8 level=7 candidates=2888 status=0
+NEXT_FRONT_RTL_CASE_PASS case=9 level=7 candidates=3104 status=4
+NEXT_FRONT_RTL_CASE_PASS case=10 level=7 candidates=3104 status=0
+NEXT_FRONT_STREAM_PASS cases=11
+<end of output>
+Test time =   0.37 sec
+----------------------------------------------------------
+Test Passed.
+"next_front_stream_vectors" end time: Oct 10 13:29 中国标准时间
+"next_front_stream_vectors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/13 Testing: next_front_synthetic
+4/13 Test: next_front_synthetic
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_front_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_front_synthetic" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+FASTV2_CASE_PASS size=268x201 budget=60 dual=0 candidates=2888 selected=54 cell=25,9,6 empty=0 fallback=0 digest=2fc38f125e80fe9a
+FASTV2_CASE_PASS size=268x201 budget=60 dual=1 candidates=2934 selected=54 cell=25,9,6 empty=0 fallback=0 digest=2fc38f125e80fe9a
+FASTV2_PASS
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"next_front_synthetic" end time: Oct 10 13:29 中国标准时间
+"next_front_synthetic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/13 Testing: next_front_fullframe
+5/13 Test: next_front_fullframe
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_front_test.exe" "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/../../../FPGA_ORB_SHARED_v1.0/vectors/flight_20261004T184929_998838_6bb93c56_f0000/input.pgm"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_front_fullframe" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+FASTV2_CASE_PASS size=960x720 budget=217 dual=1 candidates=3873 selected=64 cell=54,17,12 empty=140 fallback=19 digest=47886d9d8c61b593
+FASTV2_CASE_PASS size=800x600 budget=181 dual=1 candidates=2595 selected=45 cell=49,15,11 empty=120 fallback=3 digest=5a537e4cbcbf9248
+FASTV2_CASE_PASS size=667x500 budget=151 dual=1 candidates=1765 selected=44 cell=44,14,10 empty=96 fallback=9 digest=e4c4a9d04e871c01
+FASTV2_CASE_PASS size=556x417 budget=126 dual=1 candidates=1128 selected=38 cell=40,13,9 empty=79 fallback=9 digest=7ba9b323d3a5041b
+FASTV2_CASE_PASS size=463x347 budget=105 dual=1 candidates=776 selected=29 cell=35,12,9 empty=79 fallback=11 digest=4854c9289fd0c9d9
+FASTV2_CASE_PASS size=386x289 budget=87 dual=1 candidates=492 selected=24 cell=32,11,8 empty=64 fallback=5 digest=47318b01f6861b6f
+FASTV2_CASE_PASS size=322x241 budget=73 dual=1 candidates=296 selected=19 cell=28,10,7 empty=51 fallback=4 digest=cbc391db575241ea
+FASTV2_CASE_PASS size=268x201 budget=60 dual=1 candidates=153 selected=17 cell=25,9,6 empty=37 fallback=6 digest=ba11b89bf38964f
+FASTV2_PASS
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Passed.
+"next_front_fullframe" end time: Oct 10 13:29 中国标准时间
+"next_front_fullframe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/13 Testing: next_resize_all7
+6/13 Test: next_resize_all7
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_resize_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_resize_all7" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+FASTV2_RESIZE_CASE_PASS level=0 size=960x720->800x600
+FASTV2_RESIZE_CASE_PASS level=1 size=800x600->667x500
+FASTV2_RESIZE_CASE_PASS level=2 size=667x500->556x417
+FASTV2_RESIZE_CASE_PASS level=3 size=556x417->463x347
+FASTV2_RESIZE_CASE_PASS level=4 size=463x347->386x289
+FASTV2_RESIZE_CASE_PASS level=5 size=386x289->322x241
+FASTV2_RESIZE_CASE_PASS level=6 size=322x241->268x201
+FASTV2_RESIZE_PASS
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"next_resize_all7" end time: Oct 10 13:29 中国标准时间
+"next_resize_all7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/13 Testing: next_gaussian_boundaries_repeat
+7/13 Test: next_gaussian_boundaries_repeat
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_gaussian_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_gaussian_boundaries_repeat" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_GAUSSIAN_CASE_PASS level=0 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=0 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=1 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=1 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=2 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=2 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=3 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=3 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=4 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=4 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=5 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=5 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=6 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=6 constant=1
+NEXT_GAUSSIAN_CASE_PASS level=7 constant=0
+NEXT_GAUSSIAN_CASE_PASS level=7 constant=1
+NEXT_GAUSSIAN_PASS
+<end of output>
+Test time =   0.34 sec
+----------------------------------------------------------
+Test Passed.
+"next_gaussian_boundaries_repeat" end time: Oct 10 13:29 中国标准时间
+"next_gaussian_boundaries_repeat" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/13 Testing: next_resize_stream_all7
+8/13 Test: next_resize_stream_all7
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_resize_stream_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_resize_stream_all7" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_RESIZE_RTL_CASE_PASS case=0 level=6 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=1 level=0 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=2 level=1 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=3 level=2 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=4 level=3 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=5 level=4 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=6 level=5 pattern=0 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=7 level=6 pattern=1 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=8 level=6 pattern=2 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=9 level=6 pattern=3 status=0
+NEXT_RESIZE_RTL_CASE_PASS case=10 level=-1 pattern=0 status=1
+NEXT_RESIZE_RTL_CASE_PASS case=11 level=7 pattern=0 status=1
+NEXT_RESIZE_RTL_CASE_PASS case=12 level=6 pattern=0 status=0
+NEXT_RESIZE_STREAM_PASS cases=13
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"next_resize_stream_all7" end time: Oct 10 13:29 中国标准时间
+"next_resize_stream_all7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/13 Testing: next_gaussian_stream_all8
+9/13 Test: next_gaussian_stream_all8
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_gaussian_stream_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_gaussian_stream_all8" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_GAUSSIAN_HOST_PROGRESS case=-1 stage=main
+NEXT_GAUSSIAN_HOST_PROGRESS case=0 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=0 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=0 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=1 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=1 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=1 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=2 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=2 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=2 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=3 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=3 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=3 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=4 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=4 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=4 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=5 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=5 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=5 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=6 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=6 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=6 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=7 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=7 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=7 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=8 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=8 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=8 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=9 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=9 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=9 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=10 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=10 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=10 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=11 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=11 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=11 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=12 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=12 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=12 stage=compare
+NEXT_GAUSSIAN_HOST_PROGRESS case=13 stage=reference
+NEXT_GAUSSIAN_HOST_PROGRESS case=13 stage=kernel
+NEXT_GAUSSIAN_HOST_PROGRESS case=13 stage=compare
+NEXT_GAUSSIAN_RTL_CASE_PASS case=0 level=7 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=1 level=0 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=2 level=1 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=3 level=2 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=4 level=3 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=5 level=4 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=6 level=5 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=7 level=6 pattern=0 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=8 level=7 pattern=1 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=9 level=7 pattern=2 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=10 level=7 pattern=3 status=0
+NEXT_GAUSSIAN_RTL_CASE_PASS case=11 level=-1 pattern=0 status=1
+NEXT_GAUSSIAN_RTL_CASE_PASS case=12 level=8 pattern=0 status=1
+NEXT_GAUSSIAN_RTL_CASE_PASS case=13 level=7 pattern=0 status=0
+NEXT_GAUSSIAN_STREAM_PASS cases=14
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"next_gaussian_stream_all8" end time: Oct 10 13:29 中国标准时间
+"next_gaussian_stream_all8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/13 Testing: next_image_reference_oracles
+10/13 Test: next_image_reference_oracles
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_image_reference_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_image_reference_oracles" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_IMAGE_ORACLE_PASS cases=23
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"next_image_reference_oracles" end time: Oct 10 13:29 中国标准时间
+"next_image_reference_oracles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/13 Testing: next_resize_layout_repeat
+11/13 Test: next_resize_layout_repeat
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_resize_layout_test.exe"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_resize_layout_repeat" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_RESIZE_LAYOUT_PASS transitions=7 patterns=3 guards=PASS padding=PASS
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"next_resize_layout_repeat" end time: Oct 10 13:29 中国标准时间
+"next_resize_layout_repeat" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/13 Testing: next_complete_gaussian_direction_brief
+12/13 Test: next_complete_gaussian_direction_brief
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_complete_test.exe" "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/../../../FPGA_ORB_SHARED_v1.0/vectors/flight_20261004T184929_998838_6bb93c56_f0000/input.pgm"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_complete_gaussian_direction_brief" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_COMPLETE_PASS levels=8 features=280 gaussian_synthetic_levels=8
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Passed.
+"next_complete_gaussian_direction_brief" end time: Oct 10 13:29 中国标准时间
+"next_complete_gaussian_direction_brief" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/13 Testing: next_board_ps_control_mailbox
+13/13 Test: next_board_ps_control_mailbox
+Command: "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/next_board_ps_test.exe" "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/../../../FPGA_ORB_SHARED_v1.0/vectors/flight_20261004T184929_998838_6bb93c56_f0000/input.pgm" "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/../ps/reference_pyramid.bin" "C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build/reference_blur.bin"
+Directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+"next_board_ps_control_mailbox" start time: Oct 10 13:29 中国标准时间
+Output:
+----------------------------------------------------------
+NEXT_BOARD_PS_HOST_PASS modes=3 nominal_frames=16 injected_failures=30 pipeline_frames=18 pipeline_injected_failures=28 production_never_PASS=1 cache_api_bytes_legacy=15846720 cache_api_bytes_verified=7940992 cores_per_frame=8/7/8 features=280 mock_not_hardware_FPS=1
+<end of output>
+Test time =  10.87 sec
+----------------------------------------------------------
+Test Passed.
+"next_board_ps_control_mailbox" end time: Oct 10 13:29 中国标准时间
+"next_board_ps_control_mailbox" time elapsed: 00:00:10
+----------------------------------------------------------
+
+End testing: Oct 10 13:29 中国标准时间

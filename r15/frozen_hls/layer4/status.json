@@ -1,0 +1,14 @@
+{
+  "state": "SUCCEEDED",
+  "job": "C:\\h\\orb4\\20261012_194845_layer4_e293f124",
+  "kernel": "layer4",
+  "mode": "package",
+  "tool": "Vivado HLS 2018.3",
+  "part": "xc7z015clg485-2",
+  "period_ns": 10,
+  "synthesis_parent": "C:\\h\\orb4\\20261012_192905_layer4_82180092",
+  "axi_proof": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\axi_layer4_v2",
+  "pid": 8660,
+  "returncode": 0,
+  "seconds": 49.14
+}

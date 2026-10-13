@@ -12,3 +12,7 @@ FPGA_ORB_SHARED_v1.0/vectors/
 *.bit
 *.hdf
 *.elf
+
+# Published immutable versions are explicitly staged; development jobs stay local.
+orb60_4ppc/build/
+*.pyc

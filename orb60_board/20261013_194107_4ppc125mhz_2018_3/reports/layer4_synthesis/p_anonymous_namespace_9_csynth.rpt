@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_9'
+================================================================
+* Date:           Tue Oct 13 15:03:08 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|     7.000|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |                                 |  Latency  | Iteration|  Initiation Interval  |   Trip  |          |
+        |            Loop Name            | min | max |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +---------------------------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |- Loop 1                         |    ?|    ?|         ?|          -|          -|        ?|    no    |
+        | + CollectLayerWords             |    ?|    ?|         2|          1|          1|        ?|    yes   |
+        | + memcpy.destination.block.gep  |    0|  128|         3|          1|          1| 0 ~ 127 |    yes   |
+        +---------------------------------+-----+-----+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|    235|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        2|      -|      0|      0|
+|Multiplexer      |        -|      -|      -|     57|
+|Register         |        -|      -|    303|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        2|      0|    303|    292|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        1|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +---------+----------------------+---------+---+----+------+-----+------+-------------+
+    |  Memory |        Module        | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +---------+----------------------+---------+---+----+------+-----+------+-------------+
+    |block_U  |p_anonymous_namesOgC  |        2|  0|   0|    64|   64|     1|         4096|
+    +---------+----------------------+---------+---+----+------+-----+------+-------------+
+    |Total    |                      |        2|  0|   0|    64|   64|     1|         4096|
+    +---------+----------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |base_fu_419_p2                    |     +    |      0|  0|  32|          32|           7|
+    |i_fu_369_p2                       |     +    |      0|  0|   7|           7|           1|
+    |indvar_next_i_i_i_i_s_fu_408_p2   |     +    |      0|  0|   7|           7|           1|
+    |sum_i_i_fu_384_p2                 |     +    |      0|  0|  33|          33|          33|
+    |tmp_fu_294_p2                     |     +    |      0|  0|  19|          19|           6|
+    |tmp_i_i_i_i_i_fu_266_p2           |     +    |      0|  0|  21|          21|           3|
+    |tmp_196_i_i_i_i_i_fu_327_p2       |     -    |      0|  0|  32|          32|          32|
+    |ap_block_pp0_stage0_11001         |    and   |      0|  0|   1|           1|           1|
+    |ap_block_pp1_stage0_11001         |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state2                   |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state9_io                |    and   |      0|  0|   1|           1|           1|
+    |exitcond_i_i_i_i_i_fu_403_p2      |   icmp   |      0|  0|   3|           7|           7|
+    |icmp_fu_342_p2                    |   icmp   |      0|  0|  11|          26|           1|
+    |tmp_198_i_i_i_i_i_fu_364_p2       |   icmp   |      0|  0|  12|          32|          32|
+    |tmp_35_fu_322_p2                  |   icmp   |      0|  0|  12|          32|          32|
+    |ap_block_state1                   |    or    |      0|  0|   1|           1|           1|
+    |n_fu_348_p3                       |  select  |      0|  0|  32|           1|          32|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp1                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp1_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0| 235|         261|         199|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                             |   6|         12|    1|         12|
+    |ap_done                               |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   3|          3|    1|          3|
+    |ap_enable_reg_pp1_iter1               |   3|          2|    1|          2|
+    |ap_enable_reg_pp1_iter2               |   3|          2|    1|          2|
+    |ap_phi_mux_i_i_i_i_i_i_phi_fu_243_p4  |   3|          2|    7|         14|
+    |ap_sig_ioackin_m_axi_resized_AWREADY  |   3|          2|    1|          2|
+    |ap_sig_ioackin_m_axi_resized_WREADY   |   3|          2|    1|          2|
+    |base_i_i_i_i_i_reg_227                |   3|          2|   32|         64|
+    |i_i_i_i_i_i_reg_239                   |   3|          2|    7|         14|
+    |indvar_i_i_i_i_i_reg_251              |   3|          2|    7|         14|
+    |resize_done_V_blk_n                   |   3|          2|    1|          2|
+    |resize_words_V_blk_n                  |   3|          2|    1|          2|
+    |resized_blk_n_AW                      |   3|          2|    1|          2|
+    |resized_blk_n_B                       |   3|          2|    1|          2|
+    |resized_blk_n_W                       |   3|          2|    1|          2|
+    |resized_offset_blk_n                  |   3|          2|    1|          2|
+    |tmp_loc_c_blk_n                       |   3|          2|    1|          2|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  57|         47|   67|        145|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+----+----+-----+-----------+
+    |                   Name                   | FF | LUT| Bits| Const Bits|
+    +------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                 |  11|   0|   11|          0|
+    |ap_done_reg                               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter0                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter1                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter2                   |   1|   0|    1|          0|
+    |ap_reg_ioackin_m_axi_resized_AWREADY      |   1|   0|    1|          0|
+    |ap_reg_ioackin_m_axi_resized_WREADY       |   1|   0|    1|          0|
+    |base_i_i_i_i_i_reg_227                    |  32|   0|   32|          0|
+    |base_reg_494                              |  32|   0|   32|          0|
+    |block_load_reg_489                        |  64|   0|   64|          0|
+    |count_cast3_i_i_i_i_s_reg_425             |  18|   0|   32|         14|
+    |exitcond_i_i_i_i_i_reg_475                |   1|   0|    1|          0|
+    |exitcond_i_i_i_i_i_reg_475_pp1_iter1_reg  |   1|   0|    1|          0|
+    |i_i_i_i_i_i_reg_239                       |   7|   0|    7|          0|
+    |i_reg_459                                 |   7|   0|    7|          0|
+    |indvar_i_i_i_i_i_reg_251                  |   7|   0|    7|          0|
+    |n_reg_444                                 |  32|   0|   32|          0|
+    |p_cast_i_i_reg_435                        |  13|   0|   32|         19|
+    |sext_cast_i_i_reg_430                     |  29|   0|   33|          4|
+    |sum_i_i_reg_464                           |  33|   0|   33|          0|
+    |tmp_198_i_i_i_i_i_reg_455                 |   1|   0|    1|          0|
+    |tmp_37_reg_449                            |   7|   0|    7|          0|
+    +------------------------------------------+----+----+-----+-----------+
+    |Total                                     | 303|   0|  340|         37|
+    +------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|ap_start                |  in |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|ap_done                 | out |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|ap_continue             |  in |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|ap_ready                | out |    1| ap_ctrl_hs | (anonymous namespace.9 | return value |
+|m_axi_resized_AWVALID   | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWREADY   |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWADDR    | out |   32|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWID      | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWLEN     | out |   32|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWSIZE    | out |    3|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWBURST   | out |    2|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWLOCK    | out |    2|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWCACHE   | out |    4|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWPROT    | out |    3|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWQOS     | out |    4|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWREGION  | out |    4|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_AWUSER    | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WVALID    | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WREADY    |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WDATA     | out |   64|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WSTRB     | out |    8|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WLAST     | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WID       | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_WUSER     | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARVALID   | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARREADY   |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARADDR    | out |   32|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARID      | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARLEN     | out |   32|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARSIZE    | out |    3|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARBURST   | out |    2|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARLOCK    | out |    2|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARCACHE   | out |    4|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARPROT    | out |    3|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARQOS     | out |    4|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARREGION  | out |    4|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_ARUSER    | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RVALID    |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RREADY    | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RDATA     |  in |   64|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RLAST     |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RID       |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RUSER     |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_RRESP     |  in |    2|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_BVALID    |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_BREADY    | out |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_BRESP     |  in |    2|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_BID       |  in |    1|    m_axi   |         resized        |    pointer   |
+|m_axi_resized_BUSER     |  in |    1|    m_axi   |         resized        |    pointer   |
+|resized_offset_dout     |  in |   29|   ap_fifo  |     resized_offset     |    pointer   |
+|resized_offset_empty_n  |  in |    1|   ap_fifo  |     resized_offset     |    pointer   |
+|resized_offset_read     | out |    1|   ap_fifo  |     resized_offset     |    pointer   |
+|tmp_loc_c_dout          |  in |   20|   ap_fifo  |        tmp_loc_c       |    pointer   |
+|tmp_loc_c_empty_n       |  in |    1|   ap_fifo  |        tmp_loc_c       |    pointer   |
+|tmp_loc_c_read          | out |    1|   ap_fifo  |        tmp_loc_c       |    pointer   |
+|resize_words_V_dout     |  in |   64|   ap_fifo  |     resize_words_V     |    pointer   |
+|resize_words_V_empty_n  |  in |    1|   ap_fifo  |     resize_words_V     |    pointer   |
+|resize_words_V_read     | out |    1|   ap_fifo  |     resize_words_V     |    pointer   |
+|resize_done_V_din       | out |    8|   ap_fifo  |      resize_done_V     |    pointer   |
+|resize_done_V_full_n    |  in |    1|   ap_fifo  |      resize_done_V     |    pointer   |
+|resize_done_V_write     | out |    1|   ap_fifo  |      resize_done_V     |    pointer   |
++------------------------+-----+-----+------------+------------------------+--------------+
+

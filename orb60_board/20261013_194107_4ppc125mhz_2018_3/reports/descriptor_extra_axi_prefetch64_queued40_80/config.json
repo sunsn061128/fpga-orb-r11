@@ -1,0 +1,29 @@
+{
+  "kernel": "descriptor",
+  "vectors": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\descriptor_vectors",
+  "offsets": {
+    "RAW": 24,
+    "BLURRED": 32,
+    "POINTS": 40,
+    "FEATURES": 48,
+    "STATS": 56,
+    "WIDTH": 64,
+    "HEIGHT": 72,
+    "COUNT": 80,
+    "LEVEL": 88,
+    "FRAME_OFFSET": 96,
+    "CAPACITY": 104,
+    "AP_RETURN": 16
+  },
+  "cases": [
+    0
+  ],
+  "result": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\r17_opt\\prefetch64_queued40_80\\result.json",
+  "reset_case": 7,
+  "clock_period_ns": 8,
+  "read_concurrency": 8,
+  "first_read_latency": [
+    40,
+    80
+  ]
+}

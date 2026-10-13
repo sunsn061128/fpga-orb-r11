@@ -1,0 +1,73 @@
+attempting to launch hw_server
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+****** Xilinx hw_server v2018.3
+
+  **** Build date : Dec  7 2018-00:40:27
+
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+  1  Digilent JTAG-SMT2 C306ACCBABCD
+     2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z015 (idcode 0373b093 irlen 6 fpga)
+initializing  0%    0MB   0.0MB/s  ??:?? ETA  9%    0MB   0.6MB/s  ??:?? ETA 11%    0MB   0.3MB/s  ??:?? ETA 13%    0MB   0.3MB/s  ??:?? ETA 14%    0MB   0.2MB/s  ??:?? ETA 16%    0MB   0.2MB/s  ??:?? ETA 18%    0MB   0.2MB/s  00:14 ETA 20%    0MB   0.2MB/s  00:15 ETA 22%    0MB   0.2MB/s  00:15 ETA 24%    0MB   0.2MB/s  00:16 ETA 26%    0MB   0.2MB/s  00:16 ETA 28%    0MB   0.1MB/s  00:16 ETA 29%    1MB   0.1MB/s  00:16 ETA 31%    1MB   0.1MB/s  00:15 ETA 33%    1MB   0.1MB/s  00:15 ETA 35%    1MB   0.1MB/s  00:15 ETA 37%    1MB   0.1MB/s  00:15 ETA 39%    1MB   0.1MB/s  00:15 ETA 41%    1MB   0.1MB/s  00:14 ETA 42%    1MB   0.1MB/s  00:14 ETA 44%    1MB   0.1MB/s  00:14 ETA 46%    1MB   0.1MB/s  00:13 ETA 48%    1MB   0.1MB/s  00:13 ETA 50%    1MB   0.1MB/s  00:12 ETA 52%    1MB   0.1MB/s  00:12 ETA 54%    1MB   0.1MB/s  00:12 ETA 56%    1MB   0.1MB/s  00:11 ETA 57%    1MB   0.1MB/s  00:11 ETA 59%    2MB   0.1MB/s  00:10 ETA 61%    2MB   0.1MB/s  00:10 ETA 63%    2MB   0.1MB/s  00:09 ETA 65%    2MB   0.1MB/s  00:09 ETA 67%    2MB   0.1MB/s  00:08 ETA 69%    2MB   0.1MB/s  00:08 ETA 70%    2MB   0.1MB/s  00:07 ETA 72%    2MB   0.1MB/s  00:07 ETA 74%    2MB   0.1MB/s  00:06 ETA 76%    2MB   0.1MB/s  00:06 ETA 78%    2MB   0.1MB/s  00:05 ETA 80%    2MB   0.1MB/s  00:05 ETA 82%    2MB   0.1MB/s  00:04 ETA 84%    2MB   0.1MB/s  00:04 ETA 85%    2MB   0.1MB/s  00:03 ETA 87%    2MB   0.1MB/s  00:03 ETA 89%    3MB   0.1MB/s  00:02 ETA 91%    3MB   0.1MB/s  00:02 ETA 93%    3MB   0.1MB/s  00:01 ETA 95%    3MB   0.1MB/s  00:01 ETA 97%    3MB   0.1MB/s  00:00 ETA 98%    3MB   0.1MB/s  00:00 ETA100%    3MB   0.1MB/s  00:28    
+ORB4_FCLK0_READBACK actual=0x00200400 mask=0x03F03F30 expected=0x00200400
+ORB4_PS_CLOCK_READBACK name=ARM_PLL actual=0x00028008 mask=0x0007F000 expected=0x00028000
+ORB4_PS_CLOCK_READBACK name=DDR_PLL actual=0x00020008 mask=0x0007F000 expected=0x00020000
+ORB4_PS_CLOCK_READBACK name=IO_PLL actual=0x0001E008 mask=0x0007F000 expected=0x0001E000
+ORB4_PS_CLOCK_READBACK name=CPU_DIV actual=0x1F000200 mask=0x1F003F30 expected=0x1F000200
+ARM_MMIO image=0x43c00000 descriptor=0x43c10000 no_legacy_PL_driver=1
+Downloading Program -- C:/h/orb4/20261013_185832_board_ed859ec6/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x00102da7
+	section, .init: 0x00102da8 - 0x00102dbf
+	section, .fini: 0x00102dc0 - 0x00102dd7
+	section, .rodata: 0x00102dd8 - 0x00102dfb
+	section, .data: 0x00102e00 - 0x0010326f
+	section, .eh_frame: 0x00103270 - 0x00103273
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+  0%    0MB   0.0MB/s  ??:?? ETA 99%    0MB   0.1MB/s  ??:?? ETA100%    0MB   0.1MB/s  00:00    
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/h/orb4/20261013_185832_board_ed859ec6/elf/orb60_board.elf
+  0%    0MB   0.0MB/s  ??:?? ETA  0%    0MB   0.1MB/s  ??:?? ETA  1%    0MB   0.1MB/s  ??:?? ETA  2%    0MB   0.1MB/s  ??:?? ETA  2%    0MB   0.1MB/s  ??:?? ETA  3%    0MB   0.1MB/s  ??:?? ETA  4%    0MB   0.1MB/s  01:06 ETA  5%    0MB   0.1MB/s  01:06 ETA  5%    0MB   0.1MB/s  01:05 ETA  6%    0MB   0.1MB/s  01:04 ETA  7%    0MB   0.1MB/s  01:04 ETA  8%    0MB   0.1MB/s  01:03 ETA  8%    0MB   0.1MB/s  01:03 ETA  9%    0MB   0.1MB/s  01:02 ETA 10%    0MB   0.1MB/s  01:02 ETA 10%    0MB   0.1MB/s  01:01 ETA 11%    0MB   0.1MB/s  01:01 ETA 12%    0MB   0.1MB/s  01:00 ETA 13%    0MB   0.1MB/s  01:00 ETA 13%    0MB   0.1MB/s  00:59 ETA 14%    0MB   0.1MB/s  00:59 ETA 15%    0MB   0.1MB/s  00:58 ETA 16%    0MB   0.1MB/s  00:58 ETA 16%    0MB   0.1MB/s  00:57 ETA 17%    0MB   0.1MB/s  00:57 ETA 18%    0MB   0.1MB/s  00:56 ETA 19%    0MB   0.1MB/s  00:56 ETA 19%    0MB   0.1MB/s  00:55 ETA 20%    0MB   0.1MB/s  00:55 ETA 21%    0MB   0.1MB/s  00:54 ETA 21%    0MB   0.1MB/s  00:54 ETA 22%    0MB   0.1MB/s  00:53 ETA 23%    1MB   0.1MB/s  00:53 ETA 24%    1MB   0.1MB/s  00:52 ETA 24%    1MB   0.1MB/s  00:52 ETA 25%    1MB   0.1MB/s  00:51 ETA 26%    1MB   0.1MB/s  00:51 ETA 27%    1MB   0.1MB/s  00:50 ETA 27%    1MB   0.1MB/s  00:50 ETA 28%    1MB   0.1MB/s  00:49 ETA 29%    1MB   0.1MB/s  00:49 ETA 30%    1MB   0.1MB/s  00:48 ETA 30%    1MB   0.1MB/s  00:48 ETA 31%    1MB   0.1MB/s  00:47 ETA 32%    1MB   0.1MB/s  00:47 ETA 32%    1MB   0.1MB/s  00:46 ETA 33%    1MB   0.1MB/s  00:46 ETA 34%    1MB   0.1MB/s  00:45 ETA 35%    1MB   0.1MB/s  00:45 ETA 35%    1MB   0.1MB/s  00:44 ETA 36%    1MB   0.1MB/s  00:44 ETA 37%    1MB   0.1MB/s  00:43 ETA 38%    1MB   0.1MB/s  00:43 ETA 38%    1MB   0.1MB/s  00:42 ETA 39%    1MB   0.1MB/s  00:42 ETA 40%    1MB   0.1MB/s  00:41 ETA 40%    1MB   0.1MB/s  00:40 ETA 41%    1MB   0.1MB/s  00:40 ETA 42%    1MB   0.1MB/s  00:39 ETA 43%    1MB   0.1MB/s  00:39 ETA 43%    1MB   0.1MB/s  00:38 ETA 45%    1MB   0.1MB/s  00:38 ETA 46%    1MB   0.1MB/s  00:37 ETA 47%    2MB   0.1MB/s  00:36 ETA 47%    2MB   0.1MB/s  00:36 ETA 48%    2MB   0.1MB/s  00:35 ETA 49%    2MB   0.1MB/s  00:35 ETA 50%    2MB   0.1MB/s  00:34 ETA 50%    2MB   0.1MB/s  00:34 ETA 51%    2MB   0.1MB/s  00:33 ETA 52%    2MB   0.1MB/s  00:33 ETA 53%    2MB   0.1MB/s  00:32 ETA 53%    2MB   0.1MB/s  00:32 ETA 54%    2MB   0.1MB/s  00:31 ETA 55%    2MB   0.1MB/s  00:31 ETA 55%    2MB   0.1MB/s  00:30 ETA 56%    2MB   0.1MB/s  00:30 ETA 57%    2MB   0.1MB/s  00:29 ETA 58%    2MB   0.1MB/s  00:29 ETA 58%    2MB   0.1MB/s  00:28 ETA 59%    2MB   0.1MB/s  00:27 ETA 60%    2MB   0.1MB/s  00:27 ETA 61%    2MB   0.1MB/s  00:26 ETA 61%    2MB   0.1MB/s  00:26 ETA 62%    2MB   0.1MB/s  00:25 ETA 63%    2MB   0.1MB/s  00:25 ETA 64%    2MB   0.1MB/s  00:24 ETA 64%    2MB   0.1MB/s  00:24 ETA 65%    2MB   0.1MB/s  00:23 ETA 66%    2MB   0.1MB/s  00:23 ETA 66%    2MB   0.1MB/s  00:22 ETA 67%    2MB   0.1MB/s  00:22 ETA 68%    2MB   0.1MB/s  00:21 ETA 69%    2MB   0.1MB/s  00:21 ETA 69%    2MB   0.1MB/s  00:20 ETA 70%    3MB   0.1MB/s  00:20 ETA 71%    3MB   0.1MB/s  00:19 ETA 72%    3MB   0.1MB/s  00:19 ETA 73%    3MB   0.1MB/s  00:18 ETA 73%    3MB   0.1MB/s  00:18 ETA 74%    3MB   0.1MB/s  00:17 ETA 75%    3MB   0.1MB/s  00:17 ETA 76%    3MB   0.1MB/s  00:16 ETA 76%    3MB   0.1MB/s  00:16 ETA 77%    3MB   0.1MB/s  00:15 ETA 78%    3MB   0.1MB/s  00:15 ETA 79%    3MB   0.1MB/s  00:14 ETA 79%    3MB   0.1MB/s  00:14 ETA 80%    3MB   0.1MB/s  00:13 ETA 81%    3MB   0.1MB/s  00:13 ETA 81%    3MB   0.1MB/s  00:12 ETA 82%    3MB   0.1MB/s  00:11 ETA 83%    3MB   0.1MB/s  00:11 ETA 84%    3MB   0.1MB/s  00:10 ETA 84%    3MB   0.1MB/s  00:10 ETA 85%    3MB   0.1MB/s  00:09 ETA 86%    3MB   0.1MB/s  00:09 ETA 87%    3MB   0.1MB/s  00:08 ETA 87%    3MB   0.1MB/s  00:08 ETA 88%    3MB   0.1MB/s  00:07 ETA 89%    3MB   0.1MB/s  00:07 ETA 90%    3MB   0.1MB/s  00:06 ETA 90%    3MB   0.1MB/s  00:06 ETA 91%    3MB   0.1MB/s  00:05 ETA 92%    3MB   0.1MB/s  00:05 ETA 92%    3MB   0.1MB/s  00:04 ETA 93%    4MB   0.1MB/s  00:04 ETA 94%    4MB   0.1MB/s  00:03 ETA 95%    4MB   0.1MB/s  00:03 ETA 95%    4MB   0.1MB/s  00:02 ETA 96%    4MB   0.1MB/s  00:02 ETA 97%    4MB   0.1MB/s  00:01 ETA 98%    4MB   0.1MB/s  00:01 ETA 98%    4MB   0.1MB/s  00:00 ETA 99%    4MB   0.1MB/s  00:00 ETA100%    4MB   0.1MB/s  01:09    
+Successfully downloaded C:/h/orb4/20261013_185832_board_ed859ec6/zero/golden.bin
+ORB60_MAILBOX_WORDS=1623195649 10 1623195650 1 2 0 10 1 519 0 74203 2966472 1568062 73678 74847 13476 0 0 362016 403 233803 162721 114600 78943 55296 39958 28683 21192 5 5 5 5 5 5 5 5 1870 1302 917 632 442 320 230 170 6 6 7 7 6 6 6 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1145328177 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORB60_BOARD_RESULT mode=Verified frame=zero status=2 error=0 completed=10/10 stage=519 detail=0
+processing_avg_us=74203 min_us=73678 max_us=74847 fps_milli=13476 wall_us=2966472 verify_us=1568062 features=0 candidates_total=0
+cache_total_us=362016 config_total_us=403 INPUT_COPY_EXCLUDED=1 PL_INTERNAL_CYCLES_EXCLUDE_STATS_WRITE=1
+input_contract=direct_immutable_ddr external_capture_transfer_excluded=1
+level=0 layer_cycles=233803 descriptor_cycles=5 layer_PS_observed_us=1870 descriptor_PS_observed_us=6 count=0 offset=0
+level=1 layer_cycles=162721 descriptor_cycles=5 layer_PS_observed_us=1302 descriptor_PS_observed_us=6 count=0 offset=0
+level=2 layer_cycles=114600 descriptor_cycles=5 layer_PS_observed_us=917 descriptor_PS_observed_us=7 count=0 offset=0
+level=3 layer_cycles=78943 descriptor_cycles=5 layer_PS_observed_us=632 descriptor_PS_observed_us=7 count=0 offset=0
+level=4 layer_cycles=55296 descriptor_cycles=5 layer_PS_observed_us=442 descriptor_PS_observed_us=6 count=0 offset=0
+level=5 layer_cycles=39958 descriptor_cycles=5 layer_PS_observed_us=320 descriptor_PS_observed_us=6 count=0 offset=0
+level=6 layer_cycles=28683 descriptor_cycles=5 layer_PS_observed_us=230 descriptor_PS_observed_us=6 count=0 offset=0
+level=7 layer_cycles=21192 descriptor_cycles=5 layer_PS_observed_us=170 descriptor_PS_observed_us=6 count=0 offset=0
+ORB60_BOARD_COMPLETED CPU_EXACT_PASS

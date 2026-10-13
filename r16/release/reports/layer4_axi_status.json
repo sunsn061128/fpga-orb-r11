@@ -1,0 +1,18 @@
+{
+  "state": "SUCCEEDED",
+  "kernel": "layer4",
+  "hls_job": "C:\\h\\orb4\\20261012_192905_layer4_82180092",
+  "hls_state_at_freeze": "RUNNING",
+  "started_utc": "2026-10-12T11:38:03.235695+00:00",
+  "scope": "Isolated IP random AXI/reset/direct done barrier; common DDR address space, no DDR PHY or two-core contention",
+  "result": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\axi_layer4_v2\\result.json",
+  "runtime": {
+    "version": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dmsun\\Documents\\Codex\\toolchains\\fpga\\python\\Scripts\\python.exe",
+    "base_prefix": "C:\\Users\\dmsun\\AppData\\Local\\Programs\\Python\\Python311",
+    "loaded_dll": "C:\\Users\\dmsun\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll",
+    "expected_dll": "C:\\Users\\dmsun\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll",
+    "repaired_stdio": []
+  },
+  "finished_utc": "2026-10-12T11:43:44.229891+00:00"
+}

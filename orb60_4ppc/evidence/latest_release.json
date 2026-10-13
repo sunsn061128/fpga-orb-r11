@@ -1,0 +1,24 @@
+{
+  "Path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_194107_4ppc125mhz_2018_3",
+  "Acceptance": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_194107_4ppc125mhz_2018_3\\acceptance.json",
+  "Comparison": {
+    "baseline_processing_ms": 6.968,
+    "processing_ms": 6.306,
+    "baseline_wall_ms_per_frame": 6.9796499999999995,
+    "wall_ms_per_frame": 6.31751,
+    "baseline_wall_fps": 143.27365985400414,
+    "wall_fps": 158.29021244129413,
+    "processing_speedup": 1.1049793847129719,
+    "wall_speedup": 1.1048102812658784,
+    "r17_wall_fps": 143.27365985400414,
+    "r17_wall_gain_percent": 10.481028126587866,
+    "r16_wall_fps": 120.43578484387909,
+    "r16_wall_gain_percent": 31.43121261383046,
+    "baseline_mhz": 125,
+    "trial_mhz": 125,
+    "r15_wall_fps": 110.57213338979884,
+    "r15_wall_gain_percent": 43.15561035914468
+  },
+  "Baseline": "u1",
+  "BaselinePath": "C:\\Users\\dmsun\\Desktop\\PLD\\u1"
+}

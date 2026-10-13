@@ -1,0 +1,297 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_15'
+================================================================
+* Date:           Mon Oct 12 19:33:32 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.802|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|      1|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|    132|
+|Register         |        -|      -|      3|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      3|    133|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_done                        |   3|          2|    1|          2|
+    |capacity_blk_n                 |   3|          2|    1|          2|
+    |capacity_c_blk_n               |   3|          2|    1|          2|
+    |dh_blk_n                       |   3|          2|    1|          2|
+    |dh_c43_blk_n                   |   3|          2|    1|          2|
+    |dh_c_blk_n                     |   3|          2|    1|          2|
+    |dual_blk_n                     |   3|          2|    1|          2|
+    |dual_c_blk_n                   |   3|          2|    1|          2|
+    |dw_blk_n                       |   3|          2|    1|          2|
+    |dw_c42_blk_n                   |   3|          2|    1|          2|
+    |dw_c_blk_n                     |   3|          2|    1|          2|
+    |high_c_blk_n                   |   3|          2|    1|          2|
+    |high_r_blk_n                   |   3|          2|    1|          2|
+    |level_blk_n                    |   3|          2|    1|          2|
+    |level_c_blk_n                  |   3|          2|    1|          2|
+    |low_c_blk_n                    |   3|          2|    1|          2|
+    |low_r_blk_n                    |   3|          2|    1|          2|
+    |p_budget_c_blk_n               |   3|          2|    1|          2|
+    |p_budget_read_blk_n            |   3|          2|    1|          2|
+    |p_cell_cols_c_blk_n            |   3|          2|    1|          2|
+    |p_cell_cols_read_blk_n         |   3|          2|    1|          2|
+    |p_cell_rows_c_blk_n            |   3|          2|    1|          2|
+    |p_cell_rows_read_blk_n         |   3|          2|    1|          2|
+    |p_cell_side_c_blk_n            |   3|          2|    1|          2|
+    |p_cell_side_read_blk_n         |   3|          2|    1|          2|
+    |p_effective_height_c_blk_n     |   3|          2|    1|          2|
+    |p_effective_height_read_blk_n  |   3|          2|    1|          2|
+    |p_effective_width_c_blk_n      |   3|          2|    1|          2|
+    |p_effective_width_read_blk_n   |   3|          2|    1|          2|
+    |p_height_c_blk_n               |   3|          2|    1|          2|
+    |p_height_read_blk_n            |   3|          2|    1|          2|
+    |p_tile_cols_c_blk_n            |   3|          2|    1|          2|
+    |p_tile_cols_read_blk_n         |   3|          2|    1|          2|
+    |p_tile_height_c_blk_n          |   3|          2|    1|          2|
+    |p_tile_height_read_blk_n       |   3|          2|    1|          2|
+    |p_tile_rows_c_blk_n            |   3|          2|    1|          2|
+    |p_tile_rows_read_blk_n         |   3|          2|    1|          2|
+    |p_tile_width_c_blk_n           |   3|          2|    1|          2|
+    |p_tile_width_read_blk_n        |   3|          2|    1|          2|
+    |p_width_c_blk_n                |   3|          2|    1|          2|
+    |p_width_read_blk_n             |   3|          2|    1|          2|
+    |p_y_info_offset_c_blk_n        |   3|          2|    1|          2|
+    |p_y_info_offset_read_blk_n     |   3|          2|    1|          2|
+    |real_start                     |   3|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          | 132|         88|   44|         88|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++---------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                           |  in |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|ap_rst                           |  in |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|ap_start                         |  in |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|start_full_n                     |  in |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|ap_done                          | out |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|ap_continue                      |  in |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|ap_idle                          | out |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|ap_ready                         | out |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|start_out                        | out |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|start_write                      | out |    1| ap_ctrl_hs | (anonymous namespace.15 | return value |
+|p_width_read_dout                |  in |   10|   ap_fifo  |       p_width_read      |    pointer   |
+|p_width_read_empty_n             |  in |    1|   ap_fifo  |       p_width_read      |    pointer   |
+|p_width_read_read                | out |    1|   ap_fifo  |       p_width_read      |    pointer   |
+|p_height_read_dout               |  in |   10|   ap_fifo  |      p_height_read      |    pointer   |
+|p_height_read_empty_n            |  in |    1|   ap_fifo  |      p_height_read      |    pointer   |
+|p_height_read_read               | out |    1|   ap_fifo  |      p_height_read      |    pointer   |
+|p_budget_read_dout               |  in |   32|   ap_fifo  |      p_budget_read      |    pointer   |
+|p_budget_read_empty_n            |  in |    1|   ap_fifo  |      p_budget_read      |    pointer   |
+|p_budget_read_read               | out |    1|   ap_fifo  |      p_budget_read      |    pointer   |
+|p_effective_width_read_dout      |  in |   10|   ap_fifo  |  p_effective_width_read |    pointer   |
+|p_effective_width_read_empty_n   |  in |    1|   ap_fifo  |  p_effective_width_read |    pointer   |
+|p_effective_width_read_read      | out |    1|   ap_fifo  |  p_effective_width_read |    pointer   |
+|p_effective_height_read_dout     |  in |   10|   ap_fifo  | p_effective_height_read |    pointer   |
+|p_effective_height_read_empty_n  |  in |    1|   ap_fifo  | p_effective_height_read |    pointer   |
+|p_effective_height_read_read     | out |    1|   ap_fifo  | p_effective_height_read |    pointer   |
+|p_tile_cols_read_dout            |  in |    5|   ap_fifo  |     p_tile_cols_read    |    pointer   |
+|p_tile_cols_read_empty_n         |  in |    1|   ap_fifo  |     p_tile_cols_read    |    pointer   |
+|p_tile_cols_read_read            | out |    1|   ap_fifo  |     p_tile_cols_read    |    pointer   |
+|p_tile_rows_read_dout            |  in |    5|   ap_fifo  |     p_tile_rows_read    |    pointer   |
+|p_tile_rows_read_empty_n         |  in |    1|   ap_fifo  |     p_tile_rows_read    |    pointer   |
+|p_tile_rows_read_read            | out |    1|   ap_fifo  |     p_tile_rows_read    |    pointer   |
+|p_tile_width_read_dout           |  in |    6|   ap_fifo  |    p_tile_width_read    |    pointer   |
+|p_tile_width_read_empty_n        |  in |    1|   ap_fifo  |    p_tile_width_read    |    pointer   |
+|p_tile_width_read_read           | out |    1|   ap_fifo  |    p_tile_width_read    |    pointer   |
+|p_tile_height_read_dout          |  in |    6|   ap_fifo  |    p_tile_height_read   |    pointer   |
+|p_tile_height_read_empty_n       |  in |    1|   ap_fifo  |    p_tile_height_read   |    pointer   |
+|p_tile_height_read_read          | out |    1|   ap_fifo  |    p_tile_height_read   |    pointer   |
+|p_cell_side_read_dout            |  in |    6|   ap_fifo  |     p_cell_side_read    |    pointer   |
+|p_cell_side_read_empty_n         |  in |    1|   ap_fifo  |     p_cell_side_read    |    pointer   |
+|p_cell_side_read_read            | out |    1|   ap_fifo  |     p_cell_side_read    |    pointer   |
+|p_cell_cols_read_dout            |  in |    5|   ap_fifo  |     p_cell_cols_read    |    pointer   |
+|p_cell_cols_read_empty_n         |  in |    1|   ap_fifo  |     p_cell_cols_read    |    pointer   |
+|p_cell_cols_read_read            | out |    1|   ap_fifo  |     p_cell_cols_read    |    pointer   |
+|p_cell_rows_read_dout            |  in |    4|   ap_fifo  |     p_cell_rows_read    |    pointer   |
+|p_cell_rows_read_empty_n         |  in |    1|   ap_fifo  |     p_cell_rows_read    |    pointer   |
+|p_cell_rows_read_read            | out |    1|   ap_fifo  |     p_cell_rows_read    |    pointer   |
+|p_y_info_offset_read_dout        |  in |   12|   ap_fifo  |   p_y_info_offset_read  |    pointer   |
+|p_y_info_offset_read_empty_n     |  in |    1|   ap_fifo  |   p_y_info_offset_read  |    pointer   |
+|p_y_info_offset_read_read        | out |    1|   ap_fifo  |   p_y_info_offset_read  |    pointer   |
+|level_dout                       |  in |   32|   ap_fifo  |          level          |    pointer   |
+|level_empty_n                    |  in |    1|   ap_fifo  |          level          |    pointer   |
+|level_read                       | out |    1|   ap_fifo  |          level          |    pointer   |
+|high_r_dout                      |  in |   32|   ap_fifo  |          high_r         |    pointer   |
+|high_r_empty_n                   |  in |    1|   ap_fifo  |          high_r         |    pointer   |
+|high_r_read                      | out |    1|   ap_fifo  |          high_r         |    pointer   |
+|low_r_dout                       |  in |   32|   ap_fifo  |          low_r          |    pointer   |
+|low_r_empty_n                    |  in |    1|   ap_fifo  |          low_r          |    pointer   |
+|low_r_read                       | out |    1|   ap_fifo  |          low_r          |    pointer   |
+|dual_dout                        |  in |   32|   ap_fifo  |           dual          |    pointer   |
+|dual_empty_n                     |  in |    1|   ap_fifo  |           dual          |    pointer   |
+|dual_read                        | out |    1|   ap_fifo  |           dual          |    pointer   |
+|capacity_dout                    |  in |   32|   ap_fifo  |         capacity        |    pointer   |
+|capacity_empty_n                 |  in |    1|   ap_fifo  |         capacity        |    pointer   |
+|capacity_read                    | out |    1|   ap_fifo  |         capacity        |    pointer   |
+|dw_dout                          |  in |   10|   ap_fifo  |            dw           |    pointer   |
+|dw_empty_n                       |  in |    1|   ap_fifo  |            dw           |    pointer   |
+|dw_read                          | out |    1|   ap_fifo  |            dw           |    pointer   |
+|dh_dout                          |  in |   10|   ap_fifo  |            dh           |    pointer   |
+|dh_empty_n                       |  in |    1|   ap_fifo  |            dh           |    pointer   |
+|dh_read                          | out |    1|   ap_fifo  |            dh           |    pointer   |
+|p_width_c_din                    | out |   10|   ap_fifo  |        p_width_c        |    pointer   |
+|p_width_c_full_n                 |  in |    1|   ap_fifo  |        p_width_c        |    pointer   |
+|p_width_c_write                  | out |    1|   ap_fifo  |        p_width_c        |    pointer   |
+|p_height_c_din                   | out |   10|   ap_fifo  |        p_height_c       |    pointer   |
+|p_height_c_full_n                |  in |    1|   ap_fifo  |        p_height_c       |    pointer   |
+|p_height_c_write                 | out |    1|   ap_fifo  |        p_height_c       |    pointer   |
+|p_budget_c_din                   | out |    8|   ap_fifo  |        p_budget_c       |    pointer   |
+|p_budget_c_full_n                |  in |    1|   ap_fifo  |        p_budget_c       |    pointer   |
+|p_budget_c_write                 | out |    1|   ap_fifo  |        p_budget_c       |    pointer   |
+|p_effective_width_c_din          | out |   10|   ap_fifo  |   p_effective_width_c   |    pointer   |
+|p_effective_width_c_full_n       |  in |    1|   ap_fifo  |   p_effective_width_c   |    pointer   |
+|p_effective_width_c_write        | out |    1|   ap_fifo  |   p_effective_width_c   |    pointer   |
+|p_effective_height_c_din         | out |   10|   ap_fifo  |   p_effective_height_c  |    pointer   |
+|p_effective_height_c_full_n      |  in |    1|   ap_fifo  |   p_effective_height_c  |    pointer   |
+|p_effective_height_c_write       | out |    1|   ap_fifo  |   p_effective_height_c  |    pointer   |
+|p_tile_cols_c_din                | out |    5|   ap_fifo  |      p_tile_cols_c      |    pointer   |
+|p_tile_cols_c_full_n             |  in |    1|   ap_fifo  |      p_tile_cols_c      |    pointer   |
+|p_tile_cols_c_write              | out |    1|   ap_fifo  |      p_tile_cols_c      |    pointer   |
+|p_tile_rows_c_din                | out |    5|   ap_fifo  |      p_tile_rows_c      |    pointer   |
+|p_tile_rows_c_full_n             |  in |    1|   ap_fifo  |      p_tile_rows_c      |    pointer   |
+|p_tile_rows_c_write              | out |    1|   ap_fifo  |      p_tile_rows_c      |    pointer   |
+|p_tile_width_c_din               | out |    6|   ap_fifo  |      p_tile_width_c     |    pointer   |
+|p_tile_width_c_full_n            |  in |    1|   ap_fifo  |      p_tile_width_c     |    pointer   |
+|p_tile_width_c_write             | out |    1|   ap_fifo  |      p_tile_width_c     |    pointer   |
+|p_tile_height_c_din              | out |    6|   ap_fifo  |     p_tile_height_c     |    pointer   |
+|p_tile_height_c_full_n           |  in |    1|   ap_fifo  |     p_tile_height_c     |    pointer   |
+|p_tile_height_c_write            | out |    1|   ap_fifo  |     p_tile_height_c     |    pointer   |
+|p_cell_side_c_din                | out |    6|   ap_fifo  |      p_cell_side_c      |    pointer   |
+|p_cell_side_c_full_n             |  in |    1|   ap_fifo  |      p_cell_side_c      |    pointer   |
+|p_cell_side_c_write              | out |    1|   ap_fifo  |      p_cell_side_c      |    pointer   |
+|p_cell_cols_c_din                | out |    5|   ap_fifo  |      p_cell_cols_c      |    pointer   |
+|p_cell_cols_c_full_n             |  in |    1|   ap_fifo  |      p_cell_cols_c      |    pointer   |
+|p_cell_cols_c_write              | out |    1|   ap_fifo  |      p_cell_cols_c      |    pointer   |
+|p_cell_rows_c_din                | out |    4|   ap_fifo  |      p_cell_rows_c      |    pointer   |
+|p_cell_rows_c_full_n             |  in |    1|   ap_fifo  |      p_cell_rows_c      |    pointer   |
+|p_cell_rows_c_write              | out |    1|   ap_fifo  |      p_cell_rows_c      |    pointer   |
+|p_y_info_offset_c_din            | out |   12|   ap_fifo  |    p_y_info_offset_c    |    pointer   |
+|p_y_info_offset_c_full_n         |  in |    1|   ap_fifo  |    p_y_info_offset_c    |    pointer   |
+|p_y_info_offset_c_write          | out |    1|   ap_fifo  |    p_y_info_offset_c    |    pointer   |
+|level_c_din                      | out |    3|   ap_fifo  |         level_c         |    pointer   |
+|level_c_full_n                   |  in |    1|   ap_fifo  |         level_c         |    pointer   |
+|level_c_write                    | out |    1|   ap_fifo  |         level_c         |    pointer   |
+|high_c_din                       | out |    8|   ap_fifo  |          high_c         |    pointer   |
+|high_c_full_n                    |  in |    1|   ap_fifo  |          high_c         |    pointer   |
+|high_c_write                     | out |    1|   ap_fifo  |          high_c         |    pointer   |
+|low_c_din                        | out |   31|   ap_fifo  |          low_c          |    pointer   |
+|low_c_full_n                     |  in |    1|   ap_fifo  |          low_c          |    pointer   |
+|low_c_write                      | out |    1|   ap_fifo  |          low_c          |    pointer   |
+|dual_c_din                       | out |    1|   ap_fifo  |          dual_c         |    pointer   |
+|dual_c_full_n                    |  in |    1|   ap_fifo  |          dual_c         |    pointer   |
+|dual_c_write                     | out |    1|   ap_fifo  |          dual_c         |    pointer   |
+|capacity_c_din                   | out |   31|   ap_fifo  |        capacity_c       |    pointer   |
+|capacity_c_full_n                |  in |    1|   ap_fifo  |        capacity_c       |    pointer   |
+|capacity_c_write                 | out |    1|   ap_fifo  |        capacity_c       |    pointer   |
+|dw_c_din                         | out |   10|   ap_fifo  |           dw_c          |    pointer   |
+|dw_c_full_n                      |  in |    1|   ap_fifo  |           dw_c          |    pointer   |
+|dw_c_write                       | out |    1|   ap_fifo  |           dw_c          |    pointer   |
+|dw_c42_din                       | out |   10|   ap_fifo  |          dw_c42         |    pointer   |
+|dw_c42_full_n                    |  in |    1|   ap_fifo  |          dw_c42         |    pointer   |
+|dw_c42_write                     | out |    1|   ap_fifo  |          dw_c42         |    pointer   |
+|dh_c_din                         | out |   10|   ap_fifo  |           dh_c          |    pointer   |
+|dh_c_full_n                      |  in |    1|   ap_fifo  |           dh_c          |    pointer   |
+|dh_c_write                       | out |    1|   ap_fifo  |           dh_c          |    pointer   |
+|dh_c43_din                       | out |   10|   ap_fifo  |          dh_c43         |    pointer   |
+|dh_c43_full_n                    |  in |    1|   ap_fifo  |          dh_c43         |    pointer   |
+|dh_c43_write                     | out |    1|   ap_fifo  |          dh_c43         |    pointer   |
++---------------------------------+-----+-----+------------+-------------------------+--------------+
+

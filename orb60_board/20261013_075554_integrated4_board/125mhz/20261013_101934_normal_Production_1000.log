@@ -1,0 +1,39 @@
+ORB60_JTAG_CHAIN=  1  Digilent JTAG-SMT2 C306ACCBABCD
+     2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z015 (idcode 0373b093 irlen 6 fpga)
+ORB60_CLOCK_PROOF frequency=125 fclk_register=0x00200400 iopll_register=0x0001e000
+
+Downloading Program -- C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/125mhz/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x00102e67
+	section, .init: 0x00102e68 - 0x00102e7f
+	section, .fini: 0x00102e80 - 0x00102e97
+	section, .rodata: 0x00102e98 - 0x00102ebb
+	section, .data: 0x00102ec0 - 0x0010332f
+	section, .eh_frame: 0x00103330 - 0x00103333
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+
+  0%    0MB   0.0MB/s  ??:?? ETA
+ 99%    0MB   0.1MB/s  ??:?? ETA
+100%    0MB   0.1MB/s  00:00    
+
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/125mhz/elf/orb60_board.elf
+ORB60_MAILBOX_WORDS=1623195649 1000 1623195650 1 4 0 1000 2 519 0 6794 6805433 0 6793 6799 147188 280 11078000 75413 34306 234444 171447 126428 93899 70257 53149 40582 31159 41934 29668 28921 25173 19377 16101 12938 11549 1876 1372 1012 752 563 426 326 250 336 238 232 201 155 129 104 93 64 45 44 38 29 24 19 17 0 64 109 153 191 220 244 263 0 0 0 0 0 0 0 0 0 0 1145328177 0 6291459 0 7 268 201 53872 53872 0 13467 13467 0 31161 4 0 0 0 6291458 0 7 17 17 263 20216 27688 272 1088 11539 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORB60_BOARD_RESULT mode=Production completed=1000/1000 status=4 features=280
+processing_avg_us=6794 min_us=6793 max_us=6799 fps_milli=147188 wall_us=6805433 verification_us=0
+input_contract=direct_immutable_ddr external_capture_transfer_excluded=1
+level=0 layer_cycles=234444 descriptor_cycles=41934 layer_PS_observed_us=1876 descriptor_PS_observed_us=336 count=64 offset=0
+level=1 layer_cycles=171447 descriptor_cycles=29668 layer_PS_observed_us=1372 descriptor_PS_observed_us=238 count=45 offset=64
+level=2 layer_cycles=126428 descriptor_cycles=28921 layer_PS_observed_us=1012 descriptor_PS_observed_us=232 count=44 offset=109
+level=3 layer_cycles=93899 descriptor_cycles=25173 layer_PS_observed_us=752 descriptor_PS_observed_us=201 count=38 offset=153
+level=4 layer_cycles=70257 descriptor_cycles=19377 layer_PS_observed_us=563 descriptor_PS_observed_us=155 count=29 offset=191
+level=5 layer_cycles=53149 descriptor_cycles=16101 layer_PS_observed_us=426 descriptor_PS_observed_us=129 count=24 offset=220
+level=6 layer_cycles=40582 descriptor_cycles=12938 layer_PS_observed_us=326 descriptor_PS_observed_us=104 count=19 offset=244
+level=7 layer_cycles=31159 descriptor_cycles=11549 layer_PS_observed_us=250 descriptor_PS_observed_us=93 count=17 offset=263
+ORB60_BOARD_COMPLETED COMPLETE_UNVERIFIED

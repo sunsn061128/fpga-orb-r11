@@ -1,0 +1,4 @@
+In file included from C:\h\orb4\20261012_230833_ps_direct_16152a6f\ps_inputs\board.c:17:0:
+C:\h\orb4\20261012_230833_ps_direct_16152a6f\ps_inputs\include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="fastv2_descriptor_hls" xd:componentRef="fastv2_descriptor_hls" xd:initiationInterval="x" xd:clockPeriod="8.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x10" xd:statusOffset="0x14"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(raw)" xd:originalName="raw" xd:direction="inout" xd:interfaceRef="m_axi_gmem0" xd:busTypeRef="aximm" xd:arraySize="86400" xd:dataWidth="64" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(blurred)" xd:originalName="blurred" xd:direction="inout" xd:interfaceRef="m_axi_gmem1" xd:busTypeRef="aximm" xd:arraySize="86400" xd:dataWidth="64" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(points)" xd:originalName="points" xd:direction="inout" xd:interfaceRef="m_axi_gmem2" xd:busTypeRef="aximm" xd:arraySize="512" xd:dataWidth="64" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(features)" xd:originalName="features" xd:direction="inout" xd:interfaceRef="m_axi_gmem3" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="63:0" xd:arraySize="8000" xd:dataWidth="64" xd:bufferDirection="out"/>
+  <xd:arg xd:name="*(stats)" xd:originalName="stats" xd:direction="inout" xd:interfaceRef="m_axi_gmem3" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="63:0" xd:arraySize="8" xd:dataWidth="64" xd:bufferDirection="out"/>
+  <xd:arg xd:name="raw" xd:originalName="raw" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem0" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="blurred" xd:originalName="blurred" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem1" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="points" xd:originalName="points" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem2" xd:dataWidth="32" xd:offset="0x28" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="features" xd:originalName="features" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem3" xd:dataWidth="32" xd:offset="0x30" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="stats" xd:originalName="stats" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem3" xd:dataWidth="32" xd:offset="0x38" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="width" xd:originalName="width" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x40" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="height" xd:originalName="height" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x48" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="count" xd:originalName="count" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x50" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="level" xd:originalName="level" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x58" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="frame_offset" xd:originalName="frame_offset" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x60" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="capacity" xd:originalName="capacity" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x68" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="15763" xd:FF="11844" xd:BRAM="27" xd:DSP="16"/>
+</xd:acceleratorMap>

@@ -1,0 +1,42 @@
+[
+  {
+    "Property": "CONFIG.PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ",
+    "MHz100": "100.000000",
+    "MHz125": "125.000000"
+  },
+  {
+    "Property": "CONFIG.PCW_CLK0_FREQ",
+    "MHz100": "100000000",
+    "MHz125": "125000000"
+  },
+  {
+    "Property": "CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0",
+    "MHz100": "6",
+    "MHz125": "4"
+  },
+  {
+    "Property": "CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR1",
+    "MHz100": "3",
+    "MHz125": "2"
+  },
+  {
+    "Property": "CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ",
+    "MHz100": "100",
+    "MHz125": "125"
+  },
+  {
+    "Property": "CONFIG.PCW_IOPLL_CTRL_FBDIV",
+    "MHz100": "54",
+    "MHz125": "30"
+  },
+  {
+    "Property": "CONFIG.PCW_IO_IO_PLL_FREQMHZ",
+    "MHz100": "1800.000",
+    "MHz125": "1000.000"
+  },
+  {
+    "Property": "CONFIG.PCW_PCAP_PERIPHERAL_DIVISOR0",
+    "MHz100": "9",
+    "MHz125": "5"
+  }
+]

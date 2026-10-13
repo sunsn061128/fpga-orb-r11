@@ -1,0 +1,10 @@
+{
+  "state": "FAILED",
+  "frame": "normal",
+  "frames": 100,
+  "mode": "Verified",
+  "job": "C:\\h\\orb4\\20261012_230833_ps_direct_16152a6f",
+  "volatile_sram_only": true,
+  "error": "No actual terminal mailbox",
+  "seconds": 4.359
+}

@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_13'
+================================================================
+* Date:           Tue Oct 13 00:06:32 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.401|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|      1|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     33|
+|Register         |        -|      -|      3|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      3|     34|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------+----+-----------+-----+-----------+
+    |            Name           | LUT| Input Size| Bits| Total Bits|
+    +---------------------------+----+-----------+-----+-----------+
+    |ap_done                    |   3|          2|    1|          2|
+    |blur_offset_out_blk_n      |   3|          2|    1|          2|
+    |count_out_blk_n            |   3|          2|    1|          2|
+    |features_offset_out_blk_n  |   3|          2|    1|          2|
+    |height_out_blk_n           |   3|          2|    1|          2|
+    |level_out_blk_n            |   3|          2|    1|          2|
+    |offset_out_blk_n           |   3|          2|    1|          2|
+    |points_offset_out_blk_n    |   3|          2|    1|          2|
+    |raw_offset_out_blk_n       |   3|          2|    1|          2|
+    |real_start                 |   3|          2|    1|          2|
+    |width_out_blk_n            |   3|          2|    1|          2|
+    +---------------------------+----+-----------+-----+-----------+
+    |Total                      |  33|         22|   11|         22|
+    +---------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+-------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++----------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|start_full_n                |  in |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|ap_done                     | out |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|start_out                   | out |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|start_write                 | out |    1| ap_ctrl_hs | (anonymous namespace.13 | return value |
+|raw_offset                  |  in |   29|   ap_none  |        raw_offset       |    scalar    |
+|blur_offset                 |  in |   29|   ap_none  |       blur_offset       |    scalar    |
+|points_offset               |  in |   29|   ap_none  |      points_offset      |    scalar    |
+|features_offset             |  in |   29|   ap_none  |     features_offset     |    scalar    |
+|width                       |  in |   32|   ap_none  |          width          |    scalar    |
+|height                      |  in |   32|   ap_none  |          height         |    scalar    |
+|count                       |  in |   32|   ap_none  |          count          |    scalar    |
+|level                       |  in |   32|   ap_none  |          level          |    scalar    |
+|offset                      |  in |   32|   ap_none  |          offset         |    scalar    |
+|raw_offset_out_din          | out |   29|   ap_fifo  |      raw_offset_out     |    pointer   |
+|raw_offset_out_full_n       |  in |    1|   ap_fifo  |      raw_offset_out     |    pointer   |
+|raw_offset_out_write        | out |    1|   ap_fifo  |      raw_offset_out     |    pointer   |
+|blur_offset_out_din         | out |   29|   ap_fifo  |     blur_offset_out     |    pointer   |
+|blur_offset_out_full_n      |  in |    1|   ap_fifo  |     blur_offset_out     |    pointer   |
+|blur_offset_out_write       | out |    1|   ap_fifo  |     blur_offset_out     |    pointer   |
+|points_offset_out_din       | out |   29|   ap_fifo  |    points_offset_out    |    pointer   |
+|points_offset_out_full_n    |  in |    1|   ap_fifo  |    points_offset_out    |    pointer   |
+|points_offset_out_write     | out |    1|   ap_fifo  |    points_offset_out    |    pointer   |
+|features_offset_out_din     | out |   29|   ap_fifo  |   features_offset_out   |    pointer   |
+|features_offset_out_full_n  |  in |    1|   ap_fifo  |   features_offset_out   |    pointer   |
+|features_offset_out_write   | out |    1|   ap_fifo  |   features_offset_out   |    pointer   |
+|width_out_din               | out |   32|   ap_fifo  |        width_out        |    pointer   |
+|width_out_full_n            |  in |    1|   ap_fifo  |        width_out        |    pointer   |
+|width_out_write             | out |    1|   ap_fifo  |        width_out        |    pointer   |
+|height_out_din              | out |   32|   ap_fifo  |        height_out       |    pointer   |
+|height_out_full_n           |  in |    1|   ap_fifo  |        height_out       |    pointer   |
+|height_out_write            | out |    1|   ap_fifo  |        height_out       |    pointer   |
+|count_out_din               | out |   32|   ap_fifo  |        count_out        |    pointer   |
+|count_out_full_n            |  in |    1|   ap_fifo  |        count_out        |    pointer   |
+|count_out_write             | out |    1|   ap_fifo  |        count_out        |    pointer   |
+|level_out_din               | out |   32|   ap_fifo  |        level_out        |    pointer   |
+|level_out_full_n            |  in |    1|   ap_fifo  |        level_out        |    pointer   |
+|level_out_write             | out |    1|   ap_fifo  |        level_out        |    pointer   |
+|offset_out_din              | out |   32|   ap_fifo  |        offset_out       |    pointer   |
+|offset_out_full_n           |  in |    1|   ap_fifo  |        offset_out       |    pointer   |
+|offset_out_write            | out |    1|   ap_fifo  |        offset_out       |    pointer   |
++----------------------------+-----+-----+------------+-------------------------+--------------+
+

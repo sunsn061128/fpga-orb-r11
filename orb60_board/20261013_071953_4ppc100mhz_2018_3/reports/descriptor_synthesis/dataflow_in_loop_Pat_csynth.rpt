@@ -1,0 +1,175 @@
+
+
+================================================================
+== Vivado HLS Report for 'dataflow_in_loop_Pat'
+================================================================
+* Date:           Mon Oct 12 23:46:05 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.401|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|      1|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     36|
+|Register         |        -|      -|      2|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      2|     37|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_done                |   3|          2|    1|          2|
+    |blur_offset_out_blk_n  |   3|          2|    1|          2|
+    |count_c4_blk_n         |   3|          2|    1|          2|
+    |count_c_blk_n          |   3|          2|    1|          2|
+    |height_c2_blk_n        |   3|          2|    1|          2|
+    |height_c_blk_n         |   3|          2|    1|          2|
+    |index_0_i_i_c3_blk_n   |   3|          2|    1|          2|
+    |index_0_i_i_c_blk_n    |   3|          2|    1|          2|
+    |level_c_blk_n          |   3|          2|    1|          2|
+    |raw_offset_out_blk_n   |   3|          2|    1|          2|
+    |width_c1_blk_n         |   3|          2|    1|          2|
+    |width_c_blk_n          |   3|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  36|         24|   12|         24|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  2|   0|    2|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|ap_start                |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|ap_done                 | out |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|ap_continue             |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|ap_ready                | out |    1| ap_ctrl_hs | dataflow_in_loop_Pat | return value |
+|width                   |  in |   10|   ap_none  |         width        |    scalar    |
+|height                  |  in |   10|   ap_none  |        height        |    scalar    |
+|index_0_i_i             |  in |    9|   ap_none  |      index_0_i_i     |    scalar    |
+|count                   |  in |    9|   ap_none  |         count        |    scalar    |
+|level                   |  in |    3|   ap_none  |         level        |    scalar    |
+|width_c_din             | out |   10|   ap_fifo  |        width_c       |    pointer   |
+|width_c_full_n          |  in |    1|   ap_fifo  |        width_c       |    pointer   |
+|width_c_write           | out |    1|   ap_fifo  |        width_c       |    pointer   |
+|width_c1_din            | out |   10|   ap_fifo  |       width_c1       |    pointer   |
+|width_c1_full_n         |  in |    1|   ap_fifo  |       width_c1       |    pointer   |
+|width_c1_write          | out |    1|   ap_fifo  |       width_c1       |    pointer   |
+|height_c_din            | out |   10|   ap_fifo  |       height_c       |    pointer   |
+|height_c_full_n         |  in |    1|   ap_fifo  |       height_c       |    pointer   |
+|height_c_write          | out |    1|   ap_fifo  |       height_c       |    pointer   |
+|height_c2_din           | out |   10|   ap_fifo  |       height_c2      |    pointer   |
+|height_c2_full_n        |  in |    1|   ap_fifo  |       height_c2      |    pointer   |
+|height_c2_write         | out |    1|   ap_fifo  |       height_c2      |    pointer   |
+|index_0_i_i_c_din       | out |    8|   ap_fifo  |     index_0_i_i_c    |    pointer   |
+|index_0_i_i_c_full_n    |  in |    1|   ap_fifo  |     index_0_i_i_c    |    pointer   |
+|index_0_i_i_c_write     | out |    1|   ap_fifo  |     index_0_i_i_c    |    pointer   |
+|index_0_i_i_c3_din      | out |    8|   ap_fifo  |    index_0_i_i_c3    |    pointer   |
+|index_0_i_i_c3_full_n   |  in |    1|   ap_fifo  |    index_0_i_i_c3    |    pointer   |
+|index_0_i_i_c3_write    | out |    1|   ap_fifo  |    index_0_i_i_c3    |    pointer   |
+|count_c_din             | out |    9|   ap_fifo  |        count_c       |    pointer   |
+|count_c_full_n          |  in |    1|   ap_fifo  |        count_c       |    pointer   |
+|count_c_write           | out |    1|   ap_fifo  |        count_c       |    pointer   |
+|count_c4_din            | out |    9|   ap_fifo  |       count_c4       |    pointer   |
+|count_c4_full_n         |  in |    1|   ap_fifo  |       count_c4       |    pointer   |
+|count_c4_write          | out |    1|   ap_fifo  |       count_c4       |    pointer   |
+|level_c_din             | out |    3|   ap_fifo  |        level_c       |    pointer   |
+|level_c_full_n          |  in |    1|   ap_fifo  |        level_c       |    pointer   |
+|level_c_write           | out |    1|   ap_fifo  |        level_c       |    pointer   |
+|raw_offset              |  in |   29|   ap_none  |      raw_offset      |    scalar    |
+|blur_offset             |  in |   29|   ap_none  |      blur_offset     |    scalar    |
+|raw_offset_out_din      | out |   29|   ap_fifo  |    raw_offset_out    |    pointer   |
+|raw_offset_out_full_n   |  in |    1|   ap_fifo  |    raw_offset_out    |    pointer   |
+|raw_offset_out_write    | out |    1|   ap_fifo  |    raw_offset_out    |    pointer   |
+|blur_offset_out_din     | out |   29|   ap_fifo  |    blur_offset_out   |    pointer   |
+|blur_offset_out_full_n  |  in |    1|   ap_fifo  |    blur_offset_out   |    pointer   |
+|blur_offset_out_write   | out |    1|   ap_fifo  |    blur_offset_out   |    pointer   |
++------------------------+-----+-----+------------+----------------------+--------------+
+

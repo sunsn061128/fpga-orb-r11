@@ -1,0 +1,528 @@
+WARNING: [COSIM-384] This design has internal non-blocking FIFO/Stream accesses, which may result in mismatches or simulation hanging.
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+WARNING: [COSIM-369] AXI_master port 'gmem0' has a depth of '86400'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'gmem1' has a depth of '86400'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'gmem2' has a depth of '512'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'features' has a depth of '8000'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'stats' has a depth of '8'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "C:/Xilinx/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling apatb_fastv2_descriptor_hls.cpp
+   Compiling tb_descriptor2018.cpp_pre.cpp.tb.cpp
+   Compiling descriptor2018_hls.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+DESCRIPTOR2018_CASE_PASS frame=0 level=0 count=64 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=1 count=45 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=2 count=44 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=3 count=38 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=4 count=29 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=5 count=24 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=6 count=19 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=0 level=7 count=17 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=0 count=204 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=1 count=165 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=2 count=140 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=3 count=117 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=4 count=105 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=5 count=87 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=6 count=70 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=1 level=7 count=54 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=0 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=1 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=2 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=3 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=4 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=5 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=6 count=0 cycles=1
+DESCRIPTOR2018_CASE_PASS frame=2 level=7 count=0 cycles=1
+DESCRIPTOR2018_STREAM_PASS transactions=30 features=1222
+
+C:\h\orb4\20261013_173703_descriptor_95026780\project\solution1\sim\verilog>set PATH= 
+
+C:\h\orb4\20261013_173703_descriptor_95026780\project\solution1\sim\verilog>call C:/Xilinx/Vivado/2018.3/bin/xelab xil_defaultlib.apatb_fastv2_descriptor_hls_top glbl -prj fastv2_descriptor_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s fastv2_descriptor_hls  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fastv2_descriptor_hls_top glbl -prj fastv2_descriptor_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s fastv2_descriptor_hls 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_axi_master_gmem0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_axi_master_gmem1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_axi_master_gmem2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_axi_master_gmem3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_in_loop_Pat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_Pat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_in_loop_Pat_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_Pat_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_in_loop_pcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_pcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_in_loop_pcA_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_pcA_memcore_ram
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_pcA_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_in_loop_qcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_qcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_in_loop_qcK_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_qcK_memcore_ram
+INFO: [VRFC 10-311] analyzing module dataflow_in_loop_qcK_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/dataflow_parent_loop_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_parent_loop_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorcud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorcud_MulnS_0
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorcud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptordEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptordEe_MulnS_1
+INFO: [VRFC 10-311] analyzing module fastv2_descriptordEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptoribs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptoribs_MulnS_2
+INFO: [VRFC 10-311] analyzing module fastv2_descriptoribs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorjbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorjbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorkbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorkbM_MulnS_3
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorkbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorlbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorlbW_MulnS_4
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorlbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptormb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptormb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorncg_DSP48_0
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorocq_DSP48_1
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorrcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorrcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptorrcU_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptorrcU_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fastv2_descriptor_hls_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_read
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem0_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem0_m_axi.v:2241]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_read
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem1_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem1_m_axi.v:2241]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem2_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_read
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem2_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem2_m_axi.v:2241]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem3_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_read
+INFO: [VRFC 10-311] analyzing module fastv2_descriptor_hls_gmem3_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls_gmem3_m_axi.v:2241]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w10_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w10_d2_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w128_d4_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w128_d4_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w128_d4_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w29_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w29_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w29_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w29_d2_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w29_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w29_d2_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w29_d3_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w29_d3_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w29_d3_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w29_d4_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w29_d4_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w29_d4_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w31_d3_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w31_d3_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w31_d3_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w32_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w32_d2_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w32_d4_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d4_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d4_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w3_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w3_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w3_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w3_d3_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w3_d3_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w3_d3_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w513_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w513_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w513_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w8_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w9_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w9_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w9_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fifo_w9_d2_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w9_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w9_d2_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namesbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namesbkb_ram
+INFO: [VRFC 10-311] analyzing module p_anonymous_namesbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_nameseOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_nameseOg_rom
+INFO: [VRFC 10-311] analyzing module p_anonymous_nameseOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namesg8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namesg8j_rom
+INFO: [VRFC 10-311] analyzing module p_anonymous_namesg8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_nameshbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_nameshbi_rom
+INFO: [VRFC 10-311] analyzing module p_anonymous_nameshbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/p_anonymous_namespace_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p_anonymous_namespace_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/start_for_p_anonysc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_p_anonysc4_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_p_anonysc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/start_for_p_anonytde.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_p_anonytde_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_p_anonytde
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/start_for_p_anonyudo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_p_anonyudo_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_p_anonyudo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/start_for_p_anonyvdy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_p_anonyvdy_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_p_anonyvdy
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fastv2_descriptor_hls_control_s_...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem0_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem1_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem2_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.fastv2_descriptor_hls_gmem3_m_ax...
+Compiling module xil_defaultlib.p_anonymous_namespace_13
+Compiling module xil_defaultlib.p_anonymous_namesbkb_ram
+Compiling module xil_defaultlib.p_anonymous_namesbkb(DataWidth=6...
+Compiling module xil_defaultlib.p_anonymous_namespace_7
+Compiling module xil_defaultlib.dataflow_in_loop_pcA_memcore_ram
+Compiling module xil_defaultlib.dataflow_in_loop_pcA_memcore
+Compiling module xil_defaultlib.dataflow_in_loop_pcA(AddressRang...
+Compiling module xil_defaultlib.dataflow_in_loop_qcK_memcore_ram
+Compiling module xil_defaultlib.dataflow_in_loop_qcK_memcore
+Compiling module xil_defaultlib.dataflow_in_loop_qcK(AddressRang...
+Compiling module xil_defaultlib.dataflow_in_loop_Pat
+Compiling module xil_defaultlib.fastv2_descriptorcud_MulnS_0
+Compiling module xil_defaultlib.fastv2_descriptorcud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.p_anonymous_namespace_6
+Compiling module xil_defaultlib.fastv2_descriptordEe_MulnS_1
+Compiling module xil_defaultlib.fastv2_descriptordEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.p_anonymous_namespace_8
+Compiling module xil_defaultlib.p_anonymous_namesg8j_rom
+Compiling module xil_defaultlib.p_anonymous_namesg8j(DataWidth=4...
+Compiling module xil_defaultlib.p_anonymous_nameshbi_rom
+Compiling module xil_defaultlib.p_anonymous_nameshbi(DataWidth=2...
+Compiling module xil_defaultlib.p_anonymous_nameseOg_rom
+Compiling module xil_defaultlib.p_anonymous_nameseOg(DataWidth=3...
+Compiling module xil_defaultlib.p_anonymous_namespace_4
+Compiling module xil_defaultlib.fastv2_descriptorfYi(ID=1,din64_...
+Compiling module xil_defaultlib.p_anonymous_namespace_3
+Compiling module xil_defaultlib.fastv2_descriptoribs_MulnS_2
+Compiling module xil_defaultlib.fastv2_descriptoribs(ID=1,NUM_ST...
+Compiling module xil_defaultlib.fastv2_descriptorjbC(ID=1,din0_W...
+Compiling module xil_defaultlib.fastv2_descriptorkbM_MulnS_3
+Compiling module xil_defaultlib.fastv2_descriptorkbM(ID=1,NUM_ST...
+Compiling module xil_defaultlib.fastv2_descriptorlbW_MulnS_4
+Compiling module xil_defaultlib.fastv2_descriptorlbW(ID=1,NUM_ST...
+Compiling module xil_defaultlib.fastv2_descriptormb6(ID=1,din0_W...
+Compiling module xil_defaultlib.fastv2_descriptorncg_DSP48_0
+Compiling module xil_defaultlib.fastv2_descriptorncg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.fastv2_descriptorocq_DSP48_1
+Compiling module xil_defaultlib.fastv2_descriptorocq(ID=1,NUM_ST...
+Compiling module xil_defaultlib.p_anonymous_namespace_10
+Compiling module xil_defaultlib.p_anonymous_namespace_12
+Compiling module xil_defaultlib.fifo_w10_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w10_d2_A
+Compiling module xil_defaultlib.fifo_w8_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w8_d2_A
+Compiling module xil_defaultlib.fifo_w9_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w9_d2_A
+Compiling module xil_defaultlib.fifo_w3_d3_A_shiftReg
+Compiling module xil_defaultlib.fifo_w3_d3_A
+Compiling module xil_defaultlib.fifo_w29_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w29_d2_A
+Compiling module xil_defaultlib.dataflow_in_loop_Pat_1
+Compiling module xil_defaultlib.dataflow_parent_loop_1
+Compiling module xil_defaultlib.p_anonymous_namespace_5
+Compiling module xil_defaultlib.p_anonymous_namespace_1
+Compiling module xil_defaultlib.p_anonymous_namespace_2
+Compiling module xil_defaultlib.fastv2_descriptorrcU(ID=1,din0_W...
+Compiling module xil_defaultlib.p_anonymous_namespace_1_1
+Compiling module xil_defaultlib.p_anonymous_namespace_11
+Compiling module xil_defaultlib.fifo_w29_d3_A_shiftReg
+Compiling module xil_defaultlib.fifo_w29_d3_A
+Compiling module xil_defaultlib.fifo_w29_d2_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w29_d2_A_x
+Compiling module xil_defaultlib.fifo_w29_d4_A_shiftReg
+Compiling module xil_defaultlib.fifo_w29_d4_A
+Compiling module xil_defaultlib.fifo_w32_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w32_d2_A
+Compiling module xil_defaultlib.fifo_w9_d2_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w9_d2_A_x
+Compiling module xil_defaultlib.fifo_w10_d2_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w10_d2_A_x
+Compiling module xil_defaultlib.fifo_w3_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w3_d2_A
+Compiling module xil_defaultlib.fifo_w31_d3_A_shiftReg
+Compiling module xil_defaultlib.fifo_w31_d3_A
+Compiling module xil_defaultlib.fifo_w128_d4_A_shiftReg
+Compiling module xil_defaultlib.fifo_w128_d4_A
+Compiling module xil_defaultlib.fifo_w32_d4_A_shiftReg
+Compiling module xil_defaultlib.fifo_w32_d4_A
+Compiling module xil_defaultlib.fifo_w513_d2_S_shiftReg
+Compiling module xil_defaultlib.fifo_w513_d2_S
+Compiling module xil_defaultlib.start_for_p_anonysc4_shiftReg
+Compiling module xil_defaultlib.start_for_p_anonysc4
+Compiling module xil_defaultlib.start_for_p_anonytde_shiftReg
+Compiling module xil_defaultlib.start_for_p_anonytde
+Compiling module xil_defaultlib.start_for_p_anonyudo_shiftReg
+Compiling module xil_defaultlib.start_for_p_anonyudo
+Compiling module xil_defaultlib.start_for_p_anonyvdy_shiftReg
+Compiling module xil_defaultlib.start_for_p_anonyvdy
+Compiling module xil_defaultlib.p_anonymous_namespace_9
+Compiling module xil_defaultlib.fastv2_descriptorrcU_x(ID=1,din0...
+Compiling module xil_defaultlib.fifo_w32_d2_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w32_d2_A_x
+Compiling module xil_defaultlib.fastv2_descriptor_hls
+Compiling module xil_defaultlib.AESL_axi_master_gmem0
+Compiling module xil_defaultlib.AESL_axi_master_gmem1
+Compiling module xil_defaultlib.AESL_axi_master_gmem2
+Compiling module xil_defaultlib.AESL_axi_master_gmem3
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_fastv2_descriptor_hls_top
+Compiling module work.glbl
+Built simulation snapshot fastv2_descriptor_hls
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/xsim.dir/fastv2_descriptor_hls/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:01:22 . Memory (MB): peak = 83.609 ; gain = 1.414
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 13 18:03:21 2026...
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/fastv2_descriptor_hls/xsim_script.tcl
+# xsim {fastv2_descriptor_hls} -autoloadwcfg -tclbatch {fastv2_descriptor_hls.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source fastv2_descriptor_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 30 [n/a] @ "116000"
+// RTL Simulation : 1 / 30 [n/a] @ "514004000"
+// RTL Simulation : 2 / 30 [n/a] @ "878844000"
+// RTL Simulation : 3 / 30 [n/a] @ "1235908000"
+// RTL Simulation : 4 / 30 [n/a] @ "1545884000"
+// RTL Simulation : 5 / 30 [n/a] @ "1785156000"
+// RTL Simulation : 6 / 30 [n/a] @ "1985260000"
+// RTL Simulation : 7 / 30 [n/a] @ "2146052000"
+// RTL Simulation : 8 / 30 [n/a] @ "2291148000"
+// RTL Simulation : 9 / 30 [n/a] @ "2292388000"
+// RTL Simulation : 10 / 30 [n/a] @ "2293628000"
+// RTL Simulation : 11 / 30 [n/a] @ "3905796000"
+// RTL Simulation : 12 / 30 [n/a] @ "5212108000"
+// RTL Simulation : 13 / 30 [n/a] @ "6322292000"
+// RTL Simulation : 14 / 30 [n/a] @ "7251900000"
+// RTL Simulation : 15 / 30 [n/a] @ "8087332000"
+// RTL Simulation : 16 / 30 [n/a] @ "8781356000"
+// RTL Simulation : 17 / 30 [n/a] @ "9341892000"
+// RTL Simulation : 18 / 30 [n/a] @ "9777148000"
+// RTL Simulation : 19 / 30 [n/a] @ "9778388000"
+// RTL Simulation : 20 / 30 [n/a] @ "9779628000"
+// RTL Simulation : 21 / 30 [n/a] @ "9786916000"
+// RTL Simulation : 22 / 30 [n/a] @ "9794204000"
+// RTL Simulation : 23 / 30 [n/a] @ "9801492000"
+// RTL Simulation : 24 / 30 [n/a] @ "9808780000"
+// RTL Simulation : 25 / 30 [n/a] @ "9816068000"
+// RTL Simulation : 26 / 30 [n/a] @ "9823356000"
+// RTL Simulation : 27 / 30 [n/a] @ "9830644000"
+// RTL Simulation : 28 / 30 [n/a] @ "9837932000"
+// RTL Simulation : 29 / 30 [n/a] @ "9839172000"
+// RTL Simulation : 30 / 30 [n/a] @ "9840412000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 9840444 ns : File "C:/h/orb4/20261013_173703_descriptor_95026780/project/solution1/sim/verilog/fastv2_descriptor_hls.autotb.v" Line 974
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:05:49 . Memory (MB): peak = 219.227 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Oct 13 18:10:37 2026...
+DESCRIPTOR2018_CASE_PASS frame=0 level=0 count=64 cycles=63538
+DESCRIPTOR2018_CASE_PASS frame=0 level=1 count=45 cycles=44850
+DESCRIPTOR2018_CASE_PASS frame=0 level=2 count=44 cycles=43866
+DESCRIPTOR2018_CASE_PASS frame=0 level=3 count=38 cycles=37968
+DESCRIPTOR2018_CASE_PASS frame=0 level=4 count=29 cycles=29112
+DESCRIPTOR2018_CASE_PASS frame=0 level=5 count=24 cycles=24190
+DESCRIPTOR2018_CASE_PASS frame=0 level=6 count=19 cycles=19272
+DESCRIPTOR2018_CASE_PASS frame=0 level=7 count=17 cycles=17304
+DESCRIPTOR2018_CASE_PASS frame=1 level=0 count=204 cycles=201240
+DESCRIPTOR2018_CASE_PASS frame=1 level=1 count=165 cycles=162896
+DESCRIPTOR2018_CASE_PASS frame=1 level=2 count=140 cycles=138306
+DESCRIPTOR2018_CASE_PASS frame=1 level=3 count=117 cycles=115666
+DESCRIPTOR2018_CASE_PASS frame=1 level=4 count=105 cycles=103860
+DESCRIPTOR2018_CASE_PASS frame=1 level=5 count=87 cycles=86124
+DESCRIPTOR2018_CASE_PASS frame=1 level=6 count=70 cycles=69382
+DESCRIPTOR2018_CASE_PASS frame=1 level=7 count=54 cycles=53670
+DESCRIPTOR2018_CASE_PASS frame=2 level=0 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=1 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=2 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=3 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=4 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=5 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=6 count=0 cycles=5
+DESCRIPTOR2018_CASE_PASS frame=2 level=7 count=0 cycles=5
+DESCRIPTOR2018_STREAM_PASS transactions=30 features=1222
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,10 +1,8 @@
-# Public FPGA repository facts
+# FPGA version archive facts
 
-- Board/device/top: ALINX ACZ7015, xc7z015clg485-2, next_system_wrapper, FCLK0 100 MHz.
-- Vivado HLS/Vivado/SDK 2018.3; native host MinGW 14.2.0, CMake/Ninja. Use isolated process profiles; no global PATH edits or WSL.
-- frozen/R11_DEFAULT/inputs is authoritative for the published default ELF. FPGA_ORB_HLS is a later authored development snapshot, not identical release compilation inputs.
-- Read-only publication check: pwsh -NoProfile -File tools/verify_public.ps1; add -AssetDir to check downloaded paired firmware.
-- Host command with external vectors restored: pwsh -NoProfile -File FPGA_ORB_HLS/fastv2/next/scripts/build_and_test.ps1. See docs/BUILD_PUBLIC_ZH.md for fixture and tool-path prerequisites.
-- Authored C/C++/Tcl/PowerShell/Python inputs are checked in. Build/job directories, SDK/BSP, HLS RTL/IP, backend_tables.h, full_reference.inc and profile ROM are generated: change generators, not generated outputs.
-- Acceptance: CPU exact comparison, FAST11/resize13/Gaussian14 RTL transactions, firmware/source pairing, routed setup/hold and constraint coverage. Production is COMPLETE_UNVERIFIED, never exact PASS.
-- Publishing/copying is not a new build or board test. No automatic JTAG/programming or nonvolatile writes.
+- Target: ACZ7015 xc7z015clg485-2; ORB60 top s_wrapper at 100/125 MHz, current u1 at 125 MHz. Historical R11 top next_system_wrapper at 100 MHz.
+- Tools: current orb60_4ppc/r15/r16/r17/u1 use Vivado HLS/Vivado/SDK 2018.3; archive/2024_2 uses Vivado/Vitis HLS 2024.2 PL with paired board PS flow from SDK 2018.3. Use Windows process-isolated profiles C:/Users/dmsun/Documents/Codex/toolchains/fpga/bin; no global PATH edits or WSL.
+- Sources: orb60_4ppc contains current author inputs and generators. Build commands: its AGENTS.md and README.md. FPGA_ORB_HLS retains historical R11 author inputs; frozen/R11_DEFAULT/inputs is authoritative for its default ELF.
+- Generated boundaries: build/job/cache directories are outside publication; every file in r15/r16/r17/u1, archive/2024_2 and historical orb60_board releases is immutable. New generated jobs and accepted releases belong outside those snapshots.
+- Check: pwsh -NoProfile -File tools/verify_versions.ps1 (all new files and complete baseline manifests); historical source check: pwsh -NoProfile -File tools/verify_public.ps1. Individual baseline: pwsh -NoProfile -File u1/verify.ps1. This publication is not a fresh RTL/build/board pass or a validated relocation rebuild.
+- Acceptance: exact CPU/RTL outputs and guards; AXI stalls/reset/final-response barrier; complete routed setup/hold/constraints/DRC; matched bit/ELF/clock/source and actual physical Verified/Production gates. Same input/budgets/full PS-loop timing for performance comparisons. Production remains COMPLETE_UNVERIFIED. External capture/transfer excluded.

@@ -1,0 +1,54 @@
+{
+  "Name": "u1",
+  "State": "FROZEN_ACCEPTED",
+  "Created": "2026-10-13T19:56:47.152317+08:00",
+  "Path": "C:\\Users\\dmsun\\Desktop\\PLD\\u1",
+  "Release": "C:\\Users\\dmsun\\Desktop\\PLD\\u1\\release",
+  "OriginalRelease": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_194107_4ppc125mhz_2018_3",
+  "SourceJob": "C:\\h\\orb4\\20261013_185832_board_ed859ec6",
+  "Board": "ACZ7015",
+  "Part": "xc7z015clg485-2",
+  "Top": "s_wrapper",
+  "PLMHz": 125,
+  "Toolchain": "Vivado HLS/Vivado/SDK 2018.3",
+  "Input": "normal 960x720; 8 levels; original budgets; 280 features; 100-frame Production",
+  "InputContract": "direct immutable resident DDR; producer handoff before invocation; external capture/transfer excluded",
+  "FPS": 158.29021244129413,
+  "ProcessingMS": 6.306,
+  "WallMS": 6.31751,
+  "Timing": {
+    "part": "xc7z015clg485-2",
+    "frequency_mhz": "125",
+    "wns_ns": "0.157",
+    "whs_ns": "0.046"
+  },
+  "Resources": {
+    "Slice LUTs": 38875.0,
+    "Slice Registers": 36102.0,
+    "Block RAM Tile": 66.5,
+    "DSPs": 62.0,
+    "Slice": 11549.0
+  },
+  "CpuClockHz": 666666687,
+  "BitSHA256": "9E4C62BBFF6357782F95A03692D595B3FD9A645D0E948F8BE62919BC074AFDF4",
+  "ELFSHA256": "F0DED064A82D8469880BF7A5CBDB3A66DD408D59373BB283BECE609A4D3DCBE9",
+  "OriginalManifestSHA256": "C1893DB9340572A2BAF92B6E3BCA7EF2F25040A19757E6461A9F2013265DAD8C",
+  "PhysicalGates": [
+    "normal Verified 100",
+    "normal Production 100",
+    "noise Verified 10",
+    "zero Verified 10"
+  ],
+  "PortableLauncher": "normal Verified 1 physically passed before freezing",
+  "Optimization": "Descriptor raw/blurred AXI read window 2 to 8, scheduling latency hint 64; identical arithmetic, addresses, bytes, image core and PS source.",
+  "PreviousBaseline": "r17",
+  "PreviousBaselineFPS": 143.27365985400414,
+  "GainOverR17Percent": 10.481028126587866,
+  "CriticalPathEstimate": {
+    "InitialImageMS": 1.870368,
+    "DescriptorSumMS": 2.237816,
+    "OverlapModelMS": 6.173464,
+    "ResidualMS": 0.14404600000000034,
+    "Scope": "Averaged hardware-counter overlap estimate; residual is not CPU-only"
+  }
+}

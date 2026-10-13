@@ -1,0 +1,80 @@
+{
+  "baseline": "r15",
+  "job": "C:\\h\\orb4\\20261013_083117_route_f6928ddc",
+  "r15_fps": 110.57213338979884,
+  "trial_fps": 120.43578484387909,
+  "gain_percent": 8.920558147601287,
+  "r15": {
+    "image_cycles": [
+      228801,
+      161561,
+      113393,
+      78597,
+      54669,
+      39205,
+      28506,
+      21044
+    ],
+    "descriptor_cycles": [
+      167394,
+      118374,
+      103764,
+      84935,
+      63483,
+      50549,
+      38803,
+      30438
+    ],
+    "initial_image_ms": 2.28801,
+    "descriptor_sum_ms": 6.5774,
+    "overlap_model_ms": 8.86541,
+    "wall_ms": 9.04387,
+    "residual_ms": 0.1784599999999994,
+    "descriptor_dominates_pairs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "trial": {
+    "image_cycles": [
+      228688,
+      169779,
+      119544,
+      84789,
+      57127,
+      42003,
+      29076,
+      21079
+    ],
+    "descriptor_cycles": [
+      126176,
+      90363,
+      76556,
+      65530,
+      50403,
+      39652,
+      30333,
+      24817
+    ],
+    "initial_image_ms": 2.28688,
+    "descriptor_sum_ms": 5.0383,
+    "overlap_model_ms": 8.13535,
+    "wall_ms": 8.303180000000001,
+    "residual_ms": 0.16783000000000037,
+    "descriptor_dominates_pairs": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "scope": "Same fixture, budgets, PS source, 100 MHz and resident DDR. Counter overlap model excludes final statistics and responses; residual is not CPU-only time."
+}

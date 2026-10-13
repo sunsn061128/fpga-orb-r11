@@ -1,0 +1,12 @@
+{
+  "State": "PASS",
+  "Release": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_071953_4ppc100mhz_2018_3",
+  "Launcher": "run_verified.ps1",
+  "Frame": "normal",
+  "Frames": 1,
+  "Features": 280,
+  "Log": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_071953_4ppc100mhz_2018_3\\20261013_072052_normal_Verified_1.log",
+  "LogSHA256": "C8062C6609EDABBC9B334F007297FA8178CCE602E59E75EB606CC68EA08A37E7",
+  "ManifestFilesVerified": 117,
+  "Purpose": "Portable package execution; performance uses the original 100-frame Production run"
+}

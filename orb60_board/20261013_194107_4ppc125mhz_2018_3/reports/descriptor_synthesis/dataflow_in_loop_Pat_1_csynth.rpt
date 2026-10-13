@@ -1,0 +1,307 @@
+
+
+================================================================
+== Vivado HLS Report for 'dataflow_in_loop_Pat_1'
+================================================================
+* Date:           Tue Oct 13 18:46:14 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|     7.000|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    ?|    ?|    ?|    ?| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------+--------------------------+-----+-----+-----+-----+---------+
+        |                             |                          |  Latency  |  Interval | Pipeline|
+        |           Instance          |          Module          | min | max | min | max |   Type  |
+        +-----------------------------+--------------------------+-----+-----+-----+-----+---------+
+        |p_anonymous_namespace_12_U0  |p_anonymous_namespace_12  |    ?|    ?|    ?|    ?|   none  |
+        |p_anonymous_namespace_8_U0   |p_anonymous_namespace_8   |    1|  373|    1|  373|   none  |
+        |p_anonymous_namespace_6_U0   |p_anonymous_namespace_6   |    1|  357|    1|  357|   none  |
+        |dataflow_in_loop_Pat_U0      |dataflow_in_loop_Pat      |    0|    0|    0|    0|   none  |
+        +-----------------------------+--------------------------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     18|
+|FIFO             |        0|      -|     75|    353|
+|Instance         |        3|     16|   6624|   8503|
+|Memory           |        8|      -|      0|      0|
+|Multiplexer      |        -|      -|      -|     18|
+|Register         |        -|      -|      9|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |       11|     16|   6708|   8892|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        5|     10|      7|     19|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+--------------------------+---------+-------+------+------+
+    |           Instance          |          Module          | BRAM_18K| DSP48E|  FF  |  LUT |
+    +-----------------------------+--------------------------+---------+-------+------+------+
+    |dataflow_in_loop_Pat_U0      |dataflow_in_loop_Pat      |        0|      0|     2|    37|
+    |p_anonymous_namespace_12_U0  |p_anonymous_namespace_12  |        3|     12|  4306|  6916|
+    |p_anonymous_namespace_6_U0   |p_anonymous_namespace_6   |        0|      2|   868|   549|
+    |p_anonymous_namespace_8_U0   |p_anonymous_namespace_8   |        0|      2|  1448|  1001|
+    +-----------------------------+--------------------------+---------+-------+------+------+
+    |Total                        |                          |        3|     16|  6624|  8503|
+    +-----------------------------+--------------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |      Memory     |        Module        | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |raw_patch1_i_U   |dataflow_in_loop_pcA  |        4|  0|   0|   158|   64|     2|        20224|
+    |blur_patch2_i_U  |dataflow_in_loop_qcK  |        4|  0|   0|   222|   64|     2|        28416|
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |Total            |                      |        8|  0|   0|   380|  128|     4|        48640|
+    +-----------------+----------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    +------------------+---------+---+----+------+-----+---------+
+    |       Name       | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +------------------+---------+---+----+------+-----+---------+
+    |blur_offset_c_U   |        0|  5|  41|     2|   29|       58|
+    |count_c4_U        |        0|  5|  21|     2|    9|       18|
+    |count_c8_U        |        0|  5|  21|     2|    9|       18|
+    |count_c_U         |        0|  5|  21|     2|    9|       18|
+    |height_c2_U       |        0|  5|  22|     2|   10|       20|
+    |height_c6_U       |        0|  5|  22|     2|   10|       20|
+    |height_c_U        |        0|  5|  22|     2|   10|       20|
+    |index_0_i_i_c3_U  |        0|  5|  20|     2|    8|       16|
+    |index_0_i_i_c7_U  |        0|  5|  20|     2|    8|       16|
+    |index_0_i_i_c_U   |        0|  5|  20|     2|    8|       16|
+    |level_c_U         |        0|  5|  16|     3|    3|        9|
+    |raw_offset_c_U    |        0|  5|  41|     2|   29|       58|
+    |width_c1_U        |        0|  5|  22|     2|   10|       20|
+    |width_c5_U        |        0|  5|  22|     2|   10|       20|
+    |width_c_U         |        0|  5|  22|     2|   10|       20|
+    +------------------+---------+---+----+------+-----+---------+
+    |Total             |        0| 75| 353|    31|  172|      347|
+    +------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    |                Variable Name                | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    |dataflow_in_loop_Pat_U0_ap_ready_count       |     +    |      0|  0|   3|           2|           1|
+    |p_anonymous_namespace_6_U0_ap_ready_count    |     +    |      0|  0|   3|           2|           1|
+    |p_anonymous_namespace_8_U0_ap_ready_count    |     +    |      0|  0|   3|           2|           1|
+    |ap_idle                                      |    and   |      0|  0|   1|           1|           1|
+    |ap_sync_ready                                |    and   |      0|  0|   1|           1|           1|
+    |dataflow_in_loop_Pat_U0_ap_start             |    and   |      0|  0|   1|           1|           1|
+    |p_anonymous_namespace_12_U0_ap_start         |    and   |      0|  0|   1|           1|           1|
+    |p_anonymous_namespace_6_U0_ap_start          |    and   |      0|  0|   1|           1|           1|
+    |p_anonymous_namespace_8_U0_ap_start          |    and   |      0|  0|   1|           1|           1|
+    |ap_sync_dataflow_in_loop_Pat_U0_ap_ready     |    or    |      0|  0|   1|           1|           1|
+    |ap_sync_p_anonymous_namespace_6_U0_ap_ready  |    or    |      0|  0|   1|           1|           1|
+    |ap_sync_p_anonymous_namespace_8_U0_ap_ready  |    or    |      0|  0|   1|           1|           1|
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                        |          |      0|  0|  18|          15|          12|
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                      | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_dataflow_in_loop_Pat_U0_ap_ready     |   3|          2|    1|          2|
+    |ap_sync_reg_p_anonymous_namespace_6_U0_ap_ready  |   3|          2|    1|          2|
+    |ap_sync_reg_p_anonymous_namespace_8_U0_ap_ready  |   3|          2|    1|          2|
+    |dataflow_in_loop_Pat_U0_ap_ready_count           |   3|          2|    2|          4|
+    |p_anonymous_namespace_6_U0_ap_ready_count        |   3|          2|    2|          4|
+    |p_anonymous_namespace_8_U0_ap_ready_count        |   3|          2|    2|          4|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                            |  18|         12|    9|         18|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------+---+----+-----+-----------+
+    |                       Name                      | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_dataflow_in_loop_Pat_U0_ap_ready     |  1|   0|    1|          0|
+    |ap_sync_reg_p_anonymous_namespace_6_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_p_anonymous_namespace_8_U0_ap_ready  |  1|   0|    1|          0|
+    |dataflow_in_loop_Pat_U0_ap_ready_count           |  2|   0|    2|          0|
+    |p_anonymous_namespace_6_U0_ap_ready_count        |  2|   0|    2|          0|
+    |p_anonymous_namespace_8_U0_ap_ready_count        |  2|   0|    2|          0|
+    +-------------------------------------------------+---+----+-----+-----------+
+    |Total                                            |  9|   0|    9|          0|
+    +-------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-----------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|ap_start               |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|ap_done                | out |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|ap_ready               | out |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|ap_idle                | out |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|ap_continue            |  in |    1| ap_ctrl_hs | dataflow_in_loop_Pat.1 | return value |
+|m_axi_raw_AWVALID      | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWREADY      |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWADDR       | out |   32|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWID         | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWLEN        | out |   32|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWSIZE       | out |    3|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWBURST      | out |    2|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWLOCK       | out |    2|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWCACHE      | out |    4|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWPROT       | out |    3|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWQOS        | out |    4|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWREGION     | out |    4|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_AWUSER       | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WVALID       | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WREADY       |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WDATA        | out |   64|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WSTRB        | out |    8|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WLAST        | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WID          | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_WUSER        | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARVALID      | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARREADY      |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARADDR       | out |   32|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARID         | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARLEN        | out |   32|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARSIZE       | out |    3|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARBURST      | out |    2|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARLOCK       | out |    2|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARCACHE      | out |    4|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARPROT       | out |    3|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARQOS        | out |    4|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARREGION     | out |    4|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_ARUSER       | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RVALID       |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RREADY       | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RDATA        |  in |   64|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RLAST        |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RID          |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RUSER        |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_RRESP        |  in |    2|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_BVALID       |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_BREADY       | out |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_BRESP        |  in |    2|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_BID          |  in |    1|    m_axi   |           raw          |    pointer   |
+|m_axi_raw_BUSER        |  in |    1|    m_axi   |           raw          |    pointer   |
+|raw_offset             |  in |   29|   ap_none  |       raw_offset       |    scalar    |
+|raw_offset_ap_vld      |  in |    1|   ap_none  |       raw_offset       |    scalar    |
+|width                  |  in |   10|   ap_none  |          width         |    scalar    |
+|width_ap_vld           |  in |    1|   ap_none  |          width         |    scalar    |
+|height                 |  in |   10|   ap_none  |         height         |    scalar    |
+|height_ap_vld          |  in |    1|   ap_none  |         height         |    scalar    |
+|index_0_i_i            |  in |    9|   ap_none  |       index_0_i_i      |    scalar    |
+|index_0_i_i_ap_vld     |  in |    1|   ap_none  |       index_0_i_i      |    scalar    |
+|count                  |  in |    9|   ap_none  |          count         |    scalar    |
+|count_ap_vld           |  in |    1|   ap_none  |          count         |    scalar    |
+|m_axi_blur_AWVALID     | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWREADY     |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWADDR      | out |   32|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWID        | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWLEN       | out |   32|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWSIZE      | out |    3|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWBURST     | out |    2|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWLOCK      | out |    2|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWCACHE     | out |    4|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWPROT      | out |    3|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWQOS       | out |    4|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWREGION    | out |    4|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_AWUSER      | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WVALID      | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WREADY      |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WDATA       | out |   64|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WSTRB       | out |    8|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WLAST       | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WID         | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_WUSER       | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARVALID     | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARREADY     |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARADDR      | out |   32|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARID        | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARLEN       | out |   32|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARSIZE      | out |    3|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARBURST     | out |    2|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARLOCK      | out |    2|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARCACHE     | out |    4|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARPROT      | out |    3|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARQOS       | out |    4|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARREGION    | out |    4|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_ARUSER      | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RVALID      |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RREADY      | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RDATA       |  in |   64|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RLAST       |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RID         |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RUSER       |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_RRESP       |  in |    2|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_BVALID      |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_BREADY      | out |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_BRESP       |  in |    2|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_BID         |  in |    1|    m_axi   |          blur          |    pointer   |
+|m_axi_blur_BUSER       |  in |    1|    m_axi   |          blur          |    pointer   |
+|blur_offset            |  in |   29|   ap_none  |       blur_offset      |    scalar    |
+|blur_offset_ap_vld     |  in |    1|   ap_none  |       blur_offset      |    scalar    |
+|level                  |  in |    3|   ap_none  |          level         |    scalar    |
+|level_ap_vld           |  in |    1|   ap_none  |          level         |    scalar    |
+|raw_points_V_dout      |  in |  128|   ap_fifo  |      raw_points_V      |    pointer   |
+|raw_points_V_empty_n   |  in |    1|   ap_fifo  |      raw_points_V      |    pointer   |
+|raw_points_V_read      | out |    1|   ap_fifo  |      raw_points_V      |    pointer   |
+|raw_bytes_V_din        | out |   32|   ap_fifo  |       raw_bytes_V      |    pointer   |
+|raw_bytes_V_full_n     |  in |    1|   ap_fifo  |       raw_bytes_V      |    pointer   |
+|raw_bytes_V_write      | out |    1|   ap_fifo  |       raw_bytes_V      |    pointer   |
+|blur_points_V_dout     |  in |  128|   ap_fifo  |      blur_points_V     |    pointer   |
+|blur_points_V_empty_n  |  in |    1|   ap_fifo  |      blur_points_V     |    pointer   |
+|blur_points_V_read     | out |    1|   ap_fifo  |      blur_points_V     |    pointer   |
+|blur_bytes_V_din       | out |   32|   ap_fifo  |      blur_bytes_V      |    pointer   |
+|blur_bytes_V_full_n    |  in |    1|   ap_fifo  |      blur_bytes_V      |    pointer   |
+|blur_bytes_V_write     | out |    1|   ap_fifo  |      blur_bytes_V      |    pointer   |
+|records_V_din          | out |  513|   ap_fifo  |        records_V       |    pointer   |
+|records_V_full_n       |  in |    1|   ap_fifo  |        records_V       |    pointer   |
+|records_V_write        | out |    1|   ap_fifo  |        records_V       |    pointer   |
++-----------------------+-----+-----+------------+------------------------+--------------+
+

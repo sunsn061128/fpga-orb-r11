@@ -1,0 +1,82 @@
+{
+  "baseline": "r17",
+  "job": "C:\\h\\orb4\\20261013_181237_board_fc1b8d97",
+  "baseline_fps": 143.27365985400414,
+  "trial_fps": 143.25293023868804,
+  "gain_percent": -0.014468545954104961,
+  "baseline_counters": {
+    "image_cycles": [
+      233802,
+      172243,
+      124308,
+      83722,
+      57822,
+      40916,
+      28838,
+      21270
+    ],
+    "descriptor_cycles": [
+      147154,
+      101729,
+      88494,
+      72793,
+      56271,
+      44058,
+      33597,
+      27024
+    ],
+    "frequency_mhz": 125,
+    "initial_image_ms": 1.870416,
+    "descriptor_sum_ms": 4.56896,
+    "overlap_model_ms": 6.82072,
+    "wall_ms": 6.9796499999999995,
+    "residual_ms": 0.1589299999999998,
+    "descriptor_dominates_pairs": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "trial": {
+    "image_cycles": [
+      233853,
+      172295,
+      124326,
+      83610,
+      57785,
+      40870,
+      28844,
+      21270
+    ],
+    "descriptor_cycles": [
+      147067,
+      101776,
+      88475,
+      72739,
+      56324,
+      44067,
+      33606,
+      27029
+    ],
+    "frequency_mhz": 125,
+    "initial_image_ms": 1.870824,
+    "descriptor_sum_ms": 4.568664,
+    "overlap_model_ms": 6.821712,
+    "wall_ms": 6.980659999999999,
+    "residual_ms": 0.15894799999999965,
+    "descriptor_dominates_pairs": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "scope": "Same fixture, budgets, PS source and resident DDR; clocks reported explicitly. Counter overlap model excludes final statistics and responses; residual is not CPU-only time."
+}

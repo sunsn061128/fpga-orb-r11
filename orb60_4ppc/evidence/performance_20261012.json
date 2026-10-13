@@ -1,0 +1,138 @@
+{
+  "scope": "Existing normal Production 100-frame evidence and source/HLS review; no new board run.",
+  "clock_mhz": 100,
+  "baseline": {
+    "frames": 100,
+    "features": 280,
+    "image_cycles": [
+      355978,
+      248937,
+      174319,
+      122188,
+      85653,
+      60110,
+      42479,
+      30073
+    ],
+    "descriptor_cycles": [
+      123215,
+      86700,
+      83780,
+      72559,
+      54615,
+      44829,
+      34599,
+      29243
+    ],
+    "counts": [
+      64,
+      45,
+      44,
+      38,
+      29,
+      24,
+      19,
+      17
+    ],
+    "processing_us": 11690,
+    "wall_per_frame_us": 14398.56,
+    "input_preparation_and_loop_us": 2708.5599999999995,
+    "cache_per_frame_us": 1046.93,
+    "config_per_frame_us": 39.17,
+    "ideal_schedule_us": 11558.56,
+    "processing_minus_ideal_schedule_us": 131.4400000000005,
+    "descriptor_sum_us": 5295.4,
+    "processing_only_fps": 85.5431993156544,
+    "whole_loop_fps": 69.45138958340279
+  },
+  "four_ppc": {
+    "frames": 100,
+    "features": 280,
+    "image_cycles": [
+      228644,
+      162878,
+      113857,
+      78619,
+      54895,
+      39213,
+      28505,
+      21047
+    ],
+    "descriptor_cycles": [
+      169872,
+      119376,
+      109911,
+      92298,
+      69945,
+      56919,
+      44622,
+      38734
+    ],
+    "counts": [
+      64,
+      45,
+      44,
+      38,
+      29,
+      24,
+      19,
+      17
+    ],
+    "processing_us": 9422,
+    "wall_per_frame_us": 12118.29,
+    "input_preparation_and_loop_us": 2696.290000000001,
+    "cache_per_frame_us": 1046.24,
+    "config_per_frame_us": 39.18,
+    "ideal_schedule_us": 9303.21,
+    "processing_minus_ideal_schedule_us": 118.79000000000087,
+    "descriptor_sum_us": 7016.77,
+    "processing_only_fps": 106.13457864572278,
+    "whole_loop_fps": 82.51989348332148
+  },
+  "patch_copy_cycles_per_feature": 380,
+  "patch_copy_work_us_per_frame": 1064.0,
+  "descriptor_sum_increase_us": 1721.3700000000008,
+  "ps_source_diff_after_name_normalization": "--- 2PPC (layer2 name normalized)\n+++ 4PPC\n@@ -107,8 +107,10 @@\n }\n /** @brief Wait for one completion with a one-second hardware watchdog; never restart a timed-out core. */\n static int wait_core(uint32_t base,uint32_t which,uint32_t l) {\n-    while(!(Xil_In32(base)&2u))if(now()-started[which]>COUNTS_PER_SECOND){mail[5]=1;mail[9]=base;return 0;}\n-    if(Xil_In32(base+0x10)!=0){mail[5]=2;mail[9]=base;return 0;}\n+    uint32_t control=which?DREG(AP_CTRL):LREG(AP_CTRL);\n+    uint32_t result=which?DREG(AP_RETURN):LREG(AP_RETURN);\n+    while(!(Xil_In32(base+control)&2u))if(now()-started[which]>COUNTS_PER_SECOND){mail[5]=1;mail[9]=base;return 0;}\n+    if(Xil_In32(base+result)!=0){mail[5]=2;mail[9]=base;return 0;}\n     if(which)desc_us[l]+=us(now()-started[1]);else layer_us[l]+=us(now()-started[0]);\n     return 1;\n }\n@@ -118,7 +120,7 @@\n     cache(summary(l),64,1);cache(lstats(l),64,1);s=(uint32_t*)MEM(summary(l));v=(uint32_t*)MEM(lstats(l));\n     count[l]=s[3];offset[l]=l?offset[l-1]+count[l-1]:0;\n     if(s[0]!=0x20000 || s[1] || count[l]>256 || offset[l]+count[l]>CAP ||\n-       v[0]!=0x600001 || v[1] || v[2]!=l || v[3]!=r[0] || v[4]!=r[1] || !v[11] ||\n+       v[0]!=0x600001 || v[1] || v[2]!=l || v[3]!=r[0] || v[4]!=r[1] || !v[11] || v[12]!=(4u|(l<7?1u:0u)) ||\n        v[5]!=n || v[6]!=n || v[7]!=(l<7?((row(l+1)[0]*row(l+1)[1]+7)&~7u):0)) {mail[5]=3;return 0;}\n     layer_cycles[l]+=v[11];mail[16]=offset[l]+count[l];mail[17]+=s[2];mail[52+l]=count[l];mail[60+l]=offset[l];\n     if(mode==1) {",
+  "sources": [
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261012_172441_100mhz\\acceptance.json",
+      "sha256": "926254F1C526FC8287B47182BA5BD7B3D25417FB5DD5EE127FCEFABC60F223A7"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261012_172441_100mhz\\inputs\\board.c",
+      "sha256": "55E217208318956714837B883F86C5A54446A543C13D7AC8A906823944D64320"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261012_223016_4ppc100mhz_2018_3\\reports\\normal_Production.json",
+      "sha256": "F9281DBDB5D95C7FCBF940A62324C8C0D19CFACED70991EB9F3FD4BC81D723A3"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261012_223016_4ppc100mhz_2018_3\\inputs\\board.c",
+      "sha256": "B9C3C4F4ED56FFC203CB3CDCDC95D4D2EB450FA387246EF80E80B04FADFFF26D"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261012_223016_4ppc100mhz_2018_3\\reports\\descriptor_synthesis\\p_anonymous_namespace_9_csynth.rpt",
+      "sha256": "1A606C495C4498AE2B51F4F7CA1CF6B62EE677E167F34598E124B91E5251261B"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\scripts\\migrate_descriptor.py",
+      "sha256": "3519021F58D249326ABD51CB5FD1C2F6B07B851E55AAB961DBF8D51974CA2974"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\upstream\\FPGA_ORB_HLS\\fastv2\\next\\src\\descriptor_hls.cpp",
+      "sha256": "11F46DEBDA82AD04F6B14B1E5FB76E48F95A16F41360C68C3A8E18072F6973CD"
+    },
+    {
+      "path": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\upstream\\FPGA_ORB_HLS\\fastv2\\next\\src\\descriptor2018_hls.cpp",
+      "sha256": "48D73DE471974327A69F12AE9E0D268A946BD205E098CA80B9239E51CFFB10C0"
+    }
+  ],
+  "caveats": [
+    "Production is COMPLETE_UNVERIFIED; adjacent Verified normal 100-frame run passed exact checks.",
+    "Cache/config timings overlap other categories; do not add them to input preparation and processing.",
+    "Schedule residual includes PS bookkeeping, register start offsets, hardware tail/stats writes and rounding; not pure CPU timing.",
+    "Patch copy work is not a measured additive frame penalty or guaranteed recoverable time; loader/compute overlap changes the critical path.",
+    "PL counters include memory stalls. Existing logs cannot separate DDR arbitration, transaction latency and internal waiting.",
+    "2PPC PL used 2024.2; 4PPC PL used 2018.3 with a changed patch transport. This is not a same-source tool-version-only comparison."
+  ]
+}

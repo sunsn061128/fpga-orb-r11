@@ -1,0 +1,13 @@
+{
+  "State": "BUILT_NOT_PROGRAMMED",
+  "Part": "xc7z015clg485-2",
+  "Top": "s_wrapper",
+  "FrequencyMHz": 125,
+  "BitSHA256": "B892D2302049CE48077E82EADA0BDD331EB40DC8B708B3605FD1B33F4A5D1FEF",
+  "PSConfigProperties": 876,
+  "PLTool": "Published 2024.2 bit, unchanged",
+  "PSTool": "SDK ARM GCC/standalone 2018.3 compatibility test",
+  "NoXsaClaim": true,
+  "SourcePackage": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc_100_125mhz_source_reports_bit",
+  "Runtime": "C:\\Users\\dmsun\\Desktop\\PLD\\FPGA_ORB_HLS\\fastv2\\next\\board_build\\jobs\\20261012_012547_bf5bab91"
+}

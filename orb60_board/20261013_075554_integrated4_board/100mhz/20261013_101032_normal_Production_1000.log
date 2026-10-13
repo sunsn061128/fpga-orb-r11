@@ -1,0 +1,66 @@
+attempting to launch hw_server
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+****** Xilinx hw_server v2018.3
+
+  **** Build date : Dec  7 2018-00:40:27
+
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: hw_server application started
+
+INFO: Use Ctrl-C to exit hw_server application
+
+
+
+
+INFO: To connect to this hw_server instance use url: TCP:127.0.0.1:3121
+
+
+
+ORB60_CLOCK_PROOF frequency=100 fclk_register=0x00300600 iopll_register=0x00036000
+
+Downloading Program -- C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/elf/orb60_board.elf
+	section, .text: 0x00100000 - 0x00102e67
+	section, .init: 0x00102e68 - 0x00102e7f
+	section, .fini: 0x00102e80 - 0x00102e97
+	section, .rodata: 0x00102e98 - 0x00102ebb
+	section, .data: 0x00102ec0 - 0x0010332f
+	section, .eh_frame: 0x00103330 - 0x00103333
+	section, .mmu_tbl: 0x00104000 - 0x00107fff
+	section, .ARM.exidx: 0x00108000 - 0x00108007
+	section, .init_array: 0x00108008 - 0x0010800b
+	section, .fini_array: 0x0010800c - 0x0010800f
+	section, .bss: 0x00108010 - 0x001081c3
+	section, .heap: 0x001081c4 - 0x0010a1cf
+	section, .stack: 0x0010a1d0 - 0x0010d9cf
+
+  0%    0MB   0.0MB/s  ??:?? ETA
+ 99%    0MB   0.1MB/s  ??:?? ETA
+100%    0MB   0.0MB/s  00:00    
+
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded C:/Users/dmsun/Desktop/PLD/orb60_board/20261013_075554_integrated4_board/100mhz/elf/orb60_board.elf
+ORB60_MAILBOX_WORDS=1623195649 1000 1623195650 1 4 0 1000 2 519 0 8429 8439975 0 8428 8434 118638 280 11078000 75399 39099 233695 170804 125900 93449 69888 52841 40319 30940 40597 28774 28117 24413 18763 15650 12586 11258 2338 1709 1260 936 700 530 404 310 407 288 281 244 188 157 126 113 64 45 44 38 29 24 19 17 0 64 109 153 191 220 244 263 0 0 0 0 0 0 0 0 0 0 1145328177 0 6291459 0 7 268 201 53872 53872 0 13467 13467 0 30938 4 0 0 0 6291458 0 7 17 17 263 20216 27688 272 1088 11253 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORB60_BOARD_RESULT mode=Production completed=1000/1000 status=4 features=280
+processing_avg_us=8429 min_us=8428 max_us=8434 fps_milli=118638 wall_us=8439975 verification_us=0
+input_contract=direct_immutable_ddr external_capture_transfer_excluded=1
+level=0 layer_cycles=233695 descriptor_cycles=40597 layer_PS_observed_us=2338 descriptor_PS_observed_us=407 count=64 offset=0
+level=1 layer_cycles=170804 descriptor_cycles=28774 layer_PS_observed_us=1709 descriptor_PS_observed_us=288 count=45 offset=64
+level=2 layer_cycles=125900 descriptor_cycles=28117 layer_PS_observed_us=1260 descriptor_PS_observed_us=281 count=44 offset=109
+level=3 layer_cycles=93449 descriptor_cycles=24413 layer_PS_observed_us=936 descriptor_PS_observed_us=244 count=38 offset=153
+level=4 layer_cycles=69888 descriptor_cycles=18763 layer_PS_observed_us=700 descriptor_PS_observed_us=188 count=29 offset=191
+level=5 layer_cycles=52841 descriptor_cycles=15650 layer_PS_observed_us=530 descriptor_PS_observed_us=157 count=24 offset=220
+level=6 layer_cycles=40319 descriptor_cycles=12586 layer_PS_observed_us=404 descriptor_PS_observed_us=126 count=19 offset=244
+level=7 layer_cycles=30940 descriptor_cycles=11258 layer_PS_observed_us=310 descriptor_PS_observed_us=113 count=17 offset=263
+ORB60_BOARD_COMPLETED COMPLETE_UNVERIFIED

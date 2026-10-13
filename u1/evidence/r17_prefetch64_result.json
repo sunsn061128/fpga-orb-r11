@@ -1,0 +1,248 @@
+{
+  "State": "PHYSICALLY_ACCEPTED",
+  "Completed": "2026-10-13T19:48:22.698995+08:00",
+  "Baseline": "r17",
+  "BaselinePath": "C:\\Users\\dmsun\\Desktop\\PLD\\r17",
+  "PLMHz": 125,
+  "SourceJob": "C:\\h\\orb4\\20261013_185832_board_ed859ec6",
+  "Package": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_194107_4ppc125mhz_2018_3",
+  "BaselineFPS": 143.27365985400414,
+  "FPS": 158.29021244129413,
+  "GainPercent": 10.481028126587866,
+  "Timing": {
+    "part": "xc7z015clg485-2",
+    "frequency_mhz": "125",
+    "wns_ns": "0.157",
+    "whs_ns": "0.046"
+  },
+  "Resources": {
+    "Slice LUTs": 38875.0,
+    "Slice Registers": 36102.0,
+    "Block RAM Tile": 66.5,
+    "DSPs": 62.0,
+    "Slice": 11549.0
+  },
+  "Comparison": {
+    "baseline": "r17",
+    "job": "C:\\h\\orb4\\20261013_185832_board_ed859ec6",
+    "baseline_fps": 143.27365985400414,
+    "trial_fps": 158.29021244129413,
+    "gain_percent": 10.481028126587866,
+    "baseline_counters": {
+      "image_cycles": [
+        233802,
+        172243,
+        124308,
+        83722,
+        57822,
+        40916,
+        28838,
+        21270
+      ],
+      "descriptor_cycles": [
+        147154,
+        101729,
+        88494,
+        72793,
+        56271,
+        44058,
+        33597,
+        27024
+      ],
+      "frequency_mhz": 125,
+      "initial_image_ms": 1.870416,
+      "descriptor_sum_ms": 4.56896,
+      "overlap_model_ms": 6.82072,
+      "wall_ms": 6.9796499999999995,
+      "residual_ms": 0.1589299999999998,
+      "descriptor_dominates_pairs": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "trial": {
+      "image_cycles": [
+        233796,
+        168277,
+        118960,
+        82459,
+        58703,
+        41188,
+        29777,
+        21329
+      ],
+      "descriptor_cycles": [
+        63484,
+        44807,
+        43838,
+        37921,
+        29085,
+        24168,
+        19230,
+        17194
+      ],
+      "frequency_mhz": 125,
+      "initial_image_ms": 1.870368,
+      "descriptor_sum_ms": 2.237816,
+      "overlap_model_ms": 6.173464,
+      "wall_ms": 6.31751,
+      "residual_ms": 0.14404600000000034,
+      "descriptor_dominates_pairs": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "scope": "Same fixture, budgets, PS source and resident DDR; clocks reported explicitly. Counter overlap model excludes final statistics and responses; residual is not CPU-only time."
+  },
+  "PhysicalGates": {
+    "normal_Verified": {
+      "frame": "normal",
+      "mode": "Verified",
+      "frames": 100,
+      "features": 280,
+      "result": "EXACT_VERIFIED",
+      "state": "SUCCEEDED",
+      "log": "C:\\h\\orb4\\20261013_185832_board_ed859ec6\\20261013_192727_normal_Verified_100.log"
+    },
+    "normal_Production": {
+      "frame": "normal",
+      "mode": "Production",
+      "frames": 100,
+      "features": 280,
+      "result": "COMPLETE_UNVERIFIED",
+      "state": "SUCCEEDED",
+      "log": "C:\\h\\orb4\\20261013_185832_board_ed859ec6\\20261013_193114_normal_Production_100.log"
+    },
+    "noise_Verified": {
+      "frame": "noise",
+      "mode": "Verified",
+      "frames": 10,
+      "features": 942,
+      "result": "EXACT_VERIFIED",
+      "state": "SUCCEEDED",
+      "log": "C:\\h\\orb4\\20261013_185832_board_ed859ec6\\20261013_193328_noise_Verified_10.log"
+    },
+    "zero_Verified": {
+      "frame": "zero",
+      "mode": "Verified",
+      "frames": 10,
+      "features": 0,
+      "result": "EXACT_VERIFIED",
+      "state": "SUCCEEDED",
+      "log": "C:\\h\\orb4\\20261013_185832_board_ed859ec6\\20261013_193609_zero_Verified_10.log"
+    }
+  },
+  "BitSHA256": "9E4C62BBFF6357782F95A03692D595B3FD9A645D0E948F8BE62919BC074AFDF4",
+  "ELFSHA256": "F0DED064A82D8469880BF7A5CBDB3A66DD408D59373BB283BECE609A4D3DCBE9",
+  "ManifestSHA256": "C1893DB9340572A2BAF92B6E3BCA7EF2F25040A19757E6461A9F2013265DAD8C",
+  "PackageCheck": {
+    "State": "PASS",
+    "Package": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_194107_4ppc125mhz_2018_3",
+    "ManifestSHA256": "C1893DB9340572A2BAF92B6E3BCA7EF2F25040A19757E6461A9F2013265DAD8C",
+    "Files": 128,
+    "PowerShellASTErrors": 0
+  },
+  "PortableVerified": {
+    "State": "CPU_EXACT_PASS",
+    "Frame": "normal",
+    "Frames": 1,
+    "Features": 280,
+    "Log": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_board\\20261013_194107_4ppc125mhz_2018_3\\20261013_194147_normal_Verified_1.log",
+    "LogSHA256": "1579136A53341D3058D77352AFB7DA3D3B48D19B9C79FB5E4D450149E66E1034"
+  },
+  "Optimization": "Descriptor raw/blurred AXI read window 2 to 8, scheduling latency hint 64; identical arithmetic, addresses, bytes, image core and PS source.",
+  "ExtraAXIProof": "C:\\Users\\dmsun\\Desktop\\PLD\\orb60_4ppc\\build\\r17_opt\\prefetch64_queued40_80",
+  "Read8Only": {
+    "baseline": "r17",
+    "job": "C:\\h\\orb4\\20261013_181237_board_fc1b8d97",
+    "baseline_fps": 143.27365985400414,
+    "trial_fps": 143.25293023868804,
+    "gain_percent": -0.014468545954104961,
+    "baseline_counters": {
+      "image_cycles": [
+        233802,
+        172243,
+        124308,
+        83722,
+        57822,
+        40916,
+        28838,
+        21270
+      ],
+      "descriptor_cycles": [
+        147154,
+        101729,
+        88494,
+        72793,
+        56271,
+        44058,
+        33597,
+        27024
+      ],
+      "frequency_mhz": 125,
+      "initial_image_ms": 1.870416,
+      "descriptor_sum_ms": 4.56896,
+      "overlap_model_ms": 6.82072,
+      "wall_ms": 6.9796499999999995,
+      "residual_ms": 0.1589299999999998,
+      "descriptor_dominates_pairs": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "trial": {
+      "image_cycles": [
+        233853,
+        172295,
+        124326,
+        83610,
+        57785,
+        40870,
+        28844,
+        21270
+      ],
+      "descriptor_cycles": [
+        147067,
+        101776,
+        88475,
+        72739,
+        56324,
+        44067,
+        33606,
+        27029
+      ],
+      "frequency_mhz": 125,
+      "initial_image_ms": 1.870824,
+      "descriptor_sum_ms": 4.568664,
+      "overlap_model_ms": 6.821712,
+      "wall_ms": 6.980659999999999,
+      "residual_ms": 0.15894799999999965,
+      "descriptor_dominates_pairs": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "scope": "Same fixture, budgets, PS source and resident DDR; clocks reported explicitly. Counter overlap model excludes final statistics and responses; residual is not CPU-only time."
+  },
+  "InputScope": "Identical 960x720 eight levels, budgets and normal fixture; immutable resident DDR; full PS loop includes preparation/cache/configuration/scheduling; external capture/transfer and JTAG excluded."
+}

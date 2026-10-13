@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_8'
+================================================================
+* Date:           Mon Oct 12 19:30:35 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.867|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                         |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name        | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- CountDescriptorCycles  |    ?|    ?|         1|          1|          1|     ?|    yes   |
+        +-------------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     37|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     48|
+|Register         |        -|      -|    168|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|    168|     85|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |c_cycles_fu_314_p2              |     +    |      0|  0|  32|          32|           1|
+    |brmerge14_demorgan_i_fu_308_p2  |    and   |      0|  0|   1|           1|           1|
+    |completion_V_cycles1_status     |    and   |      0|  0|   1|           1|           1|
+    |tmp1_fu_296_p2                  |    and   |      0|  0|   1|           1|           1|
+    |tmp2_fu_302_p2                  |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state1                 |    or    |      0|  0|   1|           1|           1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |Total                           |          |      0|  0|  37|          37|           6|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                   |   3|          4|    1|          4|
+    |ap_done                     |   3|          2|    1|          2|
+    |completion_V_blur_by_blk_n  |   3|          2|    1|          2|
+    |completion_V_complet_blk_n  |   3|          2|    1|          2|
+    |completion_V_cycles_blk_n   |   3|          2|    1|          2|
+    |completion_V_raw_byt_blk_n  |   3|          2|    1|          2|
+    |completion_V_status_blk_n   |   3|          2|    1|          2|
+    |empty_n_4_fu_156            |   3|          2|    1|          2|
+    |empty_n_5_fu_160            |   3|          2|    1|          2|
+    |empty_n_6_fu_164            |   3|          2|    1|          2|
+    |empty_n_7_fu_168            |   3|          2|    1|          2|
+    |tmp_blur_bytes_fu_176       |   3|          2|   32|         64|
+    |tmp_completed_fu_180        |   3|          2|   32|         64|
+    |tmp_cycles_reg_231          |   3|          2|   32|         64|
+    |tmp_raw_bytes_fu_172        |   3|          2|   32|         64|
+    |tmp_status_fu_184           |   3|          2|   32|         64|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  48|         34|  171|        344|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |ap_CS_fsm              |   3|   0|    3|          0|
+    |ap_done_reg            |   1|   0|    1|          0|
+    |empty_n_4_fu_156       |   1|   0|    1|          0|
+    |empty_n_5_fu_160       |   1|   0|    1|          0|
+    |empty_n_6_fu_164       |   1|   0|    1|          0|
+    |empty_n_7_fu_168       |   1|   0|    1|          0|
+    |tmp_blur_bytes_fu_176  |  32|   0|   32|          0|
+    |tmp_completed_fu_180   |  32|   0|   32|          0|
+    |tmp_cycles_reg_231     |  32|   0|   32|          0|
+    |tmp_raw_bytes_fu_172   |  32|   0|   32|          0|
+    |tmp_status_fu_184      |  32|   0|   32|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  | 168|   0|  168|          0|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-----------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                       |  in |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|ap_done                      | out |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|ap_continue                  |  in |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs | (anonymous namespace.8 | return value |
+|raw_done_V_dout              |  in |   32|   ap_fifo  |       raw_done_V       |    pointer   |
+|raw_done_V_empty_n           |  in |    1|   ap_fifo  |       raw_done_V       |    pointer   |
+|raw_done_V_read              | out |    1|   ap_fifo  |       raw_done_V       |    pointer   |
+|blur_done_V_dout             |  in |   32|   ap_fifo  |       blur_done_V      |    pointer   |
+|blur_done_V_empty_n          |  in |    1|   ap_fifo  |       blur_done_V      |    pointer   |
+|blur_done_V_read             | out |    1|   ap_fifo  |       blur_done_V      |    pointer   |
+|write_done_V_dout            |  in |   32|   ap_fifo  |      write_done_V      |    pointer   |
+|write_done_V_empty_n         |  in |    1|   ap_fifo  |      write_done_V      |    pointer   |
+|write_done_V_read            | out |    1|   ap_fifo  |      write_done_V      |    pointer   |
+|compute_done_V_dout          |  in |   32|   ap_fifo  |     compute_done_V     |    pointer   |
+|compute_done_V_empty_n       |  in |    1|   ap_fifo  |     compute_done_V     |    pointer   |
+|compute_done_V_read          | out |    1|   ap_fifo  |     compute_done_V     |    pointer   |
+|completion_V_raw_byt_din     | out |   32|   ap_fifo  |  completion_V_raw_byt  |    pointer   |
+|completion_V_raw_byt_full_n  |  in |    1|   ap_fifo  |  completion_V_raw_byt  |    pointer   |
+|completion_V_raw_byt_write   | out |    1|   ap_fifo  |  completion_V_raw_byt  |    pointer   |
+|completion_V_blur_by_din     | out |   32|   ap_fifo  |  completion_V_blur_by  |    pointer   |
+|completion_V_blur_by_full_n  |  in |    1|   ap_fifo  |  completion_V_blur_by  |    pointer   |
+|completion_V_blur_by_write   | out |    1|   ap_fifo  |  completion_V_blur_by  |    pointer   |
+|completion_V_complet_din     | out |   32|   ap_fifo  |  completion_V_complet  |    pointer   |
+|completion_V_complet_full_n  |  in |    1|   ap_fifo  |  completion_V_complet  |    pointer   |
+|completion_V_complet_write   | out |    1|   ap_fifo  |  completion_V_complet  |    pointer   |
+|completion_V_cycles_din      | out |   32|   ap_fifo  |   completion_V_cycles  |    pointer   |
+|completion_V_cycles_full_n   |  in |    1|   ap_fifo  |   completion_V_cycles  |    pointer   |
+|completion_V_cycles_write    | out |    1|   ap_fifo  |   completion_V_cycles  |    pointer   |
+|completion_V_status_din      | out |   32|   ap_fifo  |   completion_V_status  |    pointer   |
+|completion_V_status_full_n   |  in |    1|   ap_fifo  |   completion_V_status  |    pointer   |
+|completion_V_status_write    | out |    1|   ap_fifo  |   completion_V_status  |    pointer   |
++-----------------------------+-----+-----+------------+------------------------+--------------+
+

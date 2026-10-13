@@ -1,0 +1,36 @@
+-- Configuring done (0.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+ninja: no work to do.
+Internal ctest changing into directory: C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+Test project C:/Users/dmsun/Desktop/PLD/FPGA_ORB_HLS/fastv2/next/host_build
+      Start  1: next_backend_angle_exact
+ 1/13 Test  #1: next_backend_angle_exact .................   Passed    0.16 sec
+      Start  2: next_front_storage_contract
+ 2/13 Test  #2: next_front_storage_contract ..............   Passed    2.57 sec
+      Start  3: next_front_stream_vectors
+ 3/13 Test  #3: next_front_stream_vectors ................   Passed    0.37 sec
+      Start  4: next_front_synthetic
+ 4/13 Test  #4: next_front_synthetic .....................   Passed    0.13 sec
+      Start  5: next_front_fullframe
+ 5/13 Test  #5: next_front_fullframe .....................   Passed    0.58 sec
+      Start  6: next_resize_all7
+ 6/13 Test  #6: next_resize_all7 .........................   Passed    0.11 sec
+      Start  7: next_gaussian_boundaries_repeat
+ 7/13 Test  #7: next_gaussian_boundaries_repeat ..........   Passed    0.34 sec
+      Start  8: next_resize_stream_all7
+ 8/13 Test  #8: next_resize_stream_all7 ..................   Passed    0.10 sec
+      Start  9: next_gaussian_stream_all8
+ 9/13 Test  #9: next_gaussian_stream_all8 ................   Passed    0.28 sec
+      Start 10: next_image_reference_oracles
+10/13 Test #10: next_image_reference_oracles .............   Passed    0.29 sec
+      Start 11: next_resize_layout_repeat
+11/13 Test #11: next_resize_layout_repeat ................   Passed    0.15 sec
+      Start 12: next_complete_gaussian_direction_brief
+12/13 Test #12: next_complete_gaussian_direction_brief ...   Passed    0.63 sec
+      Start 13: next_board_ps_control_mailbox
+13/13 Test #13: next_board_ps_control_mailbox ............   Passed   10.87 sec
+
+100% tests passed, 0 tests failed out of 13
+
+Total Test time (real) =  16.66 sec

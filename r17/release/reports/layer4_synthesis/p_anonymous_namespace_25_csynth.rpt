@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vivado HLS Report for 'p_anonymous_namespace_25'
+================================================================
+* Date:           Tue Oct 13 15:03:09 2026
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        project
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z015clg485-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|     3.867|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                     |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- CountLayer4Cycles  |    ?|    ?|         1|          1|          1|     ?|    yes   |
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     35|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     24|
+|Register         |        -|      -|     47|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|     47|     59|
++-----------------+---------+-------+-------+-------+
+|Available        |      200|    160|  93600|  46800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |cycles_fu_186_p2                |     +    |      0|  0|  32|          32|           1|
+    |brmerge10_demorgan_i_fu_180_p2  |    and   |      0|  0|   1|           1|           1|
+    |tmp1_fu_174_p2                  |    and   |      0|  0|   1|           1|           1|
+    |ap_block_state1                 |    or    |      0|  0|   1|           1|           1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |Total                           |          |      0|  0|  35|          35|           4|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------+----+-----------+-----+-----------+
+    |       Name       | LUT| Input Size| Bits| Total Bits|
+    +------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm         |   3|          4|    1|          4|
+    |ap_done           |   3|          2|    1|          2|
+    |cycles_i_reg_133  |   3|          2|   32|         64|
+    |empty_n_3_fu_92   |   3|          2|    1|          2|
+    |empty_n_4_fu_96   |   3|          2|    1|          2|
+    |empty_n_5_fu_100  |   3|          2|    1|          2|
+    |result_V_blk_n    |   3|          2|    1|          2|
+    |tmp_fu_104        |   3|          2|    8|         16|
+    +------------------+----+-----------+-----+-----------+
+    |Total             |  24|         18|   46|         94|
+    +------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |   3|   0|    3|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |cycles_i_reg_133  |  32|   0|   32|          0|
+    |empty_n_3_fu_92   |   1|   0|    1|          0|
+    |empty_n_4_fu_96   |   1|   0|    1|          0|
+    |empty_n_5_fu_100  |   1|   0|    1|          0|
+    |tmp_fu_104        |   8|   0|    8|          0|
+    +------------------+----+----+-----+-----------+
+    |Total             |  47|   0|   47|          0|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-----------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|ap_start               |  in |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|ap_done                | out |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|ap_continue            |  in |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|ap_idle                | out |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|ap_ready               | out |    1| ap_ctrl_hs | (anonymous namespace.25 | return value |
+|result_V_din           | out |   64|   ap_fifo  |         result_V        |    pointer   |
+|result_V_full_n        |  in |    1|   ap_fifo  |         result_V        |    pointer   |
+|result_V_write         | out |    1|   ap_fifo  |         result_V        |    pointer   |
+|fast_done_V_dout       |  in |    8|   ap_fifo  |       fast_done_V       |    pointer   |
+|fast_done_V_empty_n    |  in |    1|   ap_fifo  |       fast_done_V       |    pointer   |
+|fast_done_V_read       | out |    1|   ap_fifo  |       fast_done_V       |    pointer   |
+|blur_done_V_dout       |  in |    8|   ap_fifo  |       blur_done_V       |    pointer   |
+|blur_done_V_empty_n    |  in |    1|   ap_fifo  |       blur_done_V       |    pointer   |
+|blur_done_V_read       | out |    1|   ap_fifo  |       blur_done_V       |    pointer   |
+|resize_done_V_dout     |  in |    8|   ap_fifo  |      resize_done_V      |    pointer   |
+|resize_done_V_empty_n  |  in |    1|   ap_fifo  |      resize_done_V      |    pointer   |
+|resize_done_V_read     | out |    1|   ap_fifo  |      resize_done_V      |    pointer   |
++-----------------------+-----+-----+------------+-------------------------+--------------+
+

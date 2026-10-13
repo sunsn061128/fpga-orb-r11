@@ -1,0 +1,12 @@
+{
+  "state": "SUCCEEDED",
+  "job": "C:\\h\\orb4\\20261012_192905_layer4_82180092",
+  "kernel": "layer4",
+  "mode": "export",
+  "tool": "Vivado HLS 2018.3",
+  "part": "xc7z015clg485-2",
+  "period_ns": 10,
+  "pid": 12204,
+  "returncode": 0,
+  "seconds": 7552.141
+}

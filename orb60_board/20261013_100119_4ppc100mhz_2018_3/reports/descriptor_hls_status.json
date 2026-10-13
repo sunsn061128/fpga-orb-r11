@@ -1,0 +1,13 @@
+{
+  "state": "SUCCEEDED",
+  "job": "C:\\h\\orb4\\20261013_000740_descriptor_d930122f",
+  "kernel": "descriptor",
+  "mode": "export",
+  "tool": "Vivado HLS 2018.3",
+  "part": "xc7z015clg485-2",
+  "period_ns": 10,
+  "synthesis_parent": "C:\\h\\orb4\\20261013_000420_descriptor_ad6d46d5",
+  "pid": 32276,
+  "returncode": 0,
+  "seconds": 996.484
+}

@@ -1,0 +1,46 @@
+[New Thread 33604.0x7858]
+[New Thread 33604.0x673c]
+[New Thread 33604.0x2a14]
+[New Thread 33604.0x7a68]
+
+Thread 5 (Thread 33604.0x7a68):
+#0  0x00007ffe53b03ab1 in ntdll!DbgBreakPoint () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#1  0x00007ffe53b15bde in ntdll!DbgUiRemoteBreakin () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#2  0x00007ffe51f2cd87 in KERNEL32!BaseThreadInitThunk () from C:\WINDOWS\System32\kernel32.dll
+#3  0x00007ffe53a8caec in ntdll!RtlUserThreadStart () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 4 (Thread 33604.0x2a14):
+#0  0x00007ffe53b44a74 in ntdll!ZwWaitForWorkViaWorkerFactory () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#1  0x00007ffe539fa65e in ntdll!TpCallbackMayRunLong () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#2  0x00007ffe51f2cd87 in KERNEL32!BaseThreadInitThunk () from C:\WINDOWS\System32\kernel32.dll
+#3  0x00007ffe53a8caec in ntdll!RtlUserThreadStart () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 3 (Thread 33604.0x673c):
+#0  0x00007ffe53b44a74 in ntdll!ZwWaitForWorkViaWorkerFactory () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#1  0x00007ffe539fa65e in ntdll!TpCallbackMayRunLong () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#2  0x00007ffe51f2cd87 in KERNEL32!BaseThreadInitThunk () from C:\WINDOWS\System32\kernel32.dll
+#3  0x00007ffe53a8caec in ntdll!RtlUserThreadStart () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 2 (Thread 33604.0x7858):
+#0  0x00007ffe53b44a74 in ntdll!ZwWaitForWorkViaWorkerFactory () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#1  0x00007ffe539fa65e in ntdll!TpCallbackMayRunLong () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#2  0x00007ffe51f2cd87 in KERNEL32!BaseThreadInitThunk () from C:\WINDOWS\System32\kernel32.dll
+#3  0x00007ffe53a8caec in ntdll!RtlUserThreadStart () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 1 (Thread 33604.0x7aa8):
+#0  ap_private<10, true, true>::check_canary (this=0x83caa0) at C:/Xilinx/Vivado/2018.3/include/etc/ap_private.h:1400
+#1  0x000000000047d850 in ap_private<10, true, true>::ap_private<9, true, true> (this=0x83caa0, that=...) at C:/Xilinx/Vivado/2018.3/include/etc/ap_private.h:1659
+#2  0x0000000000481696 in ap_private<9, true, true>::operator< <9, true> (this=0x83cbc0, op=...) at C:/Xilinx/Vivado/2018.3/include/etc/ap_private.h:2646
+#3  0x0000000000481830 in ap_int_base<9, true>::operator< <9, true> (this=0x83cbc0, op2=...) at C:/Xilinx/Vivado/2018.3/include/ap_int_base.h:889
+#4  0x0000000000421f02 in (anonymous namespace)::fast_score (center=3 '\003', ring=0x83cd80 "\261\023zx°Ù&5\354\004\035\353\026¿òb Îƒ") at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/fastv2_hls.cpp:156
+#5  0x0000000000428ca0 in (anonymous namespace)::front4_score<1> (window=0x83cdf0) at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/front4_stream.hpp:44
+#6  0x0000000000425c91 in (anonymous namespace)::scan_front4_quads (input=..., output=..., p=..., offset=440, high=20, low=7, dual=1) at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/front4_stream.hpp:91
+#7  0x00000000004275e2 in (anonymous namespace)::layer4_dataflow (image=0x2912680, blurred=0x2d24ff0, resized=0x3000080, selected=0x29f87c0, result=0x83fc10, p=..., level=2, high=20, low=7, dual=1, capacity=1000, dw=556, dh=417, completion=...) at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/layer4_hls.cpp:67
+#8  0x0000000000427f45 in fastv2_layer4_hls (image=0x2912680, blurred=0x2d24ff0, resized=0x3000080, selected=0x29f87c0, result=0x83fc10, stats=0x83fbd0, level=2, budget=151, high_threshold=20, low_threshold=7, dual_threshold=1, selected_capacity=1000) at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/src/layer4_hls.cpp:130
+#9  0x00000000004019f8 in run_case (index=12) at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/hls/tb_layer4_stream.cpp:24
+#10 0x000000000040266b in main () at ../../../../inputs/FPGA_ORB_HLS/fastv2/next/hls/tb_layer4_stream.cpp:73
+[Inferior 1 (process 33604) detached]
